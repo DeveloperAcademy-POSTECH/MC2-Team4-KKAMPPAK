@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E47171B2A069CC30030AF1C /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717152A069CC30030AF1C /* Alert.swift */; };
+		7E47171C2A069CC30030AF1C /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717162A069CC30030AF1C /* Setting.swift */; };
+		7E47171D2A069CC30030AF1C /* EyeBlinking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717172A069CC30030AF1C /* EyeBlinking.swift */; };
+		7E47171E2A069CC30030AF1C /* ScreenTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717182A069CC30030AF1C /* ScreenTime.swift */; };
+		7E47171F2A069CC30030AF1C /* SettingTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717192A069CC30030AF1C /* SettingTime.swift */; };
+		7E4717202A069CC30030AF1C /* EyeMoving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E47171A2A069CC30030AF1C /* EyeMoving.swift */; };
+		7E4717292A069CE40030AF1C /* EyeBlinkingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717222A069CE40030AF1C /* EyeBlinkingView.swift */; };
+		7E47172A2A069CE40030AF1C /* EyeMovingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717232A069CE40030AF1C /* EyeMovingView.swift */; };
+		7E47172B2A069CE40030AF1C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717242A069CE40030AF1C /* HomeView.swift */; };
+		7E47172C2A069CE40030AF1C /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717262A069CE40030AF1C /* Button.swift */; };
+		7E47172D2A069CE40030AF1C /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717272A069CE40030AF1C /* LaunchScreenView.swift */; };
+		7E47172E2A069CE40030AF1C /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717282A069CE40030AF1C /* SettingView.swift */; };
 		BB142F032A02082A0080C843 /* MC2_Team4_KKAMPPAKApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB142F022A02082A0080C843 /* MC2_Team4_KKAMPPAKApp.swift */; };
 		BB142F052A02082A0080C843 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB142F042A02082A0080C843 /* ContentView.swift */; };
 		BB142F072A02082B0080C843 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB142F062A02082B0080C843 /* Assets.xcassets */; };
@@ -14,6 +26,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7E4717152A069CC30030AF1C /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		7E4717162A069CC30030AF1C /* Setting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		7E4717172A069CC30030AF1C /* EyeBlinking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EyeBlinking.swift; sourceTree = "<group>"; };
+		7E4717182A069CC30030AF1C /* ScreenTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenTime.swift; sourceTree = "<group>"; };
+		7E4717192A069CC30030AF1C /* SettingTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTime.swift; sourceTree = "<group>"; };
+		7E47171A2A069CC30030AF1C /* EyeMoving.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EyeMoving.swift; sourceTree = "<group>"; };
+		7E4717222A069CE40030AF1C /* EyeBlinkingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EyeBlinkingView.swift; sourceTree = "<group>"; };
+		7E4717232A069CE40030AF1C /* EyeMovingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EyeMovingView.swift; sourceTree = "<group>"; };
+		7E4717242A069CE40030AF1C /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		7E4717262A069CE40030AF1C /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		7E4717272A069CE40030AF1C /* LaunchScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
+		7E4717282A069CE40030AF1C /* SettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		BB142EFF2A02082A0080C843 /* MC2-Team4-KKAMPPAK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MC2-Team4-KKAMPPAK.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB142F022A02082A0080C843 /* MC2_Team4_KKAMPPAKApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MC2_Team4_KKAMPPAKApp.swift; sourceTree = "<group>"; };
 		BB142F042A02082A0080C843 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +56,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E4717142A069CC30030AF1C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7E4717152A069CC30030AF1C /* Alert.swift */,
+				7E4717162A069CC30030AF1C /* Setting.swift */,
+				7E4717172A069CC30030AF1C /* EyeBlinking.swift */,
+				7E4717182A069CC30030AF1C /* ScreenTime.swift */,
+				7E4717192A069CC30030AF1C /* SettingTime.swift */,
+				7E47171A2A069CC30030AF1C /* EyeMoving.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7E4717212A069CE40030AF1C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7E4717222A069CE40030AF1C /* EyeBlinkingView.swift */,
+				7E4717232A069CE40030AF1C /* EyeMovingView.swift */,
+				7E4717242A069CE40030AF1C /* HomeView.swift */,
+				7E4717252A069CE40030AF1C /* Component */,
+				7E4717272A069CE40030AF1C /* LaunchScreenView.swift */,
+				7E4717282A069CE40030AF1C /* SettingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7E4717252A069CE40030AF1C /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				7E4717262A069CE40030AF1C /* Button.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
 		BB142EF62A0208290080C843 = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +109,8 @@
 		BB142F012A02082A0080C843 /* MC2-Team4-KKAMPPAK */ = {
 			isa = PBXGroup;
 			children = (
+				7E4717212A069CE40030AF1C /* View */,
+				7E4717142A069CC30030AF1C /* Model */,
 				BB142F022A02082A0080C843 /* MC2_Team4_KKAMPPAKApp.swift */,
 				BB142F042A02082A0080C843 /* ContentView.swift */,
 				BB142F062A02082B0080C843 /* Assets.xcassets */,
@@ -137,7 +197,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E47171D2A069CC30030AF1C /* EyeBlinking.swift in Sources */,
+				7E47172D2A069CE40030AF1C /* LaunchScreenView.swift in Sources */,
+				7E47171B2A069CC30030AF1C /* Alert.swift in Sources */,
+				7E47172E2A069CE40030AF1C /* SettingView.swift in Sources */,
+				7E47172A2A069CE40030AF1C /* EyeMovingView.swift in Sources */,
+				7E4717292A069CE40030AF1C /* EyeBlinkingView.swift in Sources */,
+				7E47171E2A069CC30030AF1C /* ScreenTime.swift in Sources */,
+				7E47172B2A069CE40030AF1C /* HomeView.swift in Sources */,
 				BB142F052A02082A0080C843 /* ContentView.swift in Sources */,
+				7E47172C2A069CE40030AF1C /* Button.swift in Sources */,
+				7E47171C2A069CC30030AF1C /* Setting.swift in Sources */,
+				7E4717202A069CC30030AF1C /* EyeMoving.swift in Sources */,
+				7E47171F2A069CC30030AF1C /* SettingTime.swift in Sources */,
 				BB142F032A02082A0080C843 /* MC2_Team4_KKAMPPAKApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
