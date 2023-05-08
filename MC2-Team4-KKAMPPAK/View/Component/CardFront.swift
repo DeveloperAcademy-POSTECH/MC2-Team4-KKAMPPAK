@@ -8,16 +8,25 @@
 import SwiftUI
 
 struct CardFront: View {
+    @Binding var selectedTime: Date
     @Binding var width: CGFloat
     @Binding var height: CGFloat
     
+    let dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "hh:mm a"
+        return formatter
+    }()
+    
+    
     var body: some View {
-        Rectangle().foregroundColor(Color(red: 0.942, green: 0.951, blue: 1)).frame(width: self.width, height: self.height).overlay(
+        RoundedRectangle(cornerRadius: 40)
+            .foregroundColor(Color(red: 0.942, green: 0.951, blue: 1)).frame(width: self.width, height: self.height).overlay(
             VStack{
-                Text("01:30 AM")
+                Text(dateFormatter.string(from: selectedTime))
                     .font(.largeTitle)
                     .fontWeight(.bold)
-                Image("깜빡이")
+                Image("kp")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 150)
@@ -30,5 +39,7 @@ struct CardFront: View {
         ).scaleEffect(x: -1, y: 1)
             
     }
+  
+  
 }
 
