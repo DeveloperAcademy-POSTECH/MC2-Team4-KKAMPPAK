@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct CardBack: View {
-    @State private var selectedTime = Date()
+    @Binding var selectedTime: Date
     @Binding var width: CGFloat
     @Binding var height: CGFloat
     @Binding var isFlipped: Bool
     @Binding var degrees: Double
     
     var body: some View {
-        Rectangle()
+        RoundedRectangle(cornerRadius: 40)
             .foregroundColor(Color(red: 0.942, green: 0.951, blue: 1))
             .frame(width: self.width, height: self.height)
             .overlay(
@@ -23,15 +23,25 @@ struct CardBack: View {
                     // 네비게이션 바
                     HStack {
                         Button(action: {
-                            self.degrees += 180
                             self.isFlipped = false
+                            withAnimation {
+                                self.degrees += 180
+                                self.width = 313 // add other animated stuff here
+                                self.height = 359
+                            }
                         }) {
                             Text("취소")
                             
                         }
                         Spacer()
                         Button(action: {
-                               // 알람 삭제 버튼 액션
+                            self.selectedTime = selectedTime
+                            self.isFlipped = false
+                            withAnimation {
+                                self.degrees -= 180
+                                self.width = 313 // add other animated stuff here
+                                self.height = 359
+                            }
                         }) {
                             Text("저장")
                                 .fontWeight(.bold)

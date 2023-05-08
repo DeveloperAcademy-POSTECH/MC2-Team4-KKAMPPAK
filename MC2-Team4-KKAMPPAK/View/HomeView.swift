@@ -1,12 +1,14 @@
 import SwiftUI
 
 struct HomeView: View {
-    
+
     @State var isFlipped = false
     @State var degrees: Double = 180.0
     @State var width: CGFloat = 313
     @State var height: CGFloat = 359
-
+    @State var cardCount: Int = 0
+    @State private var selectedTime = Date()
+    
     var body: some View {
         ZStack{
             Color(red: 0.2, green: 0.2, blue: 0.2)
@@ -19,6 +21,9 @@ struct HomeView: View {
                         .frame(width: 25, height: 25, alignment: .topTrailing)
                         .foregroundColor(Color(red: 0.321, green: 0.43, blue: 1))
                         .padding(.trailing, 20)
+                        .onTapGesture {
+                            self.cardCount += 1
+                        }
                     Image(systemName: "gearshape.fill")
                         .resizable()
                         .frame(width: 25, height: 25, alignment: .topTrailing)
@@ -36,17 +41,21 @@ struct HomeView: View {
                 }
                 Spacer()
                 ZStack {
-                   if isFlipped {
-                       CardBack(width: self.$width,
-                                height: self.$height,
-                                isFlipped: self.$isFlipped,
-                                degrees: self.$degrees)
-                   } else {
-                       CardFront(width: self.$width,
-                                 height: self.$height)
-                   }
+                    if (cardCount == 0) {
+                       NoCard()
+                    } else {
+                        if isFlipped {
+                            CardBack(selectedTime: $selectedTime, width: self.$width,
+                                     height: self.$height,
+                                     isFlipped: self.$isFlipped,
+                                     degrees: self.$degrees)
+                        } else {
+                            CardFront(selectedTime: $selectedTime, width: self.$width,
+                                      height: self.$height)
+                        }
+                    }
+                 
                 }
-                .cornerRadius(40)
                 .rotation3DEffect(.degrees(degrees), axis: (x: 0, y: 1, z: 0))
                 .onTapGesture {
                    if self.isFlipped {

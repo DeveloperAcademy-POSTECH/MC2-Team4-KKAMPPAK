@@ -25,6 +25,7 @@
 		BB142F0A2A02082B0080C843 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB142F092A02082B0080C843 /* Preview Assets.xcassets */; };
 		BB142F112A073A5C0080C843 /* CardBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB142F102A073A5C0080C843 /* CardBack.swift */; };
 		BB142F132A073A8A0080C843 /* CardFront.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB142F122A073A8A0080C843 /* CardFront.swift */; };
+		BB142F152A0895660080C843 /* NoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB142F142A0895660080C843 /* NoCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		BB142F092A02082B0080C843 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BB142F102A073A5C0080C843 /* CardBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBack.swift; sourceTree = "<group>"; };
 		BB142F122A073A8A0080C843 /* CardFront.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFront.swift; sourceTree = "<group>"; };
+		BB142F142A0895660080C843 /* NoCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				7E4717262A069CE40030AF1C /* Button.swift */,
 				BB142F102A073A5C0080C843 /* CardBack.swift */,
 				BB142F122A073A8A0080C843 /* CardFront.swift */,
+				BB142F142A0895660080C843 /* NoCard.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 				7E47172C2A069CE40030AF1C /* Button.swift in Sources */,
 				7E47171C2A069CC30030AF1C /* Setting.swift in Sources */,
 				7E4717202A069CC30030AF1C /* EyeMoving.swift in Sources */,
+				BB142F152A0895660080C843 /* NoCard.swift in Sources */,
 				BB142F132A073A8A0080C843 /* CardFront.swift in Sources */,
 				7E47171F2A069CC30030AF1C /* SettingTime.swift in Sources */,
 				BB142F032A02082A0080C843 /* MC2_Team4_KKAMPPAKApp.swift in Sources */,
