@@ -52,8 +52,8 @@
 		BB142F122A073A8A0080C843 /* CardFront.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFront.swift; sourceTree = "<group>"; };
 		BB142F142A0895660080C843 /* NoCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoCard.swift; sourceTree = "<group>"; };
 		BB142F162A09CE480080C843 /* CardStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStack.swift; sourceTree = "<group>"; };
-		BB142F492A0C9B0F0080C843 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BB142F4B2A0C9B8F0080C843 /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		BB142F492A0C9B0F0080C843 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
+		BB142F4B2A0C9B8F0080C843 /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationManager.swift; path = ../NotificationManager.swift; sourceTree = "<group>"; };
 		BB142F4F2A0C9C5F0080C843 /* DemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,6 +77,8 @@
 				7E4717182A069CC30030AF1C /* ScreenTime.swift */,
 				7E4717192A069CC30030AF1C /* SettingTime.swift */,
 				7E47171A2A069CC30030AF1C /* EyeMoving.swift */,
+				BB142F4B2A0C9B8F0080C843 /* NotificationManager.swift */,
+				BB142F492A0C9B0F0080C843 /* AppDelegate.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -129,8 +131,6 @@
 				7E4717212A069CE40030AF1C /* View */,
 				7E4717142A069CC30030AF1C /* Model */,
 				BB142F022A02082A0080C843 /* MC2_Team4_KKAMPPAKApp.swift */,
-				BB142F4B2A0C9B8F0080C843 /* NotificationManager.swift */,
-				BB142F492A0C9B0F0080C843 /* AppDelegate.swift */,
 				BB142F062A02082B0080C843 /* Assets.xcassets */,
 				BB142F082A02082B0080C843 /* Preview Content */,
 			);
