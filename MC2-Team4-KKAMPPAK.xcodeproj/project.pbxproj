@@ -15,7 +15,7 @@
 		7E4717202A069CC30030AF1C /* EyeMoving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E47171A2A069CC30030AF1C /* EyeMoving.swift */; };
 		7E4717292A069CE40030AF1C /* EyeBlinkingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717222A069CE40030AF1C /* EyeBlinkingView.swift */; };
 		7E47172A2A069CE40030AF1C /* EyeMovingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717232A069CE40030AF1C /* EyeMovingView.swift */; };
-		7E47172B2A069CE40030AF1C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717242A069CE40030AF1C /* HomeView.swift */; };
+		7E47172B2A069CE40030AF1C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717242A069CE40030AF1C /* ContentView.swift */; };
 		7E47172C2A069CE40030AF1C /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717262A069CE40030AF1C /* Button.swift */; };
 		7E47172D2A069CE40030AF1C /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717272A069CE40030AF1C /* LaunchScreenView.swift */; };
 		7E47172E2A069CE40030AF1C /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717282A069CE40030AF1C /* SettingView.swift */; };
@@ -26,7 +26,9 @@
 		BB142F132A073A8A0080C843 /* CardFront.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB142F122A073A8A0080C843 /* CardFront.swift */; };
 		BB142F152A0895660080C843 /* NoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB142F142A0895660080C843 /* NoCard.swift */; };
 		BB142F172A09CE480080C843 /* CardStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB142F162A09CE480080C843 /* CardStack.swift */; };
-		BB142F1B2A09E1480080C843 /* DemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB142F1A2A09E1480080C843 /* DemoView.swift */; };
+		BB142F4A2A0C9B0F0080C843 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB142F492A0C9B0F0080C843 /* AppDelegate.swift */; };
+		BB142F4C2A0C9B8F0080C843 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB142F4B2A0C9B8F0080C843 /* NotificationManager.swift */; };
+		BB142F502A0C9C5F0080C843 /* DemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB142F4F2A0C9C5F0080C843 /* DemoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,7 +40,7 @@
 		7E47171A2A069CC30030AF1C /* EyeMoving.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EyeMoving.swift; sourceTree = "<group>"; };
 		7E4717222A069CE40030AF1C /* EyeBlinkingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EyeBlinkingView.swift; sourceTree = "<group>"; };
 		7E4717232A069CE40030AF1C /* EyeMovingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EyeMovingView.swift; sourceTree = "<group>"; };
-		7E4717242A069CE40030AF1C /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		7E4717242A069CE40030AF1C /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7E4717262A069CE40030AF1C /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		7E4717272A069CE40030AF1C /* LaunchScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
 		7E4717282A069CE40030AF1C /* SettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
@@ -50,7 +52,9 @@
 		BB142F122A073A8A0080C843 /* CardFront.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFront.swift; sourceTree = "<group>"; };
 		BB142F142A0895660080C843 /* NoCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoCard.swift; sourceTree = "<group>"; };
 		BB142F162A09CE480080C843 /* CardStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStack.swift; sourceTree = "<group>"; };
-		BB142F1A2A09E1480080C843 /* DemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoView.swift; sourceTree = "<group>"; };
+		BB142F492A0C9B0F0080C843 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB142F4B2A0C9B8F0080C843 /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		BB142F4F2A0C9C5F0080C843 /* DemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +86,7 @@
 			children = (
 				7E4717222A069CE40030AF1C /* EyeBlinkingView.swift */,
 				7E4717232A069CE40030AF1C /* EyeMovingView.swift */,
-				7E4717242A069CE40030AF1C /* HomeView.swift */,
+				7E4717242A069CE40030AF1C /* ContentView.swift */,
 				7E4717252A069CE40030AF1C /* Component */,
 				7E4717272A069CE40030AF1C /* LaunchScreenView.swift */,
 				7E4717282A069CE40030AF1C /* SettingView.swift */,
@@ -98,7 +102,7 @@
 				BB142F122A073A8A0080C843 /* CardFront.swift */,
 				BB142F142A0895660080C843 /* NoCard.swift */,
 				BB142F162A09CE480080C843 /* CardStack.swift */,
-				BB142F1A2A09E1480080C843 /* DemoView.swift */,
+				BB142F4F2A0C9C5F0080C843 /* DemoView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -125,6 +129,8 @@
 				7E4717212A069CE40030AF1C /* View */,
 				7E4717142A069CC30030AF1C /* Model */,
 				BB142F022A02082A0080C843 /* MC2_Team4_KKAMPPAKApp.swift */,
+				BB142F4B2A0C9B8F0080C843 /* NotificationManager.swift */,
+				BB142F492A0C9B0F0080C843 /* AppDelegate.swift */,
 				BB142F062A02082B0080C843 /* Assets.xcassets */,
 				BB142F082A02082B0080C843 /* Preview Content */,
 			);
@@ -211,6 +217,8 @@
 			files = (
 				7E47171D2A069CC30030AF1C /* EyeBlinking.swift in Sources */,
 				7E47172D2A069CE40030AF1C /* LaunchScreenView.swift in Sources */,
+				BB142F4C2A0C9B8F0080C843 /* NotificationManager.swift in Sources */,
+				BB142F4A2A0C9B0F0080C843 /* AppDelegate.swift in Sources */,
 				7E47171B2A069CC30030AF1C /* Alert.swift in Sources */,
 				BB142F112A073A5C0080C843 /* CardBack.swift in Sources */,
 				7E47172E2A069CE40030AF1C /* SettingView.swift in Sources */,
@@ -218,10 +226,10 @@
 				7E4717292A069CE40030AF1C /* EyeBlinkingView.swift in Sources */,
 				7E47171E2A069CC30030AF1C /* ScreenTime.swift in Sources */,
 				BB142F172A09CE480080C843 /* CardStack.swift in Sources */,
-				7E47172B2A069CE40030AF1C /* HomeView.swift in Sources */,
+				7E47172B2A069CE40030AF1C /* ContentView.swift in Sources */,
 				7E47172C2A069CE40030AF1C /* Button.swift in Sources */,
+				BB142F502A0C9C5F0080C843 /* DemoView.swift in Sources */,
 				7E47171C2A069CC30030AF1C /* Setting.swift in Sources */,
-				BB142F1B2A09E1480080C843 /* DemoView.swift in Sources */,
 				7E4717202A069CC30030AF1C /* EyeMoving.swift in Sources */,
 				BB142F152A0895660080C843 /* NoCard.swift in Sources */,
 				BB142F132A073A8A0080C843 /* CardFront.swift in Sources */,

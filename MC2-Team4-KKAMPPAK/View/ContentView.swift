@@ -1,6 +1,7 @@
 import SwiftUI
 
-struct HomeView: View {
+
+struct ContentView: View {
     
     let colors : [Color] = [
         Color("cardColor1"), Color("cardColor2"),Color("cardColor3")]
@@ -15,6 +16,7 @@ struct HomeView: View {
         ZStack{
             Color(red: 0.2, green: 0.2, blue: 0.2)
                 .ignoresSafeArea()
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
             VStack{
                 HStack{
                     Spacer()
@@ -25,7 +27,7 @@ struct HomeView: View {
                         .padding(.trailing, 20)
                         .onTapGesture {
                             if (cards.count < 3) {
-                                self.cards.append(CardItem(alarm: Date(), isFlipped: false, degrees: 180, color: colors[cards.count]))
+                                self.cards.insert(CardItem(alarm: Date(), isFlipped: false, degrees: 180, color: colors[cards.count]), at: 0)
                             }
                         }
                     Image(systemName: "gearshape.fill")
@@ -48,7 +50,7 @@ struct HomeView: View {
                     if (cards.count == 0) {
                         NoCard()
                     } else {
-                        DemoView(cards: cards)
+                        DemoView(cards: $cards)
                     }
                  
                 }
@@ -68,16 +70,14 @@ struct HomeView: View {
                 .padding(.bottom, 8)
             }
             .padding(30)
-        }
+        }.frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }
 
 
-
-
-struct HomeView_Previews: PreviewProvider {
+struct Content_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        ContentView()
     }
 }
 
