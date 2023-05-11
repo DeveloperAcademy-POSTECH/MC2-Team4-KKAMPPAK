@@ -9,15 +9,13 @@ import SwiftUI
 
 struct CardBack: View {
     @Binding var selectedTime: Date
-    @Binding var width: CGFloat
-    @Binding var height: CGFloat
     @Binding var isFlipped: Bool
     @Binding var degrees: Double
     
     var body: some View {
         RoundedRectangle(cornerRadius: 40)
             .foregroundColor(Color(red: 0.942, green: 0.951, blue: 1))
-            .frame(width: self.width, height: self.height)
+            .frame(width: 313, height: 359)
             .overlay(
                 VStack{
                     // 네비게이션 바
@@ -26,8 +24,6 @@ struct CardBack: View {
                             self.isFlipped = false
                             withAnimation {
                                 self.degrees += 180
-                                self.width = 313 // add other animated stuff here
-                                self.height = 359
                             }
                         }) {
                             Text("취소")
@@ -35,12 +31,12 @@ struct CardBack: View {
                         }
                         Spacer()
                         Button(action: {
+                           
                             self.selectedTime = selectedTime
+                            setNotification()
                             self.isFlipped = false
                             withAnimation {
                                 self.degrees -= 180
-                                self.width = 313 // add other animated stuff here
-                                self.height = 359
                             }
                         }) {
                             Text("저장")
@@ -75,6 +71,36 @@ struct CardBack: View {
                     Spacer()
                 }
         )
+    }
+    
+    private func setNotification() {
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.alert, .sound]) { granted, error in
+            if granted {
+                scheduleNotification()
+            } else {
+                print("알림 권한이 거부되었습니다.")
+            }
+        }
+    }
+    
+    private func scheduleNotification() {
+        let content = UNMutableNotificationContent()
+        content.title = "깜빡하기"
+        content.body = "띠링! 👀 깜빡 할 시간입니다."
+        content.sound = .default
+        
+        let trigger = UNCalendarNotificationTrigger(dateMatching: Calendar.current.dateComponents([.hour, .minute], from: selectedTime), repeats: true)
+        
+        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+        
+        UNUserNotificationCenter.current().add(request) { error in
+            if let error = error {
+                print("알림 등록에 실패했습니다. \(error.localizedDescription)")
+            } else {
+                print("알림이 등록되었습니다.")
+            }
+        }
     }
     
 }
