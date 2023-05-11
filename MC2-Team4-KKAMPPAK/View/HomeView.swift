@@ -1,13 +1,15 @@
 import SwiftUI
 
 struct HomeView: View {
-
-    @State var isFlipped = false
-    @State var degrees: Double = 180.0
-    @State var width: CGFloat = 313
-    @State var height: CGFloat = 359
-    @State var cardCount: Int = 0
-    @State private var selectedTime = Date()
+    
+    let colors : [Color] = [
+        Color("cardColor1"), Color("cardColor2"),Color("cardColor3")]
+    
+    @State var cards: [CardItem] = [
+        CardItem(alarm: Date(), isFlipped: false, degrees: 180, color: Color("cardColor1")),
+        CardItem(alarm: Date(), isFlipped: false, degrees: 180, color: Color("cardColor2")),
+    ]
+    
     
     var body: some View {
         ZStack{
@@ -22,7 +24,9 @@ struct HomeView: View {
                         .foregroundColor(Color(red: 0.321, green: 0.43, blue: 1))
                         .padding(.trailing, 20)
                         .onTapGesture {
-                            self.cardCount += 1
+                            if (cards.count < 3) {
+                                self.cards.append(CardItem(alarm: Date(), isFlipped: false, degrees: 180, color: colors[cards.count]))
+                            }
                         }
                     Image(systemName: "gearshape.fill")
                         .resizable()
@@ -41,40 +45,14 @@ struct HomeView: View {
                 }
                 Spacer()
                 ZStack {
-                    if (cardCount == 0) {
-                       NoCard()
+                    if (cards.count == 0) {
+                        NoCard()
                     } else {
-                        if isFlipped {
-                            CardBack(selectedTime: $selectedTime, width: self.$width,
-                                     height: self.$height,
-                                     isFlipped: self.$isFlipped,
-                                     degrees: self.$degrees)
-                        } else {
-                            CardFront(selectedTime: $selectedTime, width: self.$width,
-                                      height: self.$height)
-                        }
+                        DemoView(cards: cards)
                     }
                  
                 }
-                .rotation3DEffect(.degrees(degrees), axis: (x: 0, y: 1, z: 0))
-                .onTapGesture {
-                   if self.isFlipped {
-                       self.isFlipped = false
-                       withAnimation {
-                           self.degrees += 180
-                           self.width = 313 // add other animated stuff here
-                           self.height = 359
-                       }
-                   } else {
-                       self.isFlipped = true
-                       withAnimation {
-                           self.degrees -= 180
-                           self.width = 313 // add other animated stuff here
-                           self.height = 359
-                       }
-                   }
-                }
-                .padding(.bottom, 35)
+               
                 Spacer()
                 NavigationLink(destination: EyeBlinkingView())
                 {
@@ -86,7 +64,7 @@ struct HomeView: View {
                         .background(Color(red: 0.321, green: 0.43, blue: 1))
                         .cornerRadius(35)
                 }
-                .disabled(!isFlipped)
+//                .disabled(!isFlipped)
                 .padding(.bottom, 8)
             }
             .padding(30)

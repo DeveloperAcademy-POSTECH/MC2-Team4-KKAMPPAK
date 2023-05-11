@@ -21,12 +21,13 @@
 		7E47172D2A069CE40030AF1C /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717272A069CE40030AF1C /* LaunchScreenView.swift */; };
 		7E47172E2A069CE40030AF1C /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717282A069CE40030AF1C /* SettingView.swift */; };
 		BB142F032A02082A0080C843 /* MC2_Team4_KKAMPPAKApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB142F022A02082A0080C843 /* MC2_Team4_KKAMPPAKApp.swift */; };
-		BB142F052A02082A0080C843 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB142F042A02082A0080C843 /* ContentView.swift */; };
 		BB142F072A02082B0080C843 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB142F062A02082B0080C843 /* Assets.xcassets */; };
 		BB142F0A2A02082B0080C843 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB142F092A02082B0080C843 /* Preview Assets.xcassets */; };
 		BB142F112A073A5C0080C843 /* CardBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB142F102A073A5C0080C843 /* CardBack.swift */; };
 		BB142F132A073A8A0080C843 /* CardFront.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB142F122A073A8A0080C843 /* CardFront.swift */; };
 		BB142F152A0895660080C843 /* NoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB142F142A0895660080C843 /* NoCard.swift */; };
+		BB142F172A09CE480080C843 /* CardStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB142F162A09CE480080C843 /* CardStack.swift */; };
+		BB142F1B2A09E1480080C843 /* DemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB142F1A2A09E1480080C843 /* DemoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,12 +46,13 @@
 		7E4717282A069CE40030AF1C /* SettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		BB142EFF2A02082A0080C843 /* MC2-Team4-KKAMPPAK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MC2-Team4-KKAMPPAK.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB142F022A02082A0080C843 /* MC2_Team4_KKAMPPAKApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MC2_Team4_KKAMPPAKApp.swift; sourceTree = "<group>"; };
-		BB142F042A02082A0080C843 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BB142F062A02082B0080C843 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB142F092A02082B0080C843 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BB142F102A073A5C0080C843 /* CardBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBack.swift; sourceTree = "<group>"; };
 		BB142F122A073A8A0080C843 /* CardFront.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFront.swift; sourceTree = "<group>"; };
 		BB142F142A0895660080C843 /* NoCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoCard.swift; sourceTree = "<group>"; };
+		BB142F162A09CE480080C843 /* CardStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStack.swift; sourceTree = "<group>"; };
+		BB142F1A2A09E1480080C843 /* DemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,8 @@
 				BB142F102A073A5C0080C843 /* CardBack.swift */,
 				BB142F122A073A8A0080C843 /* CardFront.swift */,
 				BB142F142A0895660080C843 /* NoCard.swift */,
+				BB142F162A09CE480080C843 /* CardStack.swift */,
+				BB142F1A2A09E1480080C843 /* DemoView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -124,7 +128,6 @@
 				7E4717212A069CE40030AF1C /* View */,
 				7E4717142A069CC30030AF1C /* Model */,
 				BB142F022A02082A0080C843 /* MC2_Team4_KKAMPPAKApp.swift */,
-				BB142F042A02082A0080C843 /* ContentView.swift */,
 				BB142F062A02082B0080C843 /* Assets.xcassets */,
 				BB142F082A02082B0080C843 /* Preview Content */,
 			);
@@ -217,10 +220,11 @@
 				7E47172A2A069CE40030AF1C /* EyeMovingView.swift in Sources */,
 				7E4717292A069CE40030AF1C /* EyeBlinkingView.swift in Sources */,
 				7E47171E2A069CC30030AF1C /* ScreenTime.swift in Sources */,
+				BB142F172A09CE480080C843 /* CardStack.swift in Sources */,
 				7E47172B2A069CE40030AF1C /* HomeView.swift in Sources */,
-				BB142F052A02082A0080C843 /* ContentView.swift in Sources */,
 				7E47172C2A069CE40030AF1C /* Button.swift in Sources */,
 				7E47171C2A069CC30030AF1C /* Setting.swift in Sources */,
+				BB142F1B2A09E1480080C843 /* DemoView.swift in Sources */,
 				7E4717202A069CC30030AF1C /* EyeMoving.swift in Sources */,
 				BB142F152A0895660080C843 /* NoCard.swift in Sources */,
 				13D24B962A0A83EA003C3CFB /* BlinkARViewContainer.swift in Sources */,

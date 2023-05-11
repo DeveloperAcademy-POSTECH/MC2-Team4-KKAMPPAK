@@ -9,8 +9,6 @@ import SwiftUI
 
 struct CardFront: View {
     @Binding var selectedTime: Date
-    @Binding var width: CGFloat
-    @Binding var height: CGFloat
     
     let dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
@@ -21,7 +19,7 @@ struct CardFront: View {
     
     var body: some View {
         RoundedRectangle(cornerRadius: 40)
-            .foregroundColor(Color(red: 0.942, green: 0.951, blue: 1)).frame(width: self.width, height: self.height).overlay(
+            .foregroundColor(Color(red: 0.942, green: 0.951, blue: 1)).frame(width: 313, height: 359).overlay(
             VStack{
                 Text(dateFormatter.string(from: selectedTime))
                     .font(.largeTitle)
