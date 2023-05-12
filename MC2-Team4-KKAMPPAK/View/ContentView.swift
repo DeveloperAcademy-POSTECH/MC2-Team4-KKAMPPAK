@@ -26,9 +26,13 @@ struct ContentView: View {
                         .foregroundColor(Color(red: 0.321, green: 0.43, blue: 1))
                         .padding(.trailing, 20)
                         .onTapGesture {
-                            if (cards.count < 3) {
-                                self.cards.insert(CardItem(alarm: Date(), isFlipped: false, degrees: 180, color: colors[cards.count]), at: 0)
-                            }
+                            if cards.count < 3 {
+                               for i in 0..<cards.count {
+                                   let index = colors.indices.contains(i+1) ? i+1 : 0
+                                   cards[i].color = colors[index]
+                               }
+                               cards.insert(CardItem(alarm: Date(), isFlipped: false, degrees: 180, color: colors[0]), at: 0)
+                           }
                         }
                     Image(systemName: "gearshape.fill")
                         .resizable()
