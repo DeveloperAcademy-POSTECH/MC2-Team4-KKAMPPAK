@@ -1,6 +1,7 @@
 import SwiftUI
 
-struct HomeView: View {
+
+struct ContentView: View {
     
     let colors : [Color] = [
         Color("cardColor1"), Color("cardColor2"),Color("cardColor3")]
@@ -15,6 +16,7 @@ struct HomeView: View {
         ZStack{
             Color(red: 0.2, green: 0.2, blue: 0.2)
                 .ignoresSafeArea()
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
             VStack{
                 HStack{
                     Spacer()
@@ -24,9 +26,13 @@ struct HomeView: View {
                         .foregroundColor(Color(red: 0.321, green: 0.43, blue: 1))
                         .padding(.trailing, 20)
                         .onTapGesture {
-                            if (cards.count < 3) {
-                                self.cards.append(CardItem(alarm: Date(), isFlipped: false, degrees: 180, color: colors[cards.count]))
-                            }
+                            if cards.count < 3 {
+                               for i in 0..<cards.count {
+                                   let index = colors.indices.contains(i+1) ? i+1 : 0
+                                   cards[i].color = colors[index]
+                               }
+                               cards.insert(CardItem(alarm: Date(), isFlipped: false, degrees: 180, color: colors[0]), at: 0)
+                           }
                         }
                     Image(systemName: "gearshape.fill")
                         .resizable()
@@ -48,7 +54,7 @@ struct HomeView: View {
                     if (cards.count == 0) {
                         NoCard()
                     } else {
-                        DemoView(cards: cards)
+                        DemoView(cards: $cards)
                     }
                  
                 }
@@ -68,16 +74,14 @@ struct HomeView: View {
                 .padding(.bottom, 8)
             }
             .padding(30)
-        }
+        }.frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }
 
 
-
-
-struct HomeView_Previews: PreviewProvider {
+struct Content_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        ContentView()
     }
 }
 
