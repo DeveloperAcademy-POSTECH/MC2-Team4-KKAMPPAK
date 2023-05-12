@@ -26,6 +26,7 @@ struct ContentView: View {
                         .frame(width: 25, height: 25, alignment: .topTrailing)
                         .foregroundColor(Color(red: 0.321, green: 0.43, blue: 1))
                         .padding(.trailing, 20)
+                        .fontWeight(.heavy)
                         .onTapGesture {
                             if cards.count < 3 {
                                for i in 0..<cards.count {
@@ -39,7 +40,7 @@ struct ContentView: View {
                         .resizable()
                         .frame(width: 25, height: 25, alignment: .topTrailing)
                         .foregroundColor(Color(red: 0.321, green: 0.43, blue: 1))
-                        .padding(.trailing, 20)
+//                        .padding(.trailing, 10)
                 }
                 Spacer()
                 HStack{
@@ -50,7 +51,8 @@ struct ContentView: View {
                         .bold()
                     Spacer()
                 }
-                Spacer()
+                .padding(.bottom,40)
+              
                 ZStack {
                     if (cards.count == 0) {
                         NoCard()
@@ -72,7 +74,7 @@ struct ContentView: View {
                         .cornerRadius(35)
                 }
 //                .disabled(!isFlipped)
-                .padding(.bottom, 8)
+                .padding(.bottom, 15)
             }
             .padding(30)
             if isLoading {
