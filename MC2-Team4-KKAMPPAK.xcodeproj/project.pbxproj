@@ -7,11 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E121DD12A0C760500A97749 /* MultiPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E121DD02A0C760500A97749 /* MultiPicker.swift */; };
+		0E121DD32A0C765200A97749 /* OnBoarding3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E121DD22A0C765200A97749 /* OnBoarding3.swift */; };
+		0E121DD62A0C770E00A97749 /* DeviceActivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E121DD52A0C770D00A97749 /* DeviceActivity.framework */; };
+		0E121DD82A0C771600A97749 /* FamilyControls.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E121DD72A0C771600A97749 /* FamilyControls.framework */; };
+		0E121DDB2A0C772900A97749 /* ManagedSettingsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E121DD92A0C772900A97749 /* ManagedSettingsUI.framework */; };
+		0E121DDC2A0C772900A97749 /* ManagedSettings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E121DDA2A0C772900A97749 /* ManagedSettings.framework */; };
+		0E121DE02A0C77C300A97749 /* ScreenTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E121DDD2A0C77C300A97749 /* ScreenTime.swift */; };
+		0E121DE22A0C77C300A97749 /* ScreenTimeNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E121DDF2A0C77C300A97749 /* ScreenTimeNotification.swift */; };
+		0E121DE82A0C884800A97749 /* DeviceActivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E121DD52A0C770D00A97749 /* DeviceActivity.framework */; };
+		0E121DEB2A0C884800A97749 /* DeviceActivityMonitorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E121DEA2A0C884800A97749 /* DeviceActivityMonitorExtension.swift */; };
+		0E121DF02A0C884800A97749 /* DeviceActivityMonitor.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0E121DE72A0C884800A97749 /* DeviceActivityMonitor.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		13D24B962A0A83EA003C3CFB /* BlinkARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D24B952A0A83EA003C3CFB /* BlinkARViewContainer.swift */; };
 		7E47171B2A069CC30030AF1C /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717152A069CC30030AF1C /* Alert.swift */; };
 		7E47171C2A069CC30030AF1C /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717162A069CC30030AF1C /* Setting.swift */; };
 		7E47171D2A069CC30030AF1C /* EyeBlinking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717172A069CC30030AF1C /* EyeBlinking.swift */; };
-		7E47171E2A069CC30030AF1C /* ScreenTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717182A069CC30030AF1C /* ScreenTime.swift */; };
 		7E47171F2A069CC30030AF1C /* SettingTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717192A069CC30030AF1C /* SettingTime.swift */; };
 		7E4717202A069CC30030AF1C /* EyeMoving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E47171A2A069CC30030AF1C /* EyeMoving.swift */; };
 		7E4717292A069CE40030AF1C /* EyeBlinkingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717222A069CE40030AF1C /* EyeBlinkingView.swift */; };
@@ -29,12 +39,48 @@
 		BB142F152A0895660080C843 /* NoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB142F142A0895660080C843 /* NoCard.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		0E121DEE2A0C884800A97749 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB142EF72A0208290080C843 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E121DE62A0C884800A97749;
+			remoteInfo = DeviceActivityMonitor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0E121DF42A0C884800A97749 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0E121DF02A0C884800A97749 /* DeviceActivityMonitor.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0E121DD02A0C760500A97749 /* MultiPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MultiPicker.swift; path = "../../../../ADA/무제 폴더/MultiPicker.swift"; sourceTree = "<group>"; };
+		0E121DD22A0C765200A97749 /* OnBoarding3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OnBoarding3.swift; path = "../../../ADA/무제 폴더/OnBoarding3.swift"; sourceTree = "<group>"; };
+		0E121DD52A0C770D00A97749 /* DeviceActivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DeviceActivity.framework; path = System/Library/Frameworks/DeviceActivity.framework; sourceTree = SDKROOT; };
+		0E121DD72A0C771600A97749 /* FamilyControls.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FamilyControls.framework; path = System/Library/Frameworks/FamilyControls.framework; sourceTree = SDKROOT; };
+		0E121DD92A0C772900A97749 /* ManagedSettingsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ManagedSettingsUI.framework; path = System/Library/Frameworks/ManagedSettingsUI.framework; sourceTree = SDKROOT; };
+		0E121DDA2A0C772900A97749 /* ManagedSettings.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ManagedSettings.framework; path = System/Library/Frameworks/ManagedSettings.framework; sourceTree = SDKROOT; };
+		0E121DDD2A0C77C300A97749 /* ScreenTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScreenTime.swift; path = "../../../ADA/무제 폴더/ScreenTime.swift"; sourceTree = "<group>"; };
+		0E121DDF2A0C77C300A97749 /* ScreenTimeNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScreenTimeNotification.swift; path = "../../../ADA/무제 폴더/ScreenTimeNotification.swift"; sourceTree = "<group>"; };
+		0E121DE72A0C884800A97749 /* DeviceActivityMonitor.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DeviceActivityMonitor.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E121DEA2A0C884800A97749 /* DeviceActivityMonitorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceActivityMonitorExtension.swift; sourceTree = "<group>"; };
+		0E121DEC2A0C884800A97749 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E121DED2A0C884800A97749 /* DeviceActivityMonitor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DeviceActivityMonitor.entitlements; sourceTree = "<group>"; };
+		0EDD38262A0DDBBD00FF24D3 /* MC2-Team4-KKAMPPAK.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "MC2-Team4-KKAMPPAK.entitlements"; sourceTree = "<group>"; };
 		13D24B952A0A83EA003C3CFB /* BlinkARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlinkARViewContainer.swift; sourceTree = "<group>"; };
 		7E4717152A069CC30030AF1C /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		7E4717162A069CC30030AF1C /* Setting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 		7E4717172A069CC30030AF1C /* EyeBlinking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EyeBlinking.swift; sourceTree = "<group>"; };
-		7E4717182A069CC30030AF1C /* ScreenTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenTime.swift; sourceTree = "<group>"; };
 		7E4717192A069CC30030AF1C /* SettingTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTime.swift; sourceTree = "<group>"; };
 		7E47171A2A069CC30030AF1C /* EyeMoving.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EyeMoving.swift; sourceTree = "<group>"; };
 		7E4717222A069CE40030AF1C /* EyeBlinkingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EyeBlinkingView.swift; sourceTree = "<group>"; };
@@ -54,23 +100,57 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0E121DE42A0C884800A97749 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E121DE82A0C884800A97749 /* DeviceActivity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BB142EFC2A02082A0080C843 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E121DD82A0C771600A97749 /* FamilyControls.framework in Frameworks */,
+				0E121DD62A0C770E00A97749 /* DeviceActivity.framework in Frameworks */,
+				0E121DDB2A0C772900A97749 /* ManagedSettingsUI.framework in Frameworks */,
+				0E121DDC2A0C772900A97749 /* ManagedSettings.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E121DD42A0C770D00A97749 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E121DDA2A0C772900A97749 /* ManagedSettings.framework */,
+				0E121DD92A0C772900A97749 /* ManagedSettingsUI.framework */,
+				0E121DD72A0C771600A97749 /* FamilyControls.framework */,
+				0E121DD52A0C770D00A97749 /* DeviceActivity.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0E121DE92A0C884800A97749 /* DeviceActivityMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				0E121DEA2A0C884800A97749 /* DeviceActivityMonitorExtension.swift */,
+				0E121DEC2A0C884800A97749 /* Info.plist */,
+				0E121DED2A0C884800A97749 /* DeviceActivityMonitor.entitlements */,
+			);
+			path = DeviceActivityMonitor;
+			sourceTree = "<group>";
+		};
 		7E4717142A069CC30030AF1C /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				7E4717152A069CC30030AF1C /* Alert.swift */,
 				7E4717162A069CC30030AF1C /* Setting.swift */,
 				7E4717172A069CC30030AF1C /* EyeBlinking.swift */,
-				7E4717182A069CC30030AF1C /* ScreenTime.swift */,
+				0E121DDD2A0C77C300A97749 /* ScreenTime.swift */,
+				0E121DDF2A0C77C300A97749 /* ScreenTimeNotification.swift */,
 				7E4717192A069CC30030AF1C /* SettingTime.swift */,
 				7E47171A2A069CC30030AF1C /* EyeMoving.swift */,
 				13D24B952A0A83EA003C3CFB /* BlinkARViewContainer.swift */,
@@ -81,12 +161,13 @@
 		7E4717212A069CE40030AF1C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7E4717252A069CE40030AF1C /* Component */,
 				7E4717222A069CE40030AF1C /* EyeBlinkingView.swift */,
 				7E4717232A069CE40030AF1C /* EyeMovingView.swift */,
 				7E4717242A069CE40030AF1C /* HomeView.swift */,
-				7E4717252A069CE40030AF1C /* Component */,
 				7E4717272A069CE40030AF1C /* LaunchScreenView.swift */,
 				7E4717282A069CE40030AF1C /* SettingView.swift */,
+				0E121DD22A0C765200A97749 /* OnBoarding3.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -98,6 +179,7 @@
 				BB142F102A073A5C0080C843 /* CardBack.swift */,
 				BB142F122A073A8A0080C843 /* CardFront.swift */,
 				BB142F142A0895660080C843 /* NoCard.swift */,
+				0E121DD02A0C760500A97749 /* MultiPicker.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -106,7 +188,9 @@
 			isa = PBXGroup;
 			children = (
 				BB142F012A02082A0080C843 /* MC2-Team4-KKAMPPAK */,
+				0E121DE92A0C884800A97749 /* DeviceActivityMonitor */,
 				BB142F002A02082A0080C843 /* Products */,
+				0E121DD42A0C770D00A97749 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				BB142EFF2A02082A0080C843 /* MC2-Team4-KKAMPPAK.app */,
+				0E121DE72A0C884800A97749 /* DeviceActivityMonitor.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -121,6 +206,7 @@
 		BB142F012A02082A0080C843 /* MC2-Team4-KKAMPPAK */ = {
 			isa = PBXGroup;
 			children = (
+				0EDD38262A0DDBBD00FF24D3 /* MC2-Team4-KKAMPPAK.entitlements */,
 				7E4717212A069CE40030AF1C /* View */,
 				7E4717142A069CC30030AF1C /* Model */,
 				BB142F022A02082A0080C843 /* MC2_Team4_KKAMPPAKApp.swift */,
@@ -142,6 +228,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0E121DE62A0C884800A97749 /* DeviceActivityMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E121DF12A0C884800A97749 /* Build configuration list for PBXNativeTarget "DeviceActivityMonitor" */;
+			buildPhases = (
+				0E121DE32A0C884800A97749 /* Sources */,
+				0E121DE42A0C884800A97749 /* Frameworks */,
+				0E121DE52A0C884800A97749 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeviceActivityMonitor;
+			productName = DeviceActivityMonitor;
+			productReference = 0E121DE72A0C884800A97749 /* DeviceActivityMonitor.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		BB142EFE2A02082A0080C843 /* MC2-Team4-KKAMPPAK */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB142F0D2A02082B0080C843 /* Build configuration list for PBXNativeTarget "MC2-Team4-KKAMPPAK" */;
@@ -149,10 +252,12 @@
 				BB142EFB2A02082A0080C843 /* Sources */,
 				BB142EFC2A02082A0080C843 /* Frameworks */,
 				BB142EFD2A02082A0080C843 /* Resources */,
+				0E121DF42A0C884800A97749 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0E121DEF2A0C884800A97749 /* PBXTargetDependency */,
 			);
 			name = "MC2-Team4-KKAMPPAK";
 			productName = "MC2-Team4-KKAMPPAK";
@@ -169,6 +274,9 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					0E121DE62A0C884800A97749 = {
+						CreatedOnToolsVersion = 14.3;
+					};
 					BB142EFE2A02082A0080C843 = {
 						CreatedOnToolsVersion = 14.3;
 					};
@@ -188,11 +296,19 @@
 			projectRoot = "";
 			targets = (
 				BB142EFE2A02082A0080C843 /* MC2-Team4-KKAMPPAK */,
+				0E121DE62A0C884800A97749 /* DeviceActivityMonitor */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0E121DE52A0C884800A97749 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BB142EFD2A02082A0080C843 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -205,34 +321,105 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0E121DE32A0C884800A97749 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E121DEB2A0C884800A97749 /* DeviceActivityMonitorExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BB142EFB2A02082A0080C843 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7E47171D2A069CC30030AF1C /* EyeBlinking.swift in Sources */,
 				7E47172D2A069CE40030AF1C /* LaunchScreenView.swift in Sources */,
+				0E121DE02A0C77C300A97749 /* ScreenTime.swift in Sources */,
 				7E47171B2A069CC30030AF1C /* Alert.swift in Sources */,
 				BB142F112A073A5C0080C843 /* CardBack.swift in Sources */,
 				7E47172E2A069CE40030AF1C /* SettingView.swift in Sources */,
 				7E47172A2A069CE40030AF1C /* EyeMovingView.swift in Sources */,
+				0E121DD32A0C765200A97749 /* OnBoarding3.swift in Sources */,
 				7E4717292A069CE40030AF1C /* EyeBlinkingView.swift in Sources */,
-				7E47171E2A069CC30030AF1C /* ScreenTime.swift in Sources */,
 				7E47172B2A069CE40030AF1C /* HomeView.swift in Sources */,
 				BB142F052A02082A0080C843 /* ContentView.swift in Sources */,
 				7E47172C2A069CE40030AF1C /* Button.swift in Sources */,
 				7E47171C2A069CC30030AF1C /* Setting.swift in Sources */,
 				7E4717202A069CC30030AF1C /* EyeMoving.swift in Sources */,
+				0E121DD12A0C760500A97749 /* MultiPicker.swift in Sources */,
 				BB142F152A0895660080C843 /* NoCard.swift in Sources */,
 				13D24B962A0A83EA003C3CFB /* BlinkARViewContainer.swift in Sources */,
 				BB142F132A073A8A0080C843 /* CardFront.swift in Sources */,
 				7E47171F2A069CC30030AF1C /* SettingTime.swift in Sources */,
 				BB142F032A02082A0080C843 /* MC2_Team4_KKAMPPAKApp.swift in Sources */,
+				0E121DE22A0C77C300A97749 /* ScreenTimeNotification.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		0E121DEF2A0C884800A97749 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0E121DE62A0C884800A97749 /* DeviceActivityMonitor */;
+			targetProxy = 0E121DEE2A0C884800A97749 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		0E121DF22A0C884800A97749 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DeviceActivityMonitor/DeviceActivityMonitor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V7Z62V83Y6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DeviceActivityMonitor/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DeviceActivityMonitor;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.haeun.MC2-Team4-KKAMPPAK.DeviceActivityMonitor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0E121DF32A0C884800A97749 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DeviceActivityMonitor/DeviceActivityMonitor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V7Z62V83Y6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DeviceActivityMonitor/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DeviceActivityMonitor;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.haeun.MC2-Team4-KKAMPPAK.DeviceActivityMonitor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		BB142F0B2A02082B0080C843 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -350,9 +537,11 @@
 		BB142F0E2A02082B0080C843 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = "MC2-Team4-KKAMPPAK/MC2-Team4-KKAMPPAK.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MC2-Team4-KKAMPPAK/Preview Content\"";
@@ -381,9 +570,11 @@
 		BB142F0F2A02082B0080C843 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = "MC2-Team4-KKAMPPAK/MC2-Team4-KKAMPPAK.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MC2-Team4-KKAMPPAK/Preview Content\"";
@@ -412,6 +603,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0E121DF12A0C884800A97749 /* Build configuration list for PBXNativeTarget "DeviceActivityMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E121DF22A0C884800A97749 /* Debug */,
+				0E121DF32A0C884800A97749 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BB142EFA2A0208290080C843 /* Build configuration list for PBXProject "MC2-Team4-KKAMPPAK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
