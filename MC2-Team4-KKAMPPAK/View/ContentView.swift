@@ -6,10 +6,7 @@ struct ContentView: View {
     let colors : [Color] = [
         Color("cardColor1"), Color("cardColor2"),Color("cardColor3")]
     
-    @State var cards: [CardItem] = [
-        CardItem(alarm: Date(), isFlipped: false, degrees: 180, color: Color("cardColor1")),
-        CardItem(alarm: Date(), isFlipped: false, degrees: 180, color: Color("cardColor2")),
-    ]
+    @State var cards: [CardItem] = []
     @State var isLoading: Bool = true
 
     

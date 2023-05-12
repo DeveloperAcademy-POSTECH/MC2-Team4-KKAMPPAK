@@ -76,7 +76,7 @@ struct DemoView: View {
                             .frame(width: 313, height: 180)
                             // 알람 삭제 버튼
                             Button(action: {
-                                // 알람 삭제 버튼 액션
+                                cards.remove(at: currentIndex)
                             }) {
                                 Text("알람 삭제")
                                     .foregroundColor(.red)
@@ -92,11 +92,14 @@ struct DemoView: View {
             } else {
                 RoundedRectangle(cornerRadius: 40, style: .continuous)
                     .onTapGesture {
-                        cards[currentIndex].isFlipped =  true
+                      
+                       
+                        cards[currentIndex].isFlipped = true
                         withAnimation {
                             cards[currentIndex].degrees -= 180
                             
                         }
+                       
                         
                     }
                     .foregroundColor(card.color)
@@ -115,9 +118,9 @@ struct DemoView: View {
                                 .fontWeight(.bold)
                                 .foregroundColor(Color(red: 0.321, green: 0.43, blue: 1))
                                 .padding(.top, 30)
+//                            Text("currentIndex= \(currentIndex)")
                         }
                     )
-//                        ).scaleEffect(x: -1, y: 1)
             }
             
         }

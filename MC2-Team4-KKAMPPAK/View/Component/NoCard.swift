@@ -24,7 +24,7 @@ struct NoCard: View {
                     .padding(.top, 30)
                     .font(.title3)
             }
-        ).scaleEffect(x: -1, y: 1)
+        )
     }
 }
 
