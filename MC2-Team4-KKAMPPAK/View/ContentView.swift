@@ -10,7 +10,8 @@ struct ContentView: View {
         CardItem(alarm: Date(), isFlipped: false, degrees: 180, color: Color("cardColor1")),
         CardItem(alarm: Date(), isFlipped: false, degrees: 180, color: Color("cardColor2")),
     ]
-    
+    @State var isLoading: Bool = true
+
     
     var body: some View {
         ZStack{
@@ -74,7 +75,16 @@ struct ContentView: View {
                 .padding(.bottom, 8)
             }
             .padding(30)
-        }.frame(maxWidth: .infinity, maxHeight: .infinity)
+            if isLoading {
+                launchScreenView
+            }
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .onAppear {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 4, execute: {
+                isLoading.toggle()
+            })
+        }
     }
 }
 

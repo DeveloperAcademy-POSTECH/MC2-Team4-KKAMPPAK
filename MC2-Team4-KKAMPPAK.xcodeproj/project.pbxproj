@@ -20,6 +20,10 @@
 		7E47172C2A069CE40030AF1C /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717262A069CE40030AF1C /* Button.swift */; };
 		7E47172D2A069CE40030AF1C /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717272A069CE40030AF1C /* LaunchScreenView.swift */; };
 		7E47172E2A069CE40030AF1C /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717282A069CE40030AF1C /* SettingView.swift */; };
+		A231D8062A0DC80900072D20 /* 깜빡_splash.gif in Resources */ = {isa = PBXBuildFile; fileRef = A231D8052A0DC80900072D20 /* 깜빡_splash.gif */; };
+		A231D8082A0DC81500072D20 /* 띠로링.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A231D8072A0DC81500072D20 /* 띠로링.mp3 */; };
+		A231D80A2A0DC83500072D20 /* GifView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A231D8092A0DC83500072D20 /* GifView.swift */; };
+		A231D80C2A0DC85400072D20 /* MusicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A231D80B2A0DC85400072D20 /* MusicView.swift */; };
 		BB142F032A02082A0080C843 /* MC2_Team4_KKAMPPAKApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB142F022A02082A0080C843 /* MC2_Team4_KKAMPPAKApp.swift */; };
 		BB142F072A02082B0080C843 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB142F062A02082B0080C843 /* Assets.xcassets */; };
 		BB142F0A2A02082B0080C843 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB142F092A02082B0080C843 /* Preview Assets.xcassets */; };
@@ -44,6 +48,10 @@
 		7E4717262A069CE40030AF1C /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		7E4717272A069CE40030AF1C /* LaunchScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
 		7E4717282A069CE40030AF1C /* SettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		A231D8052A0DC80900072D20 /* 깜빡_splash.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "깜빡_splash.gif"; sourceTree = "<group>"; };
+		A231D8072A0DC81500072D20 /* 띠로링.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "띠로링.mp3"; sourceTree = "<group>"; };
+		A231D8092A0DC83500072D20 /* GifView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifView.swift; sourceTree = "<group>"; };
+		A231D80B2A0DC85400072D20 /* MusicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicView.swift; sourceTree = "<group>"; };
 		BB142EFF2A02082A0080C843 /* MC2-Team4-KKAMPPAK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MC2-Team4-KKAMPPAK.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB142F022A02082A0080C843 /* MC2_Team4_KKAMPPAKApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MC2_Team4_KKAMPPAKApp.swift; sourceTree = "<group>"; };
 		BB142F062A02082B0080C843 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -90,6 +98,8 @@
 				7E4717242A069CE40030AF1C /* ContentView.swift */,
 				7E4717252A069CE40030AF1C /* Component */,
 				7E4717272A069CE40030AF1C /* LaunchScreenView.swift */,
+				A231D8092A0DC83500072D20 /* GifView.swift */,
+				A231D80B2A0DC85400072D20 /* MusicView.swift */,
 				7E4717282A069CE40030AF1C /* SettingView.swift */,
 			);
 			path = View;
@@ -129,6 +139,8 @@
 				7E4717142A069CC30030AF1C /* Model */,
 				BB142F022A02082A0080C843 /* MC2_Team4_KKAMPPAKApp.swift */,
 				BB142F062A02082B0080C843 /* Assets.xcassets */,
+				A231D8072A0DC81500072D20 /* 띠로링.mp3 */,
+				A231D8052A0DC80900072D20 /* 깜빡_splash.gif */,
 				BB142F082A02082B0080C843 /* Preview Content */,
 			);
 			path = "MC2-Team4-KKAMPPAK";
@@ -201,6 +213,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB142F0A2A02082B0080C843 /* Preview Assets.xcassets in Resources */,
+				A231D8062A0DC80900072D20 /* 깜빡_splash.gif in Resources */,
+				A231D8082A0DC81500072D20 /* 띠로링.mp3 in Resources */,
 				BB142F072A02082B0080C843 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,7 +230,9 @@
 				7E47172D2A069CE40030AF1C /* LaunchScreenView.swift in Sources */,
 				BB142F4C2A0C9B8F0080C843 /* NotificationManager.swift in Sources */,
 				BB142F4A2A0C9B0F0080C843 /* AppDelegate.swift in Sources */,
+				A231D80C2A0DC85400072D20 /* MusicView.swift in Sources */,
 				7E47171B2A069CC30030AF1C /* Alert.swift in Sources */,
+				A231D80A2A0DC83500072D20 /* GifView.swift in Sources */,
 				7E47172E2A069CE40030AF1C /* SettingView.swift in Sources */,
 				7E47172A2A069CE40030AF1C /* EyeMovingView.swift in Sources */,
 				7E4717292A069CE40030AF1C /* EyeBlinkingView.swift in Sources */,
@@ -229,7 +245,6 @@
 				7E4717202A069CC30030AF1C /* EyeMoving.swift in Sources */,
 				BB142F152A0895660080C843 /* NoCard.swift in Sources */,
 				13D24B962A0A83EA003C3CFB /* BlinkARViewContainer.swift in Sources */,
-				BB142F132A073A8A0080C843 /* CardFront.swift in Sources */,
 				7E47171F2A069CC30030AF1C /* SettingTime.swift in Sources */,
 				BB142F032A02082A0080C843 /* MC2_Team4_KKAMPPAKApp.swift in Sources */,
 			);
@@ -361,7 +376,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MC2-Team4-KKAMPPAK/Preview Content\"";
-				DEVELOPMENT_TEAM = 8H945XJJGA;
+				DEVELOPMENT_TEAM = VGYLZVFNSB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = KKAMPPAK;
@@ -392,7 +407,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MC2-Team4-KKAMPPAK/Preview Content\"";
-				DEVELOPMENT_TEAM = 8H945XJJGA;
+				DEVELOPMENT_TEAM = VGYLZVFNSB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = KKAMPPAK;
