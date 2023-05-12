@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13D24B962A0A83EA003C3CFB /* BlinkARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D24B952A0A83EA003C3CFB /* BlinkARViewContainer.swift */; };
 		7E47171B2A069CC30030AF1C /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717152A069CC30030AF1C /* Alert.swift */; };
 		7E47171C2A069CC30030AF1C /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717162A069CC30030AF1C /* Setting.swift */; };
 		7E47171D2A069CC30030AF1C /* EyeBlinking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717172A069CC30030AF1C /* EyeBlinking.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13D24B952A0A83EA003C3CFB /* BlinkARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlinkARViewContainer.swift; sourceTree = "<group>"; };
 		7E4717152A069CC30030AF1C /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		7E4717162A069CC30030AF1C /* Setting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 		7E4717172A069CC30030AF1C /* EyeBlinking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EyeBlinking.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				7E47171A2A069CC30030AF1C /* EyeMoving.swift */,
 				BB142F4B2A0C9B8F0080C843 /* NotificationManager.swift */,
 				BB142F492A0C9B0F0080C843 /* AppDelegate.swift */,
+				13D24B952A0A83EA003C3CFB /* BlinkARViewContainer.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -225,6 +228,8 @@
 				7E47171C2A069CC30030AF1C /* Setting.swift in Sources */,
 				7E4717202A069CC30030AF1C /* EyeMoving.swift in Sources */,
 				BB142F152A0895660080C843 /* NoCard.swift in Sources */,
+				13D24B962A0A83EA003C3CFB /* BlinkARViewContainer.swift in Sources */,
+				BB142F132A073A8A0080C843 /* CardFront.swift in Sources */,
 				7E47171F2A069CC30030AF1C /* SettingTime.swift in Sources */,
 				BB142F032A02082A0080C843 /* MC2_Team4_KKAMPPAKApp.swift in Sources */,
 			);
@@ -352,12 +357,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MC2-Team4-KKAMPPAK/Preview Content\"";
 				DEVELOPMENT_TEAM = 8H945XJJGA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = KKAMPPAK;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -381,12 +388,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MC2-Team4-KKAMPPAK/Preview Content\"";
 				DEVELOPMENT_TEAM = 8H945XJJGA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = KKAMPPAK;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
