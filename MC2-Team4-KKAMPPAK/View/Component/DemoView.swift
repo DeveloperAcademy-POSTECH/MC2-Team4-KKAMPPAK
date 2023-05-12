@@ -42,6 +42,7 @@ struct DemoView: View {
                                     }
                                 }) {
                                     Text("취소")
+                                        .foregroundColor(.blue)
                                     
                                 }
                                 Spacer()
@@ -57,6 +58,7 @@ struct DemoView: View {
                                     }
                                 }) {
                                     Text("저장")
+                                        .foregroundColor(.blue)
                                         .fontWeight(.bold)
                                 }
                             }
