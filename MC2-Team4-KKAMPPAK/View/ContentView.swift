@@ -60,7 +60,7 @@ struct ContentView: View {
                 }
                
                 Spacer()
-                NavigationLink(destination: EyeBlinkingView())
+                NavigationLink(destination: EyeBlinkingView(checkBlink: false))
                 {
                     Text("깜빡하러가기")
                         .frame(width: 313, height: 70)
