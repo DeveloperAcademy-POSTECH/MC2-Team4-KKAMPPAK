@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		135F75EB2A0FF89C00487299 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135F75EA2A0FF89C00487299 /* LoadingView.swift */; };
+		135F75ED2A0FFA9E00487299 /* LoadingBlinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135F75EC2A0FFA9E00487299 /* LoadingBlinkView.swift */; };
+		135F75F02A0FFF4900487299 /* eyes.gif in Resources */ = {isa = PBXBuildFile; fileRef = 135F75EF2A0FFF4900487299 /* eyes.gif */; };
 		13D24B962A0A83EA003C3CFB /* BlinkARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D24B952A0A83EA003C3CFB /* BlinkARViewContainer.swift */; };
 		7E47171B2A069CC30030AF1C /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717152A069CC30030AF1C /* Alert.swift */; };
 		7E47171C2A069CC30030AF1C /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717162A069CC30030AF1C /* Setting.swift */; };
@@ -37,6 +40,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		135F75EA2A0FF89C00487299 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		135F75EC2A0FFA9E00487299 /* LoadingBlinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingBlinkView.swift; sourceTree = "<group>"; };
+		135F75EE2A0FFE6400487299 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		135F75EF2A0FFF4900487299 /* eyes.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = eyes.gif; sourceTree = "<group>"; };
 		13D24B952A0A83EA003C3CFB /* BlinkARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlinkARViewContainer.swift; sourceTree = "<group>"; };
 		7E4717152A069CC30030AF1C /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		7E4717162A069CC30030AF1C /* Setting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
@@ -98,6 +105,7 @@
 		7E4717212A069CE40030AF1C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				135F75EC2A0FFA9E00487299 /* LoadingBlinkView.swift */,
 				7E4717222A069CE40030AF1C /* EyeBlinkingView.swift */,
 				7E4717232A069CE40030AF1C /* EyeMovingView.swift */,
 				7E4717242A069CE40030AF1C /* ContentView.swift */,
@@ -113,6 +121,7 @@
 		7E4717252A069CE40030AF1C /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				135F75EA2A0FF89C00487299 /* LoadingView.swift */,
 				7E4717262A069CE40030AF1C /* Button.swift */,
 				BB142F142A0895660080C843 /* NoCard.swift */,
 				7E47172F2A0C87BA0030AF1C /* ProgressBar.swift */,
@@ -142,10 +151,12 @@
 		BB142F012A02082A0080C843 /* MC2-Team4-KKAMPPAK */ = {
 			isa = PBXGroup;
 			children = (
+				135F75EE2A0FFE6400487299 /* Info.plist */,
 				7E4717212A069CE40030AF1C /* View */,
 				7E4717142A069CC30030AF1C /* Model */,
 				BB142F022A02082A0080C843 /* MC2_Team4_KKAMPPAKApp.swift */,
 				BB142F062A02082B0080C843 /* Assets.xcassets */,
+				135F75EF2A0FFF4900487299 /* eyes.gif */,
 				A231D8072A0DC81500072D20 /* 띠로링.mp3 */,
 				A231D8052A0DC80900072D20 /* 깜빡_splash.gif */,
 				BB142F082A02082B0080C843 /* Preview Content */,
@@ -221,6 +232,7 @@
 			files = (
 				BB142F0A2A02082B0080C843 /* Preview Assets.xcassets in Resources */,
 				A231D8062A0DC80900072D20 /* 깜빡_splash.gif in Resources */,
+				135F75F02A0FFF4900487299 /* eyes.gif in Resources */,
 				A231D8082A0DC81500072D20 /* 띠로링.mp3 in Resources */,
 				BB142F072A02082B0080C843 /* Assets.xcassets in Resources */,
 			);
@@ -237,6 +249,7 @@
 				7E4717302A0C87BA0030AF1C /* ProgressBar.swift in Sources */,
 				7E47172D2A069CE40030AF1C /* LaunchScreenView.swift in Sources */,
 				BB142F4C2A0C9B8F0080C843 /* NotificationManager.swift in Sources */,
+				135F75EB2A0FF89C00487299 /* LoadingView.swift in Sources */,
 				BB142F4A2A0C9B0F0080C843 /* AppDelegate.swift in Sources */,
 				A231D80C2A0DC85400072D20 /* MusicView.swift in Sources */,
 				7E47171B2A069CC30030AF1C /* Alert.swift in Sources */,
@@ -255,6 +268,7 @@
 				BB142F152A0895660080C843 /* NoCard.swift in Sources */,
 				13D24B962A0A83EA003C3CFB /* BlinkARViewContainer.swift in Sources */,
 				7E47171F2A069CC30030AF1C /* SettingTime.swift in Sources */,
+				135F75ED2A0FFA9E00487299 /* LoadingBlinkView.swift in Sources */,
 				BB142F032A02082A0080C843 /* MC2_Team4_KKAMPPAKApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,9 +399,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MC2-Team4-KKAMPPAK/Preview Content\"";
-				DEVELOPMENT_TEAM = VGYLZVFNSB;
+				DEVELOPMENT_TEAM = 34K3V5D9X5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MC2-Team4-KKAMPPAK/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = KKAMPPAK;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -399,7 +414,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.whaeun.MC2-Team4-KKAMPPAK";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dabin.MC2-Team4-KKAMPPAK";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -419,6 +434,7 @@
 				DEVELOPMENT_TEAM = VGYLZVFNSB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MC2-Team4-KKAMPPAK/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = KKAMPPAK;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
