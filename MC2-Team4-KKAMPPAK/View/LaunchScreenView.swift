@@ -1,20 +1,45 @@
 //
-//  LaunchScreenView.swift
-//  MC2-Team4-KKAMPPAK
+//  Launchscreen.swift
+//  twice
 //
-//  Created by yusang on 2023/05/04.
+//  Created by woozu on 2023/05/11.
 //
 
 import SwiftUI
 
-struct LaunchScreenView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+extension ContentView {
+    
+    var launchScreenView: some View {
+        
+        ZStack(alignment: .center) {
+            
+            Color("AccentColor")
+                .edgesIgnoringSafeArea(.all)
+            Text("KKAM-PARK")
+                .fontWeight(.black)
+                .foregroundColor(Color.white)
+                .padding(.top,85)
+            
+            
+            GifView(gifName: "깜빡_splash")
+                .padding(.bottom,100)
+                .edgesIgnoringSafeArea(.all)
+                .onAppear{
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.0){
+                        DDiroringMusicPlayer.shared.playSound()
+                    }
+                }
+            
+            
+            
+//            LinearGradient(gradient: Gradient(colors: [Color("PrimaryColor"), Color("SubPrimaryColor")]),
+//                            startPoint: .top, endPoint: .bottom)
+//            .edgesIgnoringSafeArea(.all)
+//
+//            Image("LaunchScreenImage")
+//
+        }
+        
     }
-}
-
-struct LaunchScreenView_Previews: PreviewProvider {
-    static var previews: some View {
-        LaunchScreenView()
-    }
+    
 }
