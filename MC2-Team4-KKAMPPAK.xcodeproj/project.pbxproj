@@ -13,13 +13,15 @@
 		7E47171D2A069CC30030AF1C /* EyeBlinking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717172A069CC30030AF1C /* EyeBlinking.swift */; };
 		7E47171E2A069CC30030AF1C /* ScreenTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717182A069CC30030AF1C /* ScreenTime.swift */; };
 		7E47171F2A069CC30030AF1C /* SettingTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717192A069CC30030AF1C /* SettingTime.swift */; };
-		7E4717202A069CC30030AF1C /* EyeMoving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E47171A2A069CC30030AF1C /* EyeMoving.swift */; };
+		7E4717202A069CC30030AF1C /* EyeMovingARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E47171A2A069CC30030AF1C /* EyeMovingARViewContainer.swift */; };
 		7E4717292A069CE40030AF1C /* EyeBlinkingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717222A069CE40030AF1C /* EyeBlinkingView.swift */; };
 		7E47172A2A069CE40030AF1C /* EyeMovingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717232A069CE40030AF1C /* EyeMovingView.swift */; };
 		7E47172B2A069CE40030AF1C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717242A069CE40030AF1C /* HomeView.swift */; };
 		7E47172C2A069CE40030AF1C /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717262A069CE40030AF1C /* Button.swift */; };
 		7E47172D2A069CE40030AF1C /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717272A069CE40030AF1C /* LaunchScreenView.swift */; };
 		7E47172E2A069CE40030AF1C /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717282A069CE40030AF1C /* SettingView.swift */; };
+		7E4717302A0C87BA0030AF1C /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E47172F2A0C87BA0030AF1C /* ProgressBar.swift */; };
+		7E4717322A0C88000030AF1C /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717312A0C88000030AF1C /* HapticManager.swift */; };
 		BB142F032A02082A0080C843 /* MC2_Team4_KKAMPPAKApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB142F022A02082A0080C843 /* MC2_Team4_KKAMPPAKApp.swift */; };
 		BB142F052A02082A0080C843 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB142F042A02082A0080C843 /* ContentView.swift */; };
 		BB142F072A02082B0080C843 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB142F062A02082B0080C843 /* Assets.xcassets */; };
@@ -36,13 +38,15 @@
 		7E4717172A069CC30030AF1C /* EyeBlinking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EyeBlinking.swift; sourceTree = "<group>"; };
 		7E4717182A069CC30030AF1C /* ScreenTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenTime.swift; sourceTree = "<group>"; };
 		7E4717192A069CC30030AF1C /* SettingTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTime.swift; sourceTree = "<group>"; };
-		7E47171A2A069CC30030AF1C /* EyeMoving.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EyeMoving.swift; sourceTree = "<group>"; };
+		7E47171A2A069CC30030AF1C /* EyeMovingARViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EyeMovingARViewContainer.swift; sourceTree = "<group>"; };
 		7E4717222A069CE40030AF1C /* EyeBlinkingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EyeBlinkingView.swift; sourceTree = "<group>"; };
 		7E4717232A069CE40030AF1C /* EyeMovingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EyeMovingView.swift; sourceTree = "<group>"; };
 		7E4717242A069CE40030AF1C /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		7E4717262A069CE40030AF1C /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		7E4717272A069CE40030AF1C /* LaunchScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
 		7E4717282A069CE40030AF1C /* SettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		7E47172F2A0C87BA0030AF1C /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		7E4717312A0C88000030AF1C /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 		BB142EFF2A02082A0080C843 /* MC2-Team4-KKAMPPAK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MC2-Team4-KKAMPPAK.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB142F022A02082A0080C843 /* MC2_Team4_KKAMPPAKApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MC2_Team4_KKAMPPAKApp.swift; sourceTree = "<group>"; };
 		BB142F042A02082A0080C843 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,7 +76,7 @@
 				7E4717172A069CC30030AF1C /* EyeBlinking.swift */,
 				7E4717182A069CC30030AF1C /* ScreenTime.swift */,
 				7E4717192A069CC30030AF1C /* SettingTime.swift */,
-				7E47171A2A069CC30030AF1C /* EyeMoving.swift */,
+				7E47171A2A069CC30030AF1C /* EyeMovingARViewContainer.swift */,
 				13D24B952A0A83EA003C3CFB /* BlinkARViewContainer.swift */,
 			);
 			path = Model;
@@ -98,6 +102,8 @@
 				BB142F102A073A5C0080C843 /* CardBack.swift */,
 				BB142F122A073A8A0080C843 /* CardFront.swift */,
 				BB142F142A0895660080C843 /* NoCard.swift */,
+				7E47172F2A0C87BA0030AF1C /* ProgressBar.swift */,
+				7E4717312A0C88000030AF1C /* HapticManager.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -210,10 +216,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E47171D2A069CC30030AF1C /* EyeBlinking.swift in Sources */,
+				7E4717302A0C87BA0030AF1C /* ProgressBar.swift in Sources */,
 				7E47172D2A069CE40030AF1C /* LaunchScreenView.swift in Sources */,
 				7E47171B2A069CC30030AF1C /* Alert.swift in Sources */,
 				BB142F112A073A5C0080C843 /* CardBack.swift in Sources */,
 				7E47172E2A069CE40030AF1C /* SettingView.swift in Sources */,
+				7E4717322A0C88000030AF1C /* HapticManager.swift in Sources */,
 				7E47172A2A069CE40030AF1C /* EyeMovingView.swift in Sources */,
 				7E4717292A069CE40030AF1C /* EyeBlinkingView.swift in Sources */,
 				7E47171E2A069CC30030AF1C /* ScreenTime.swift in Sources */,
@@ -221,7 +229,7 @@
 				BB142F052A02082A0080C843 /* ContentView.swift in Sources */,
 				7E47172C2A069CE40030AF1C /* Button.swift in Sources */,
 				7E47171C2A069CC30030AF1C /* Setting.swift in Sources */,
-				7E4717202A069CC30030AF1C /* EyeMoving.swift in Sources */,
+				7E4717202A069CC30030AF1C /* EyeMovingARViewContainer.swift in Sources */,
 				BB142F152A0895660080C843 /* NoCard.swift in Sources */,
 				13D24B962A0A83EA003C3CFB /* BlinkARViewContainer.swift in Sources */,
 				BB142F132A073A8A0080C843 /* CardFront.swift in Sources */,
@@ -356,7 +364,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MC2-Team4-KKAMPPAK/Preview Content\"";
-				DEVELOPMENT_TEAM = 8H945XJJGA;
+				DEVELOPMENT_TEAM = FLG797DV64;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = KKAMPPAK;
@@ -370,7 +378,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.haeun.MC2-Team4-KKAMPPAK";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.whaeun.MC2-Team4-KKAMPPAK";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -387,7 +395,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MC2-Team4-KKAMPPAK/Preview Content\"";
-				DEVELOPMENT_TEAM = 8H945XJJGA;
+				DEVELOPMENT_TEAM = FLG797DV64;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = KKAMPPAK;
@@ -401,7 +409,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.haeun.MC2-Team4-KKAMPPAK";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.whaeun.MC2-Team4-KKAMPPAK";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
