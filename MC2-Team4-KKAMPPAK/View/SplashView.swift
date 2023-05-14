@@ -13,7 +13,7 @@ struct SplashView: View {
                 VStack {
 
                     if self.isActive {
-                        ContentView()
+                        OnboardingCheckView()
                     } else {
                         ZStack(alignment: .center) {
                             
