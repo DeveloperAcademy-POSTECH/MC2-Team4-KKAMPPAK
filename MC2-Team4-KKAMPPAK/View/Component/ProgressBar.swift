@@ -14,11 +14,10 @@ struct ProgressBar: View {
         GeometryReader { geometry in
             ZStack(alignment: .leading) {
                 Rectangle().frame(width: geometry.size.width , height: geometry.size.height)
-                    .opacity(0.3)
-                    .foregroundColor(Color(UIColor.systemTeal))
+                    .foregroundColor(Color("secondCircle"))
                 
                 Rectangle().frame(width: min(CGFloat(self.value)*geometry.size.width, geometry.size.width), height: geometry.size.height)
-                    .foregroundColor(Color(UIColor.systemBlue))
+                    .foregroundColor(Color("centerCircle"))
                     .animation(.linear)
             }.cornerRadius(45.0)
         }
