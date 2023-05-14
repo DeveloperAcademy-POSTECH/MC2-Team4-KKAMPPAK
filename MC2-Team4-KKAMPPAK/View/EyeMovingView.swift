@@ -1,14 +1,19 @@
 //
 //  EyeMovingView.swift
-//  MC2-Team4-KKAMPPAK
+//  MC2-Team4-kpPPAK
 //
 //  Created by yusang on 2023/05/04.
 //
 
 import SwiftUI
+import ARKit
+import RealityKit
 
 struct EyeMovingView: View {
     @State private var mode = 1
+    @State private var isNextViewPresented = false
+    @State private var timeRemaining = 0.0
+    @State private var animate = false
     
     @State private var isLeftCompleted = false
     @State private var isRightCompleted = false
@@ -23,23 +28,35 @@ struct EyeMovingView: View {
     
     @State private var moving = -60
     @State private var moving2 = -60
+    @Environment(\.presentationMode) var presentation
     
     var timeTrigger = true
-    var realTime = Timer()
     
     let hapticManager = HapticManager.instance
     
     var body: some View {
-        ZStack{
-            Color(red: 51 / 255, green: 51 / 255, blue: 51 / 255).ignoresSafeArea()
-            
-            if(mode == 1){
+        
+        if(mode == 1){
+            ZStack{
+                EyeMovingARViewContainer(mode: $mode, isLeftCompleted: $isLeftCompleted, isRightCompleted: $isRightCompleted, isUpCompleted: $isUpCompleted, isDownCompleted: $isDownCompleted)
+                
+                Color(red: 51 / 255, green: 51 / 255, blue: 51 / 255).ignoresSafeArea()
+                
+                
                 VStack{
                     
+                    Spacer()
+                    Text("눈 움직이기. \n양옆, 위아래 30초")
+                        .font(.largeTitle)
+                        .bold()
+                        .lineSpacing(5)
+                        .foregroundColor(.white)
+                        .frame(maxWidth: .infinity,alignment: .leading)
+                        .padding(.top, 15)
+                        .padding(.leading, 50)
+                        .padding(.bottom, 75)
+                    
                     ZStack{
-                        EyeMovingARViewContainer(mode: $mode, isLeftCompleted: $isLeftCompleted, isRightCompleted: $isRightCompleted, isUpCompleted: $isUpCompleted, isDownCompleted: $isDownCompleted)
-                        
-                        Color(red: 51 / 255, green: 51 / 255, blue: 51 / 255).ignoresSafeArea()
                         
                         RoundedRectangle(cornerRadius: 40)
                             .fill(Color(red: 206 / 255, green: 214 / 255, blue: 255 / 255).opacity(0.5))
@@ -86,7 +103,7 @@ struct EyeMovingView: View {
                                     }
                                 }
                             
-                            Image("kkam")
+                            Image("kp")
                                 .resizable()
                                 .frame(width: 40, height: 40)
                                 .offset(x: xOffset)
@@ -135,7 +152,7 @@ struct EyeMovingView: View {
                                     }
                                 }
                             
-                            Image("kkam")
+                            Image("kp")
                                 .resizable()
                                 .frame(width: 40, height: 40)
                                 .offset(x: xOffset)
@@ -153,30 +170,74 @@ struct EyeMovingView: View {
                         }
                         
                         if(!isRightCompleted && !isLeftCompleted){
-                            Image("kkam")
+                            Image("kp")
                                 .resizable()
                                 .frame(width: 40, height: 40)
                         }
-                        
-                        
                     }
-                    ProgressBar(value: $progressValue).frame(height: 20)
+                    .padding(.leading, 57)
+                    .padding(.trailing,  57)
+                    .padding(.bottom, 80)
+                    
+                    
+                    ProgressBar(value: $progressValue)
+                        .frame(width: 300, height: 18)
                         .onAppear(){
                             self.startProgressBar()
                         }
+                    
+                    Spacer()
+        
+                    Button {
+                        self.presentation.wrappedValue.dismiss()
+                    } label: {
+                        Text("중단하기")
+                            .foregroundColor(Color("secondCircle"))
+                            .underline(true,color: Color("secondCircle"))
+                            .baselineOffset(5)
+                    }
+                    .padding(.bottom, 30)
+                    .onAppear {
+                        Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true) { timer in
+                            if timeRemaining < 30.0 {
+                                timeRemaining += 0.01
+                            }
+                            else {
+                                timer.invalidate()
+                                // 60초가 지나면 NextView로 이동
+                                withAnimation(.easeInOut(duration: 0.5)) {
+                                    isNextViewPresented = true
+                                }
+                            }
+                        }
+                    }
+                    .onDisappear {
+                        withAnimation(.spring(dampingFraction: 0.6),{
+                            animate.toggle()
+                        })
+                    }
                 }
             }
-            else{
+        }
+        else{
+            ZStack{
+                EyeMovingARViewContainer(mode: $mode, isLeftCompleted: $isLeftCompleted, isRightCompleted: $isRightCompleted, isUpCompleted: $isUpCompleted, isDownCompleted: $isDownCompleted)
+                
+                Color(red: 51 / 255, green: 51 / 255, blue: 51 / 255).ignoresSafeArea()
+                
                 VStack{
-    //                Text("눈 움직이기.\n양옆, 위아래 1분")
-    //                    .foregroundColor(.white)
-    //                    .font(.system(size: 36))
+                    Spacer()
+                    Text("눈 움직이기. \n양옆, 위아래 30초")
+                        .font(.largeTitle)
+                        .bold()
+                        .lineSpacing(5)
+                        .foregroundColor(.white)
+                        .frame(maxWidth: .infinity,alignment: .leading)
+                        .padding(.top, 15)
+                        .padding(.leading, 50)
+                        .padding(.bottom, 75)
                     
                     ZStack{
-                        EyeMovingARViewContainer(mode: $mode, isLeftCompleted: $isLeftCompleted, isRightCompleted: $isRightCompleted, isUpCompleted: $isUpCompleted, isDownCompleted: $isDownCompleted)
-                        
-                        Color(red: 51 / 255, green: 51 / 255, blue: 51 / 255).ignoresSafeArea()
-                        
                         RoundedRectangle(cornerRadius: 40)
                             .fill(Color(red: 206 / 255, green: 214 / 255, blue: 255 / 255).opacity(0.5))
                             .frame(width: 300, height: 65)
@@ -222,7 +283,7 @@ struct EyeMovingView: View {
                                     }
                                 }
                             
-                            Image("kkam")
+                            Image("kp")
                                 .resizable()
                                 .frame(width: 40, height: 40)
                                 .offset(y: xOffset)
@@ -271,7 +332,7 @@ struct EyeMovingView: View {
                                     }
                                 }
                             
-                            Image("kkam")
+                            Image("kp")
                                 .resizable()
                                 .frame(width: 40, height: 40)
                                 .offset(y: xOffset)
@@ -289,25 +350,61 @@ struct EyeMovingView: View {
                         }
                         
                         if(!isUpCompleted && !isDownCompleted){
-                            Image("kkam")
+                            Image("kp")
                                 .resizable()
                                 .frame(width: 40, height: 40)
                         }
                         
                         
                     }
+                    .padding(.leading, 57)
+                    .padding(.trailing,  57)
+                    .padding(.bottom, 80)
                     
-                    ProgressBar(value: $progressValue).frame(height: 20)
+                    ProgressBar(value: $progressValue)
+                        .frame(width: 300, height: 18)
                         .onAppear(){
                             self.startProgressBar()
                         }
+                    
+                    Spacer()
+        
+                    Button {
+                        self.presentation.wrappedValue.dismiss()
+                        // 이전화면으로 돌아가게 하는 기능 self.presentation.wrappedValue.dismiss()
+                    } label: {
+                        Text("중단하기")
+                            .foregroundColor(Color("secondCircle"))
+                            .underline(true,color: Color("secondCircle"))
+                            .baselineOffset(5)
+                    }
+                    .padding(.bottom, 30)
+                    .onAppear {
+                        Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true) { timer in
+                            if timeRemaining < 30.0 {
+                                timeRemaining += 0.01
+                            }
+                            else {
+                                timer.invalidate()
+                                // 60초가 지나면 NextView로 이동
+                                withAnimation(.easeInOut(duration: 0.5)) {
+                                    isNextViewPresented = true
+                                }
+                            }
+                        }
+                    }
+                    .onDisappear {
+                        withAnimation(.spring(dampingFraction: 0.6),{
+                            animate.toggle()
+                        })
+                    }
                 }
             }
-            
-            
         }
         
+        
     }
+        
     
     func startProgressBar() {
         Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: { timer in
