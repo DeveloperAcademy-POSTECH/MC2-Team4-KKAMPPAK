@@ -25,6 +25,9 @@
 		7E47172E2A069CE40030AF1C /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717282A069CE40030AF1C /* SettingView.swift */; };
 		7E4717302A0C87BA0030AF1C /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E47172F2A0C87BA0030AF1C /* ProgressBar.swift */; };
 		7E4717322A0C88000030AF1C /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717312A0C88000030AF1C /* HapticManager.swift */; };
+		7E4717422A1106690030AF1C /* BlinkingLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717412A1106690030AF1C /* BlinkingLoadingView.swift */; };
+		7E4717462A1133810030AF1C /* MovingLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717452A1133810030AF1C /* MovingLoadingView.swift */; };
+		7E4717482A114D0C0030AF1C /* NavigationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717472A114D0C0030AF1C /* NavigationUtil.swift */; };
 		A231D8062A0DC80900072D20 /* 깜빡_splash.gif in Resources */ = {isa = PBXBuildFile; fileRef = A231D8052A0DC80900072D20 /* 깜빡_splash.gif */; };
 		A231D8082A0DC81500072D20 /* 띠로링.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A231D8072A0DC81500072D20 /* 띠로링.mp3 */; };
 		A231D80A2A0DC83500072D20 /* GifView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A231D8092A0DC83500072D20 /* GifView.swift */; };
@@ -60,6 +63,9 @@
 		7E4717282A069CE40030AF1C /* SettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		7E47172F2A0C87BA0030AF1C /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
 		7E4717312A0C88000030AF1C /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
+		7E4717412A1106690030AF1C /* BlinkingLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlinkingLoadingView.swift; sourceTree = "<group>"; };
+		7E4717452A1133810030AF1C /* MovingLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovingLoadingView.swift; sourceTree = "<group>"; };
+		7E4717472A114D0C0030AF1C /* NavigationUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationUtil.swift; sourceTree = "<group>"; };
 		A231D8052A0DC80900072D20 /* 깜빡_splash.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "깜빡_splash.gif"; sourceTree = "<group>"; };
 		A231D8072A0DC81500072D20 /* 띠로링.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "띠로링.mp3"; sourceTree = "<group>"; };
 		A231D8092A0DC83500072D20 /* GifView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifView.swift; sourceTree = "<group>"; };
@@ -96,9 +102,9 @@
 				7E4717182A069CC30030AF1C /* ScreenTime.swift */,
 				7E4717192A069CC30030AF1C /* SettingTime.swift */,
 				7E47171A2A069CC30030AF1C /* EyeMovingARViewContainer.swift */,
+				13D24B952A0A83EA003C3CFB /* BlinkARViewContainer.swift */,
 				BB142F4B2A0C9B8F0080C843 /* NotificationManager.swift */,
 				BB142F492A0C9B0F0080C843 /* AppDelegate.swift */,
-				13D24B952A0A83EA003C3CFB /* BlinkARViewContainer.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -107,8 +113,10 @@
 			isa = PBXGroup;
 			children = (
 				135F75EC2A0FFA9E00487299 /* LoadingBlinkView.swift */,
-				7E4717222A069CE40030AF1C /* EyeBlinkingView.swift */,
+				7E4717412A1106690030AF1C /* BlinkingLoadingView.swift */,
+				7E4717452A1133810030AF1C /* MovingLoadingView.swift */,
 				1A92DA722A10DD6E00E2F735 /* FinishView.swift */,
+				7E4717222A069CE40030AF1C /* EyeBlinkingView.swift */,
 				7E4717232A069CE40030AF1C /* EyeMovingView.swift */,
 				7E4717242A069CE40030AF1C /* ContentView.swift */,
 				A231D8572A10DB0F00072D20 /* SplashView.swift */,
@@ -162,6 +170,7 @@
 				A231D8072A0DC81500072D20 /* 띠로링.mp3 */,
 				A231D8052A0DC80900072D20 /* 깜빡_splash.gif */,
 				BB142F082A02082B0080C843 /* Preview Content */,
+				7E4717472A114D0C0030AF1C /* NavigationUtil.swift */,
 			);
 			path = "MC2-Team4-KKAMPPAK";
 			sourceTree = "<group>";
@@ -248,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E47171D2A069CC30030AF1C /* EyeBlinking.swift in Sources */,
+				7E4717482A114D0C0030AF1C /* NavigationUtil.swift in Sources */,
 				7E4717302A0C87BA0030AF1C /* ProgressBar.swift in Sources */,
 				A231D8582A10DB0F00072D20 /* SplashView.swift in Sources */,
 				BB142F4C2A0C9B8F0080C843 /* NotificationManager.swift in Sources */,
@@ -262,11 +272,13 @@
 				7E47172A2A069CE40030AF1C /* EyeMovingView.swift in Sources */,
 				7E4717292A069CE40030AF1C /* EyeBlinkingView.swift in Sources */,
 				7E47171E2A069CC30030AF1C /* ScreenTime.swift in Sources */,
+				7E4717462A1133810030AF1C /* MovingLoadingView.swift in Sources */,
 				BB142F172A09CE480080C843 /* CardStack.swift in Sources */,
 				7E47172B2A069CE40030AF1C /* ContentView.swift in Sources */,
 				7E47172C2A069CE40030AF1C /* Button.swift in Sources */,
 				BB142F502A0C9C5F0080C843 /* DemoView.swift in Sources */,
 				7E47171C2A069CC30030AF1C /* Setting.swift in Sources */,
+				7E4717422A1106690030AF1C /* BlinkingLoadingView.swift in Sources */,
 				7E4717202A069CC30030AF1C /* EyeMovingARViewContainer.swift in Sources */,
 				BB142F152A0895660080C843 /* NoCard.swift in Sources */,
 				13D24B962A0A83EA003C3CFB /* BlinkARViewContainer.swift in Sources */,
