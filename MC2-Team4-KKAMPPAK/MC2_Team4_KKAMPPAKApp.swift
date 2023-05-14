@@ -9,12 +9,11 @@ import SwiftUI
 import UserNotifications
 
 @main
-
 struct MC2_Team4_KKAMPPAKApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SplashView()
         }
     }
 }
