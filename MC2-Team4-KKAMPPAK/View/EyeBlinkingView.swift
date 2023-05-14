@@ -42,28 +42,46 @@ struct EyeBlinkingView: View {
                             .stroke(Color.white,style: .init(lineWidth: 6))
                             .frame(width: 300,height: 300)
                             .frame(maxWidth: .infinity)
+                            .opacity(0.8)
                             .scaleEffect(checkBlink ? 0 : 1)
-                            .animation(.linear(duration: 0.5))
+                            .animation(
+                                Animation.linear(duration: 0.5)
+                                    .delay(0.2),
+                                value: checkBlink
+                            )
                         
                         Circle()
                             .stroke(Color("firstCircle"),style: .init(lineWidth: 13))
                             .frame(width: 250,height: 250)
                             .frame(maxWidth: .infinity)
-                            .scaleEffect(checkBlink ? 0 : 1)
-                            .animation(.linear(duration: 0.5))
-                    
-                            
+                            .opacity(0.9)
+                            .scaleEffect(checkBlink ? 0.2 : 1)
+                            .animation(
+                                Animation.linear(duration: 0.5)
+                                    .delay(0.15),
+                                value: checkBlink
+                            )
                         Circle()
                             .stroke(Color("secondCircle"),style: .init(lineWidth: 17))
                             .frame(width: 195, height: 195)
-                            .scaleEffect(checkBlink ? 0 : 1)
-                            .animation(.linear(duration: 0.5))
-                           
+                            .opacity(1)
+                            .scaleEffect(checkBlink ? 0.2 : 1)
+                            .animation(
+                                Animation.linear(duration: 0.5)
+                                    .delay(0.1),
+                                value: checkBlink
+                            )
                         Circle()
                             .stroke(Color("thirdCircle"),style: .init(lineWidth: 22))
+                        
                             .frame(width: 140, height: 140)
-                            .scaleEffect(checkBlink ? 0 : 1)
-                            .animation(.linear(duration: 0.5))
+                            .opacity(1)
+                            .scaleEffect(checkBlink ? 0.2 : 1)
+                            .animation(
+                                Animation.linear(duration: 0.5)
+                                    .delay(0.05),
+                                value: checkBlink
+                            )
                         ZStack{
                             Circle()
                                 .frame(width: 100, height: 100)

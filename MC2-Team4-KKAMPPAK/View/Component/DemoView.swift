@@ -92,33 +92,34 @@ struct DemoView: View {
             } else {
                 RoundedRectangle(cornerRadius: 40, style: .continuous)
                     .onTapGesture {
-                      
-                       
                         cards[currentIndex].isFlipped = true
                         withAnimation {
                             cards[currentIndex].degrees -= 180
-                            
                         }
-                       
-                        
                     }
                     .foregroundColor(card.color)
                     .frame(width: 313, height: 359)
                     .overlay(
                         VStack{
                             Text(dateFormatter.string(from: card.alarm))
-                                .font(.largeTitle)
+                                .font(.system(size: 38))
                                 .fontWeight(.bold)
                             Image("kp")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 150)
-                            Text("알림 편집하기 > ")
-                                .font(.title3)
-                                .fontWeight(.bold)
-                                .foregroundColor(Color(red: 0.321, green: 0.43, blue: 1))
-                                .padding(.top, 30)
-//                            Text("currentIndex= \(currentIndex)")
+                            HStack{
+                                Text("  알림 편집하기")
+                                    .font(.title3)
+                                    .fontWeight(.bold)
+                                    .foregroundColor(Color(red: 0.321, green: 0.43, blue: 1))
+                                 
+                                Image(systemName: "chevron.right")
+                                    .foregroundColor(Color("centerCircle"))
+                                    .bold()
+                            }   .padding(.top, 30)
+                          
+
                         }
                     )
             }
