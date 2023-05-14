@@ -7,6 +7,8 @@
 import SwiftUI
 
 struct FinishView: View {
+    @State private var animate = false
+    
     var body: some View {
         ZStack{
             Color("backgroundColor")
@@ -22,7 +24,7 @@ struct FinishView: View {
                     
                     
                 }
-                .padding(EdgeInsets(top: 250, leading: 130, bottom: 0, trailing: 130))
+                .padding(EdgeInsets(top: 220, leading: 130, bottom: 0, trailing: 130))
                 .frame(maxWidth: .infinity)
                 
                 VStack(alignment: .center){
@@ -31,33 +33,38 @@ struct FinishView: View {
                         .frame(width: 121,height: 108)
                     
                 }
-                .padding(EdgeInsets(top: 15, leading: 138, bottom: 0, trailing: 134))
+                .padding(EdgeInsets(top: 15, leading: 138, bottom: 30, trailing: 134))
                 VStack{
                     ZStack{
                         RoundedRectangle(cornerRadius: 40)
                            
-                            NavigationLink(destination: ContentView()){
-                                Text("메인 화면으로")
-                                    .font(.system(size: 24))
-                                    .bold()
-                                    .foregroundColor(Color.white)
-                            }
-                            
-                            
+                        Button {
+                            NavigationUtil.popToRootView()
+                        } label: {
+                            Text("메인 화면으로")
+                                .font(.system(size: 24))
+                                .bold()
+                                .foregroundColor(Color.white)
+                        }
                         
                     }
                     .foregroundColor(Color("centerCircle"))
                     .frame(height: 70)
                     .frame(maxWidth: .infinity)
-                    .padding(EdgeInsets(top: 185, leading: 39, bottom: 0, trailing: 40))
+                    .padding(EdgeInsets(top: 145, leading: 39, bottom: 30, trailing: 40))
                     
-                    NavigationLink(destination: EyeBlinkingView(checkBlink: false)){
+                    NavigationLink(destination: BlinkingLoadingView(animate: $animate)){
                         Text("다시 깜빡 하러 가기")
                             .foregroundColor(Color("secondCircle"))
                             .underline(true,color: Color("secondCircle"))
                             .baselineOffset(5)
+                            .onDisappear {
+                                           withAnimation(.spring(dampingFraction: 0.6),{
+                                               animate.toggle()
+                                           })
+                                       }
                     }
-                    .padding(.top, 30)
+                    .padding(.bottom, 60)
                 }
             }
             

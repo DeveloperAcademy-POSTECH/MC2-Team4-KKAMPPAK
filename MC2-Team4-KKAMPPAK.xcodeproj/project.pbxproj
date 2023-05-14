@@ -10,6 +10,14 @@
 		135F75EB2A0FF89C00487299 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135F75EA2A0FF89C00487299 /* LoadingView.swift */; };
 		135F75ED2A0FFA9E00487299 /* LoadingBlinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135F75EC2A0FFA9E00487299 /* LoadingBlinkView.swift */; };
 		135F75F02A0FFF4900487299 /* eyes.gif in Resources */ = {isa = PBXBuildFile; fileRef = 135F75EF2A0FFF4900487299 /* eyes.gif */; };
+		13CAC9352A1162C300DC297F /* NextCard 2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 13CAC9312A1162C300DC297F /* NextCard 2.gif */; };
+		13CAC9362A1162C300DC297F /* onboardgif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 13CAC9322A1162C300DC297F /* onboardgif.gif */; };
+		13CAC9372A1162C300DC297F /* onboadingBlink.gif in Resources */ = {isa = PBXBuildFile; fileRef = 13CAC9332A1162C300DC297F /* onboadingBlink.gif */; };
+		13CAC9382A1162C300DC297F /* onboadingSide.gif in Resources */ = {isa = PBXBuildFile; fileRef = 13CAC9342A1162C300DC297F /* onboadingSide.gif */; };
+		13CAC93A2A11630500DC297F /* OnboardingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CAC9392A11630500DC297F /* OnboardingCard.swift */; };
+		13CAC93C2A11632200DC297F /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CAC93B2A11632200DC297F /* OnboardingView.swift */; };
+		13CAC93E2A11633800DC297F /* OnboardingText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CAC93D2A11633800DC297F /* OnboardingText.swift */; };
+		13CAC9402A1169B900DC297F /* OnboardingCheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CAC93F2A1169B900DC297F /* OnboardingCheckView.swift */; };
 		13D24B962A0A83EA003C3CFB /* BlinkARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D24B952A0A83EA003C3CFB /* BlinkARViewContainer.swift */; };
 		1A92DA732A10DD6E00E2F735 /* FinishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A92DA722A10DD6E00E2F735 /* FinishView.swift */; };
 		7E47171B2A069CC30030AF1C /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717152A069CC30030AF1C /* Alert.swift */; };
@@ -25,6 +33,9 @@
 		7E47172E2A069CE40030AF1C /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717282A069CE40030AF1C /* SettingView.swift */; };
 		7E4717302A0C87BA0030AF1C /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E47172F2A0C87BA0030AF1C /* ProgressBar.swift */; };
 		7E4717322A0C88000030AF1C /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717312A0C88000030AF1C /* HapticManager.swift */; };
+		7E4717422A1106690030AF1C /* BlinkingLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717412A1106690030AF1C /* BlinkingLoadingView.swift */; };
+		7E4717462A1133810030AF1C /* MovingLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717452A1133810030AF1C /* MovingLoadingView.swift */; };
+		7E4717482A114D0C0030AF1C /* NavigationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717472A114D0C0030AF1C /* NavigationUtil.swift */; };
 		A231D8062A0DC80900072D20 /* 깜빡_splash.gif in Resources */ = {isa = PBXBuildFile; fileRef = A231D8052A0DC80900072D20 /* 깜빡_splash.gif */; };
 		A231D8082A0DC81500072D20 /* 띠로링.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A231D8072A0DC81500072D20 /* 띠로링.mp3 */; };
 		A231D80A2A0DC83500072D20 /* GifView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A231D8092A0DC83500072D20 /* GifView.swift */; };
@@ -46,6 +57,14 @@
 		135F75EC2A0FFA9E00487299 /* LoadingBlinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingBlinkView.swift; sourceTree = "<group>"; };
 		135F75EE2A0FFE6400487299 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		135F75EF2A0FFF4900487299 /* eyes.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = eyes.gif; sourceTree = "<group>"; };
+		13CAC9312A1162C300DC297F /* NextCard 2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "NextCard 2.gif"; sourceTree = "<group>"; };
+		13CAC9322A1162C300DC297F /* onboardgif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = onboardgif.gif; sourceTree = "<group>"; };
+		13CAC9332A1162C300DC297F /* onboadingBlink.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = onboadingBlink.gif; sourceTree = "<group>"; };
+		13CAC9342A1162C300DC297F /* onboadingSide.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = onboadingSide.gif; sourceTree = "<group>"; };
+		13CAC9392A11630500DC297F /* OnboardingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCard.swift; sourceTree = "<group>"; };
+		13CAC93B2A11632200DC297F /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		13CAC93D2A11633800DC297F /* OnboardingText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingText.swift; sourceTree = "<group>"; };
+		13CAC93F2A1169B900DC297F /* OnboardingCheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCheckView.swift; sourceTree = "<group>"; };
 		13D24B952A0A83EA003C3CFB /* BlinkARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlinkARViewContainer.swift; sourceTree = "<group>"; };
 		1A92DA722A10DD6E00E2F735 /* FinishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishView.swift; sourceTree = "<group>"; };
 		7E4717152A069CC30030AF1C /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
@@ -61,6 +80,9 @@
 		7E4717282A069CE40030AF1C /* SettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		7E47172F2A0C87BA0030AF1C /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
 		7E4717312A0C88000030AF1C /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
+		7E4717412A1106690030AF1C /* BlinkingLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlinkingLoadingView.swift; sourceTree = "<group>"; };
+		7E4717452A1133810030AF1C /* MovingLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovingLoadingView.swift; sourceTree = "<group>"; };
+		7E4717472A114D0C0030AF1C /* NavigationUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationUtil.swift; sourceTree = "<group>"; };
 		A231D8052A0DC80900072D20 /* 깜빡_splash.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "깜빡_splash.gif"; sourceTree = "<group>"; };
 		A231D8072A0DC81500072D20 /* 띠로링.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "띠로링.mp3"; sourceTree = "<group>"; };
 		A231D8092A0DC83500072D20 /* GifView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifView.swift; sourceTree = "<group>"; };
@@ -98,9 +120,9 @@
 				7E4717182A069CC30030AF1C /* ScreenTime.swift */,
 				7E4717192A069CC30030AF1C /* SettingTime.swift */,
 				7E47171A2A069CC30030AF1C /* EyeMovingARViewContainer.swift */,
+				13D24B952A0A83EA003C3CFB /* BlinkARViewContainer.swift */,
 				BB142F4B2A0C9B8F0080C843 /* NotificationManager.swift */,
 				BB142F492A0C9B0F0080C843 /* AppDelegate.swift */,
-				13D24B952A0A83EA003C3CFB /* BlinkARViewContainer.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -109,9 +131,13 @@
 			isa = PBXGroup;
 			children = (
 				7E4717252A069CE40030AF1C /* Component */,
+				13CAC93F2A1169B900DC297F /* OnboardingCheckView.swift */,
+				13CAC93B2A11632200DC297F /* OnboardingView.swift */,
 				135F75EC2A0FFA9E00487299 /* LoadingBlinkView.swift */,
-				7E4717222A069CE40030AF1C /* EyeBlinkingView.swift */,
+				7E4717412A1106690030AF1C /* BlinkingLoadingView.swift */,
+				7E4717452A1133810030AF1C /* MovingLoadingView.swift */,
 				1A92DA722A10DD6E00E2F735 /* FinishView.swift */,
+				7E4717222A069CE40030AF1C /* EyeBlinkingView.swift */,
 				7E4717232A069CE40030AF1C /* EyeMovingView.swift */,
 				7E4717242A069CE40030AF1C /* ContentView.swift */,
 				A231D8572A10DB0F00072D20 /* SplashView.swift */,
@@ -133,6 +159,8 @@
 				BB142F162A09CE480080C843 /* CardStack.swift */,
 				BB142F4F2A0C9C5F0080C843 /* DemoView.swift */,
 				BBD8E2D42A1145C000A0689A /* TimePicker.swift */,
+				13CAC9392A11630500DC297F /* OnboardingCard.swift */,
+				13CAC93D2A11633800DC297F /* OnboardingText.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -163,8 +191,13 @@
 				BB142F062A02082B0080C843 /* Assets.xcassets */,
 				135F75EF2A0FFF4900487299 /* eyes.gif */,
 				A231D8072A0DC81500072D20 /* 띠로링.mp3 */,
+				13CAC9312A1162C300DC297F /* NextCard 2.gif */,
+				13CAC9332A1162C300DC297F /* onboadingBlink.gif */,
+				13CAC9342A1162C300DC297F /* onboadingSide.gif */,
+				13CAC9322A1162C300DC297F /* onboardgif.gif */,
 				A231D8052A0DC80900072D20 /* 깜빡_splash.gif */,
 				BB142F082A02082B0080C843 /* Preview Content */,
+				7E4717472A114D0C0030AF1C /* NavigationUtil.swift */,
 			);
 			path = "MC2-Team4-KKAMPPAK";
 			sourceTree = "<group>";
@@ -238,8 +271,12 @@
 				BB142F0A2A02082B0080C843 /* Preview Assets.xcassets in Resources */,
 				A231D8062A0DC80900072D20 /* 깜빡_splash.gif in Resources */,
 				135F75F02A0FFF4900487299 /* eyes.gif in Resources */,
+				13CAC9362A1162C300DC297F /* onboardgif.gif in Resources */,
+				13CAC9382A1162C300DC297F /* onboadingSide.gif in Resources */,
 				A231D8082A0DC81500072D20 /* 띠로링.mp3 in Resources */,
 				BB142F072A02082B0080C843 /* Assets.xcassets in Resources */,
+				13CAC9352A1162C300DC297F /* NextCard 2.gif in Resources */,
+				13CAC9372A1162C300DC297F /* onboadingBlink.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E47171D2A069CC30030AF1C /* EyeBlinking.swift in Sources */,
+				7E4717482A114D0C0030AF1C /* NavigationUtil.swift in Sources */,
 				7E4717302A0C87BA0030AF1C /* ProgressBar.swift in Sources */,
 				A231D8582A10DB0F00072D20 /* SplashView.swift in Sources */,
 				BB142F4C2A0C9B8F0080C843 /* NotificationManager.swift in Sources */,
@@ -266,16 +304,22 @@
 				7E4717292A069CE40030AF1C /* EyeBlinkingView.swift in Sources */,
 				BBD8E2D52A1145C000A0689A /* TimePicker.swift in Sources */,
 				7E47171E2A069CC30030AF1C /* ScreenTime.swift in Sources */,
+				13CAC9402A1169B900DC297F /* OnboardingCheckView.swift in Sources */,
+				7E4717462A1133810030AF1C /* MovingLoadingView.swift in Sources */,
 				BB142F172A09CE480080C843 /* CardStack.swift in Sources */,
 				7E47172B2A069CE40030AF1C /* ContentView.swift in Sources */,
 				7E47172C2A069CE40030AF1C /* Button.swift in Sources */,
+				13CAC93C2A11632200DC297F /* OnboardingView.swift in Sources */,
 				BB142F502A0C9C5F0080C843 /* DemoView.swift in Sources */,
 				7E47171C2A069CC30030AF1C /* Setting.swift in Sources */,
+				13CAC93E2A11633800DC297F /* OnboardingText.swift in Sources */,
+				7E4717422A1106690030AF1C /* BlinkingLoadingView.swift in Sources */,
 				7E4717202A069CC30030AF1C /* EyeMovingARViewContainer.swift in Sources */,
 				BB142F152A0895660080C843 /* NoCard.swift in Sources */,
 				13D24B962A0A83EA003C3CFB /* BlinkARViewContainer.swift in Sources */,
 				7E47171F2A069CC30030AF1C /* SettingTime.swift in Sources */,
 				135F75ED2A0FFA9E00487299 /* LoadingBlinkView.swift in Sources */,
+				13CAC93A2A11630500DC297F /* OnboardingCard.swift in Sources */,
 				BB142F032A02082A0080C843 /* MC2_Team4_KKAMPPAKApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,7 +450,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MC2-Team4-KKAMPPAK/Preview Content\"";
-				DEVELOPMENT_TEAM = 8H945XJJGA;
+				DEVELOPMENT_TEAM = 34K3V5D9X5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "MC2-Team4-KKAMPPAK/Info.plist";
@@ -439,7 +483,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MC2-Team4-KKAMPPAK/Preview Content\"";
-				DEVELOPMENT_TEAM = 8H945XJJGA;
+				DEVELOPMENT_TEAM = 34K3V5D9X5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "MC2-Team4-KKAMPPAK/Info.plist";

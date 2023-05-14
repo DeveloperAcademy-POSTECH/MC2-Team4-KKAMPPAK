@@ -11,9 +11,9 @@ import RealityKit
 struct EyeBlinkingView: View {
     @State var checkBlink : Bool
     @State private var animate = false
-    @State private var isNextViewPresented = false
     @State private var timeRemaining = 0.0
     @State var progressValue: Float = 0.0
+    @State private var next = false
     @State private var tag:Int? = nil
     @Environment(\.presentationMode) var presentation
     
@@ -110,13 +110,6 @@ struct EyeBlinkingView: View {
                     .padding(.trailing,  57)
                     .padding(.bottom, 80)
                     
-                    NavigationLink(destination: EyeMovingView(), tag: 1, selection: self.$tag){
-                        
-                    }
-                    
-                    
-                    //0.5
-                    
                     ProgressBar(value: $progressValue)
                         .frame(width: 300, height: 18)
                         .onAppear(){
@@ -124,19 +117,16 @@ struct EyeBlinkingView: View {
                         }
                     
                     
-//                    ProgressView(value: timeRemaining / 60.0)
-//                        .frame(width: 300, height: 18)
-//                        .scaleEffect(CGSize(width: 1.0, height: 4.5), anchor: .center)
-//                        .cornerRadius(20.0)
-//                        .accentColor(Color("Center"))
-//                        .background(Color("secondary").cornerRadius(20.0))
-//                        .offset(y: 60)
                     Spacer()
+                    
+                    NavigationLink (destination: MovingLoadingView(animate: $animate),
+                                    isActive: $next
+                    ){
+                        
+                    }
         
                     Button {
-                        print("돌아가라 얍")
-                        self.presentation.wrappedValue.dismiss()
-                        // 이전화면으로 돌아가게 하는 기능 self.presentation.wrappedValue.dismiss()
+                        NavigationUtil.popToRootView()
                     } label: {
                         Text("중단하기")
                             .foregroundColor(Color("secondCircle"))
@@ -163,9 +153,7 @@ struct EyeBlinkingView: View {
             
             if(progressValue >= 1){
                 timer.invalidate()
-                self.tag = 1
-                
-                print("finish")
+                next = true
                 
             }
         })

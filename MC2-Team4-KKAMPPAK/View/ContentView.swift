@@ -8,6 +8,7 @@ struct ContentView: View {
     
     @State var cards: [CardItem] = []
     @State var isLoading: Bool = true
+    @State private var animate = false
 
     
     var body: some View {
@@ -61,7 +62,8 @@ struct ContentView: View {
                      
                     }
                     Spacer()
-                    NavigationLink(destination: EyeBlinkingView(checkBlink: false))
+                    
+                    NavigationLink (destination: BlinkingLoadingView(animate: $animate))
                     {
                         Text("깜빡하러가기")
                             .frame(width: 313, height: 70)
@@ -70,6 +72,12 @@ struct ContentView: View {
                             .bold()
                             .background(Color(red: 0.321, green: 0.43, blue: 1))
                             .cornerRadius(35)
+                            .onDisappear {
+                                           withAnimation(.spring(dampingFraction: 0.6),{
+                                               animate.toggle()
+                                           })
+                                       }
+                            
                     }
     //                .disabled(!isFlipped)
                     .padding(.bottom, 15)
@@ -86,6 +94,8 @@ struct ContentView: View {
 //                })
 //            }
         }
+        
+
     }
 }
 
