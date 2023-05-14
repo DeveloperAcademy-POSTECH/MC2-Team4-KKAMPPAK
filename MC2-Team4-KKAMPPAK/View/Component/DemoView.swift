@@ -118,17 +118,11 @@ struct DemoView: View {
                                     .foregroundColor(Color("centerCircle"))
                                     .bold()
                             }   .padding(.top, 30)
-                          
-
                         }
                     )
             }
             
         }
-
-            
-        
-       
     }
 }
 

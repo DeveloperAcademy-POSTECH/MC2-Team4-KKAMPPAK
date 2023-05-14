@@ -34,11 +34,12 @@ struct ContentView: View {
                                    cards.insert(CardItem(alarm: Date(), isFlipped: false, degrees: 180, color: colors[0]), at: 0)
                                }
                             }
-                        Image(systemName: "gearshape.fill")
-                            .resizable()
-                            .frame(width: 25, height: 25, alignment: .topTrailing)
-                            .foregroundColor(Color(red: 0.321, green: 0.43, blue: 1))
-    //                        .padding(.trailing, 10)
+                        NavigationLink(destination: SettingView()){
+                            Image(systemName: "gearshape.fill")
+                                .resizable()
+                                .frame(width: 25, height: 25, alignment: .topTrailing)
+                                .foregroundColor(Color(red: 0.321, green: 0.43, blue: 1))
+                        }
                     }
                     Spacer()
                     HStack{
@@ -59,7 +60,6 @@ struct ContentView: View {
                         }
                      
                     }
-                   
                     Spacer()
                     NavigationLink(destination: EyeBlinkingView(checkBlink: false))
                     {
