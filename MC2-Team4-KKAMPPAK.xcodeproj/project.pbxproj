@@ -11,6 +11,7 @@
 		135F75ED2A0FFA9E00487299 /* LoadingBlinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135F75EC2A0FFA9E00487299 /* LoadingBlinkView.swift */; };
 		135F75F02A0FFF4900487299 /* eyes.gif in Resources */ = {isa = PBXBuildFile; fileRef = 135F75EF2A0FFF4900487299 /* eyes.gif */; };
 		13D24B962A0A83EA003C3CFB /* BlinkARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D24B952A0A83EA003C3CFB /* BlinkARViewContainer.swift */; };
+		1A92DA732A10DD6E00E2F735 /* FinishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A92DA722A10DD6E00E2F735 /* FinishView.swift */; };
 		7E47171B2A069CC30030AF1C /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717152A069CC30030AF1C /* Alert.swift */; };
 		7E47171C2A069CC30030AF1C /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717162A069CC30030AF1C /* Setting.swift */; };
 		7E47171D2A069CC30030AF1C /* EyeBlinking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4717172A069CC30030AF1C /* EyeBlinking.swift */; };
@@ -45,6 +46,7 @@
 		135F75EE2A0FFE6400487299 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		135F75EF2A0FFF4900487299 /* eyes.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = eyes.gif; sourceTree = "<group>"; };
 		13D24B952A0A83EA003C3CFB /* BlinkARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlinkARViewContainer.swift; sourceTree = "<group>"; };
+		1A92DA722A10DD6E00E2F735 /* FinishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishView.swift; sourceTree = "<group>"; };
 		7E4717152A069CC30030AF1C /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		7E4717162A069CC30030AF1C /* Setting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 		7E4717172A069CC30030AF1C /* EyeBlinking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EyeBlinking.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 			children = (
 				135F75EC2A0FFA9E00487299 /* LoadingBlinkView.swift */,
 				7E4717222A069CE40030AF1C /* EyeBlinkingView.swift */,
+				1A92DA722A10DD6E00E2F735 /* FinishView.swift */,
 				7E4717232A069CE40030AF1C /* EyeMovingView.swift */,
 				7E4717242A069CE40030AF1C /* ContentView.swift */,
 				A231D8572A10DB0F00072D20 /* SplashView.swift */,
@@ -255,6 +258,7 @@
 				A231D80A2A0DC83500072D20 /* GifView.swift in Sources */,
 				7E47172E2A069CE40030AF1C /* SettingView.swift in Sources */,
 				7E4717322A0C88000030AF1C /* HapticManager.swift in Sources */,
+				1A92DA732A10DD6E00E2F735 /* FinishView.swift in Sources */,
 				7E47172A2A069CE40030AF1C /* EyeMovingView.swift in Sources */,
 				7E4717292A069CE40030AF1C /* EyeBlinkingView.swift in Sources */,
 				7E47171E2A069CC30030AF1C /* ScreenTime.swift in Sources */,
