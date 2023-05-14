@@ -13,10 +13,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func applicationDidEnterBackground(_ application: UIApplication) {
-        for card in ContentView().cards { // Loop through all cards in the array
-           let wakeUpTime = card.alarm // Get the alarm time of each card
-            print(wakeUpTime)
-           notificationManager.scheduleNotification(at: wakeUpTime)
+        scheduleNotifications()
+    }
+    
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        scheduleNotifications()
+    }
+    
+    private func scheduleNotifications() {
+        for card in getCards() {
+            let wakeUpTime = card.alarm
+            notificationManager.scheduleNotification(at: wakeUpTime)
         }
+    }
+    
+    private func getCards() -> [CardItem] {
+        // Get the cards from ContentView or wherever they are stored
+        return ContentView().cards
     }
 }
