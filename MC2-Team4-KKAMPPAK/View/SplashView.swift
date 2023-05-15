@@ -17,7 +17,7 @@ struct SplashView: View {
                     } else {
                         ZStack(alignment: .center) {
                             
-                            Color("AccentColor")
+                            Color("backgroundColor")
                                 .edgesIgnoringSafeArea(.all)
                             Text("KKAM-PARK")
                                 .fontWeight(.black)

@@ -49,6 +49,7 @@
 		BB142F4A2A0C9B0F0080C843 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB142F492A0C9B0F0080C843 /* AppDelegate.swift */; };
 		BB142F4C2A0C9B8F0080C843 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB142F4B2A0C9B8F0080C843 /* NotificationManager.swift */; };
 		BB142F502A0C9C5F0080C843 /* DemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB142F4F2A0C9C5F0080C843 /* DemoView.swift */; };
+		BBD8E2D52A1145C000A0689A /* TimePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD8E2D42A1145C000A0689A /* TimePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +97,7 @@
 		BB142F492A0C9B0F0080C843 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		BB142F4B2A0C9B8F0080C843 /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationManager.swift; path = ../NotificationManager.swift; sourceTree = "<group>"; };
 		BB142F4F2A0C9C5F0080C843 /* DemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoView.swift; sourceTree = "<group>"; };
+		BBD8E2D42A1145C000A0689A /* TimePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 		7E4717212A069CE40030AF1C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7E4717252A069CE40030AF1C /* Component */,
 				13CAC93F2A1169B900DC297F /* OnboardingCheckView.swift */,
 				13CAC93B2A11632200DC297F /* OnboardingView.swift */,
 				135F75EC2A0FFA9E00487299 /* LoadingBlinkView.swift */,
@@ -138,7 +141,6 @@
 				7E4717232A069CE40030AF1C /* EyeMovingView.swift */,
 				7E4717242A069CE40030AF1C /* ContentView.swift */,
 				A231D8572A10DB0F00072D20 /* SplashView.swift */,
-				7E4717252A069CE40030AF1C /* Component */,
 				A231D8092A0DC83500072D20 /* GifView.swift */,
 				A231D80B2A0DC85400072D20 /* MusicView.swift */,
 				7E4717282A069CE40030AF1C /* SettingView.swift */,
@@ -156,6 +158,7 @@
 				7E4717312A0C88000030AF1C /* HapticManager.swift */,
 				BB142F162A09CE480080C843 /* CardStack.swift */,
 				BB142F4F2A0C9C5F0080C843 /* DemoView.swift */,
+				BBD8E2D42A1145C000A0689A /* TimePicker.swift */,
 				13CAC9392A11630500DC297F /* OnboardingCard.swift */,
 				13CAC93D2A11633800DC297F /* OnboardingText.swift */,
 			);
@@ -299,6 +302,7 @@
 				1A92DA732A10DD6E00E2F735 /* FinishView.swift in Sources */,
 				7E47172A2A069CE40030AF1C /* EyeMovingView.swift in Sources */,
 				7E4717292A069CE40030AF1C /* EyeBlinkingView.swift in Sources */,
+				BBD8E2D52A1145C000A0689A /* TimePicker.swift in Sources */,
 				7E47171E2A069CC30030AF1C /* ScreenTime.swift in Sources */,
 				13CAC9402A1169B900DC297F /* OnboardingCheckView.swift in Sources */,
 				7E4717462A1133810030AF1C /* MovingLoadingView.swift in Sources */,
