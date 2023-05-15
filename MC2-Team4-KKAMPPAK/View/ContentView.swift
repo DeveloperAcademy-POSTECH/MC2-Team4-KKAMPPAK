@@ -9,7 +9,9 @@ struct ContentView: View {
     @State var cards: [CardItem] = []
     @State var isLoading: Bool = true
     @State private var animate = false
-
+    @Binding var hours: Int
+    @Binding var minutes: Int
+    @Binding var seconds: Int
     
     var body: some View {
         NavigationStack {
@@ -32,10 +34,10 @@ struct ContentView: View {
                                        let index = colors.indices.contains(i+1) ? i+1 : 0
                                        cards[i].color = colors[index]
                                    }
-                                   cards.insert(CardItem(alarm: Date(), isFlipped: false, degrees: 180, color: colors[0]), at: 0)
+                                   cards.insert(CardItem(alarm: Date(), isFlipped: true, degrees: 180, color: colors[0]), at: 0)
                                }
                             }
-                        NavigationLink(destination: SettingView()){
+                        NavigationLink(destination: SettingView(hours: hours, minutes: minutes, seconds: seconds)){
                             Image(systemName: "gearshape.fill")
                                 .resizable()
                                 .frame(width: 25, height: 25, alignment: .topTrailing)
@@ -56,6 +58,15 @@ struct ContentView: View {
                     ZStack {
                         if (cards.count == 0) {
                             NoCard()
+                                .onTapGesture {
+                                    if cards.count < 3 {
+                                       for i in 0..<cards.count {
+                                           let index = colors.indices.contains(i+1) ? i+1 : 0
+                                           cards[i].color = colors[index]
+                                       }
+                                       cards.insert(CardItem(alarm: Date(), isFlipped: true, degrees: 180, color: colors[0]), at: 0)
+                                   }
+                                }
                         } else {
                             DemoView(cards: $cards)
                         }
@@ -88,6 +99,9 @@ struct ContentView: View {
 //                }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .onAppear(){
+                print("\(hours) : \(minutes) : \(seconds)")
+            }
 //            .onAppear {
 //                DispatchQueue.main.asyncAfter(deadline: .now() + 4, execute: {
 //                    isLoading.toggle()
@@ -99,12 +113,12 @@ struct ContentView: View {
     }
 }
 
-
-struct Content_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+//
+//struct Content_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ContentView()
+//    }
+//}
 
 
 

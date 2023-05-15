@@ -4,9 +4,9 @@ struct SettingView: View {
     
     @State private var isToggleOn = false
     @State private var selectedTime: String? = nil
-    @State private var hours = 0
-    @State private var minutes = 0
-    @State private var seconds = 0
+    @State var hours: Int
+    @State var minutes: Int
+    @State var seconds: Int
     
     var body: some View {
         NavigationView{
@@ -83,7 +83,7 @@ struct SettingView: View {
                                                 .foregroundColor(.blue)
                                         })
                                     }
-                                    TimePicker(hours: $hours,  minutes: $minutes, seconds: $seconds)
+                                    TimePicker(hours: $hours, minutes: $minutes, seconds: $seconds)
                                         .frame(maxHeight: 150)
                                         .padding(.horizontal, 5)
                                         .foregroundColor(.white)
@@ -121,19 +121,24 @@ struct SettingView: View {
                 }
                 .animation(Animation.easeInOut)
             }
+            .onAppear(){
+                print("\(hours) : \(minutes) : \(seconds)")
+                if(hours !=  0 || minutes !=  0 || seconds != 0){
+                    isToggleOn = true
+                }
+            }
         }.navigationBarTitle("설정")
-            .foregroundColor(.blue)
-            .accentColor(.white)
-           
+        .foregroundColor(.blue)
+        .accentColor(.white)
         .navigationBarBackButtonHidden(false)
-      
+       
        
     }
 }
 
 
-struct SettingView_Previews: PreviewProvider {
-    static var previews: some View {
-        SettingView()
-    }
-}
+//struct SettingView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        SettingView()
+//    }
+//}

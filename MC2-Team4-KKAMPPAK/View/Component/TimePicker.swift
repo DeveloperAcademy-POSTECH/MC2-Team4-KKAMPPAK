@@ -36,8 +36,8 @@ struct TimePicker: View {
     }
 }
 
-struct TimePicker_Previews: PreviewProvider {
-    static var previews: some View {
-        TimePicker(hours: .constant(0), minutes: .constant(0), seconds: .constant(0))
-    }
-}
+//struct TimePicker_Previews: PreviewProvider {
+//    static var previews: some View {
+//        TimePicker(hours: .constant(0), minutes: .constant(0), seconds: .constant(0))
+//    }
+//}

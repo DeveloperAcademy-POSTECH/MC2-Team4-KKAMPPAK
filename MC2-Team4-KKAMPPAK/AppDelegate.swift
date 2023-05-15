@@ -1,10 +1,13 @@
 import UIKit
 import UserNotifications
-
+import SwiftUI
 //@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    let notificationManager = NotificationManager()
 
+    let hours = Binding.constant(0)
+    let minutes = Binding.constant(0)
+    let seconds = Binding.constant(0)
+    let notificationManager = NotificationManager()
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Request notification authorization on app launch
         notificationManager.requestAuthorization()
@@ -29,6 +32,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private func getCards() -> [CardItem] {
         // Get the cards from ContentView or wherever they are stored
-        return ContentView().cards
+        return ContentView(hours: hours, minutes: minutes, seconds: seconds).cards
     }
 }

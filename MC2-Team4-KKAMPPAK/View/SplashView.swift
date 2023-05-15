@@ -9,48 +9,43 @@ import SwiftUI
 
 struct SplashView: View {
     @State var isActive:Bool = false
+    
     var body: some View {
-                VStack {
-
-                    if self.isActive {
-                        OnboardingCheckView()
-                    } else {
-                        ZStack(alignment: .center) {
-                            
-                            Color("backgroundColor")
-                                .edgesIgnoringSafeArea(.all)
-                            Text("KKAM-PARK")
-                                .fontWeight(.black)
-                                .foregroundColor(Color.white)
-                                .padding(.top,85)
-                            
-                            
-                            GifView(gifName: "깜빡_splash")
-                                .padding(.bottom,100)
-                                .edgesIgnoringSafeArea(.all)
-                                .onAppear{
-                                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.0){
-                                        DDiroringMusicPlayer.shared.playSound()
-                                    }
-                                }
+        VStack {
+            if self.isActive {
+                OnboardingCheckView(hours: Binding.constant(0), minutes: Binding.constant(0), seconds: Binding.constant(0))
+            } else {
+                ZStack(alignment: .center) {
+                    
+                    Color("backgroundColor")
+                        .edgesIgnoringSafeArea(.all)
+                    Text("KKAM-PARK")
+                        .fontWeight(.black)
+                        .foregroundColor(Color.white)
+                        .padding(.top,85)
+                    
+                    
+                    GifView(gifName: "깜빡_splash")
+                        .padding(.bottom,100)
+                        .edgesIgnoringSafeArea(.all)
+                        .onAppear{
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0){
+                                DDiroringMusicPlayer.shared.playSound()
+                            }
                         }
-
-                    }
-
-                }
-                .onAppear {
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
-                        withAnimation {
-                            self.isActive = true
-                        }
-                    }
                 }
 
+            }
 
-        
-        
-        
-        
+        }
+        .onAppear {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
+                withAnimation {
+                    self.isActive = true
+                }
+            }
+        }
+
     }
 }
 
