@@ -25,9 +25,10 @@ struct OnboardingText: View {
                     .padding(.leading,40)
                 Text(description)
                     .font(.system(size: 18,weight: .heavy))
-                    .foregroundColor(Color("centerCircle"))
+                    .foregroundColor(Color("thirdCircle"))
                     .padding(.bottom, 51)
                     .padding(.leading,40)
+                    .lineSpacing(7)
                 
             }
             HStack{
@@ -44,6 +45,6 @@ struct OnboardingText: View {
 
 struct OnboardingText_Previews: PreviewProvider {
     static var previews: some View {
-        OnboardingText(title: "눈깜빡 운동\n4초당 1회, 1분에 15회 이상", description: "스마트폰 사용 중의 안구건조증\n 각종 각막질환을 예방해요",gif: "onboardgif",gifwidth: 134,gifheight: 80)
+        OnboardingText(title: "눈깜빡 운동\n4초당 1회, 1분에 15회 이상", description: "스마트폰 사용 중의 안구건조증\n각종 각막질환을 예방해요",gif: "onboardgif",gifwidth: 134,gifheight: 80)
     }
 }

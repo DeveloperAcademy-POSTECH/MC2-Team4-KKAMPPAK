@@ -50,6 +50,7 @@
 		BB142F4C2A0C9B8F0080C843 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB142F4B2A0C9B8F0080C843 /* NotificationManager.swift */; };
 		BB142F502A0C9C5F0080C843 /* DemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB142F4F2A0C9C5F0080C843 /* DemoView.swift */; };
 		BBD8E2D52A1145C000A0689A /* TimePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD8E2D42A1145C000A0689A /* TimePicker.swift */; };
+		BBD8E2D72A11F93F00A0689A /* OnboardingView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD8E2D62A11F93F00A0689A /* OnboardingView2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +99,7 @@
 		BB142F4B2A0C9B8F0080C843 /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationManager.swift; path = ../NotificationManager.swift; sourceTree = "<group>"; };
 		BB142F4F2A0C9C5F0080C843 /* DemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoView.swift; sourceTree = "<group>"; };
 		BBD8E2D42A1145C000A0689A /* TimePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePicker.swift; sourceTree = "<group>"; };
+		BBD8E2D62A11F93F00A0689A /* OnboardingView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 				A231D8092A0DC83500072D20 /* GifView.swift */,
 				A231D80B2A0DC85400072D20 /* MusicView.swift */,
 				7E4717282A069CE40030AF1C /* SettingView.swift */,
+				BBD8E2D62A11F93F00A0689A /* OnboardingView2.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				7E47171E2A069CC30030AF1C /* ScreenTime.swift in Sources */,
 				13CAC9402A1169B900DC297F /* OnboardingCheckView.swift in Sources */,
 				7E4717462A1133810030AF1C /* MovingLoadingView.swift in Sources */,
+				BBD8E2D72A11F93F00A0689A /* OnboardingView2.swift in Sources */,
 				BB142F172A09CE480080C843 /* CardStack.swift in Sources */,
 				7E47172B2A069CE40030AF1C /* ContentView.swift in Sources */,
 				7E47172C2A069CE40030AF1C /* Button.swift in Sources */,

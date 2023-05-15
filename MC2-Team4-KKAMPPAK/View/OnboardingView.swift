@@ -14,9 +14,11 @@ struct OnboardingView: View {
             kampakkImage: "watch", description:"시간 가는 줄\n모르겠어요!"),
         OnboardingCard(kampakkImage: "cardKampak", description:"화면을 오래\n보니 눈이 뻑뻑해요!"),
     ]
+    
     @Environment(\.presentationMode) var presentationMode
     @AppStorage("isFirstLaunching") var isFirstLaunching: Bool = false
     @Binding var showView: Bool
+    @Binding var isSecondView: Bool
     @State private var timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
     @State private var isAnimate = false
     @State private var currentIndex: Int = 0
@@ -102,7 +104,7 @@ struct OnboardingView: View {
                                         .padding(.bottom, 100)
                                         .id(2)
                                     OnboardingText(title: "Z세대의\n스마트폰 사용\n하루 평균 7시간.", description: "건강한 일상을 가로막는 주된 원인!", gif: "onboardgif", gifwidth: 267, gifheight: 278)
-                                    OnboardingText(title: "눈깜빡 운동\n4초당 1회, 1분에 15회 이상", description: "스마트폰 사용 중의 안구건조증,\n각종 각막질환을 예방해요",gif: "onboadingBlink",gifwidth: 134,gifheight: 80)
+                                    OnboardingText(title: "눈깜빡 운동\n4초당 1회, 1분에 15회 이상", description: "스마트폰 사용 중에 발생하는,\n안구건조증, 각종 각막질환을 예방해요",gif: "onboadingBlink",gifwidth: 134,gifheight: 80)
                                         .padding(.top, 50)
                                     OnboardingText(title: "눈 상하좌우 운동.\n양 옆 위아래 1분", description: "누적된 눈 피로에 더욱 효과적으로!",gif: "onboadingSide",gifwidth: 134,gifheight: 80)
                                         .padding(.top,100)
@@ -110,15 +112,12 @@ struct OnboardingView: View {
                                         .padding(.top,150)
                                 }
                                 .padding(.top, 128)
-                            }
+                        }.padding(.bottom, 50)
                         }
                         ZStack{
                             VStack{
                                 Button {
-                                    isFirstLaunching = true
-                                    presentationMode.wrappedValue.dismiss()
-                                    showView = false
-                                    
+                                    isSecondView = true
                                 } label: {
                                     ZStack{
                                         RoundedRectangle(cornerRadius: 40)
@@ -130,6 +129,7 @@ struct OnboardingView: View {
                                             .foregroundColor(.white)
                                     }
                                 }
+                                
                             }
                       
                         }
