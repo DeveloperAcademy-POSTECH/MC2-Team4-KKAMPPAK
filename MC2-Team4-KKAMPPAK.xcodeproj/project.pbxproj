@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0ED072E72A13615100272470 /* DeviceActivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED072E62A13615100272470 /* DeviceActivity.framework */; };
+		0ED072EA2A13615100272470 /* DeviceActivityMonitorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED072E92A13615100272470 /* DeviceActivityMonitorExtension.swift */; };
+		0ED072EF2A13615100272470 /* DeviceActivityMonitorExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0ED072E42A13615100272470 /* DeviceActivityMonitorExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0ED072FA2A13617E00272470 /* ManagedSettings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED072F92A13617E00272470 /* ManagedSettings.framework */; };
+		0ED072FD2A13617E00272470 /* ShieldActionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED072FC2A13617E00272470 /* ShieldActionExtension.swift */; };
+		0ED073022A13617E00272470 /* ShieldActionExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0ED072F82A13617E00272470 /* ShieldActionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0ED0730B2A13619300272470 /* ManagedSettings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED072F92A13617E00272470 /* ManagedSettings.framework */; };
+		0ED0730D2A13619300272470 /* ManagedSettingsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED0730C2A13619300272470 /* ManagedSettingsUI.framework */; };
+		0ED073102A13619300272470 /* ShieldConfigurationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED0730F2A13619300272470 /* ShieldConfigurationExtension.swift */; };
+		0ED073152A13619300272470 /* ShieldConfigurationExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0ED0730A2A13619300272470 /* ShieldConfigurationExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0ED0731B2A13625700272470 /* MultiPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED0731A2A13625700272470 /* MultiPicker.swift */; };
+		0ED0731D2A13629D00272470 /* OnboardingView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED0731C2A13629D00272470 /* OnboardingView3.swift */; };
+		0ED0731E2A1363F500272470 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB142F4B2A0C9B8F0080C843 /* NotificationManager.swift */; };
 		135F75EB2A0FF89C00487299 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135F75EA2A0FF89C00487299 /* LoadingView.swift */; };
 		135F75ED2A0FFA9E00487299 /* LoadingBlinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135F75EC2A0FFA9E00487299 /* LoadingBlinkView.swift */; };
 		138EDC332A126E6300E57813 /* DeveloperRaw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138EDC322A126E6300E57813 /* DeveloperRaw.swift */; };
@@ -55,7 +68,65 @@
 		BBD8E2D72A11F93F00A0689A /* OnboardingView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD8E2D62A11F93F00A0689A /* OnboardingView2.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		0ED072ED2A13615100272470 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB142EF72A0208290080C843 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0ED072E32A13615100272470;
+			remoteInfo = DeviceActivityMonitorExtension;
+		};
+		0ED073002A13617E00272470 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB142EF72A0208290080C843 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0ED072F72A13617E00272470;
+			remoteInfo = ShieldActionExtension;
+		};
+		0ED073132A13619300272470 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB142EF72A0208290080C843 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0ED073092A13619300272470;
+			remoteInfo = ShieldConfigurationExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0ED072F02A13615100272470 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0ED072EF2A13615100272470 /* DeviceActivityMonitorExtension.appex in Embed Foundation Extensions */,
+				0ED073152A13619300272470 /* ShieldConfigurationExtension.appex in Embed Foundation Extensions */,
+				0ED073022A13617E00272470 /* ShieldActionExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0ED072E42A13615100272470 /* DeviceActivityMonitorExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DeviceActivityMonitorExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ED072E62A13615100272470 /* DeviceActivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DeviceActivity.framework; path = System/Library/Frameworks/DeviceActivity.framework; sourceTree = SDKROOT; };
+		0ED072E92A13615100272470 /* DeviceActivityMonitorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceActivityMonitorExtension.swift; sourceTree = "<group>"; };
+		0ED072EB2A13615100272470 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0ED072EC2A13615100272470 /* DeviceActivityMonitorExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DeviceActivityMonitorExtension.entitlements; sourceTree = "<group>"; };
+		0ED072F82A13617E00272470 /* ShieldActionExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShieldActionExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ED072F92A13617E00272470 /* ManagedSettings.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ManagedSettings.framework; path = System/Library/Frameworks/ManagedSettings.framework; sourceTree = SDKROOT; };
+		0ED072FC2A13617E00272470 /* ShieldActionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShieldActionExtension.swift; sourceTree = "<group>"; };
+		0ED072FE2A13617E00272470 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0ED072FF2A13617E00272470 /* ShieldActionExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShieldActionExtension.entitlements; sourceTree = "<group>"; };
+		0ED0730A2A13619300272470 /* ShieldConfigurationExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShieldConfigurationExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ED0730C2A13619300272470 /* ManagedSettingsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ManagedSettingsUI.framework; path = System/Library/Frameworks/ManagedSettingsUI.framework; sourceTree = SDKROOT; };
+		0ED0730F2A13619300272470 /* ShieldConfigurationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShieldConfigurationExtension.swift; sourceTree = "<group>"; };
+		0ED073112A13619300272470 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0ED073122A13619300272470 /* ShieldConfigurationExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShieldConfigurationExtension.entitlements; sourceTree = "<group>"; };
+		0ED073192A13619E00272470 /* MC2-Team4-KKAMPPAK.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "MC2-Team4-KKAMPPAK.entitlements"; sourceTree = "<group>"; };
+		0ED0731A2A13625700272470 /* MultiPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiPicker.swift; sourceTree = "<group>"; };
+		0ED0731C2A13629D00272470 /* OnboardingView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView3.swift; sourceTree = "<group>"; };
 		135F75EA2A0FF89C00487299 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		135F75EC2A0FFA9E00487299 /* LoadingBlinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingBlinkView.swift; sourceTree = "<group>"; };
 		135F75EE2A0FFE6400487299 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -107,6 +178,31 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0ED072E12A13615100272470 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ED072E72A13615100272470 /* DeviceActivity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0ED072F52A13617E00272470 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ED072FA2A13617E00272470 /* ManagedSettings.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0ED073072A13619300272470 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ED0730B2A13619300272470 /* ManagedSettings.framework in Frameworks */,
+				0ED0730D2A13619300272470 /* ManagedSettingsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BB142EFC2A02082A0080C843 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -117,6 +213,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0ED072E52A13615100272470 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0ED072E62A13615100272470 /* DeviceActivity.framework */,
+				0ED072F92A13617E00272470 /* ManagedSettings.framework */,
+				0ED0730C2A13619300272470 /* ManagedSettingsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0ED072E82A13615100272470 /* DeviceActivityMonitorExtension */ = {
+			isa = PBXGroup;
+			children = (
+				0ED072E92A13615100272470 /* DeviceActivityMonitorExtension.swift */,
+				0ED072EB2A13615100272470 /* Info.plist */,
+				0ED072EC2A13615100272470 /* DeviceActivityMonitorExtension.entitlements */,
+			);
+			path = DeviceActivityMonitorExtension;
+			sourceTree = "<group>";
+		};
+		0ED072FB2A13617E00272470 /* ShieldActionExtension */ = {
+			isa = PBXGroup;
+			children = (
+				0ED072FC2A13617E00272470 /* ShieldActionExtension.swift */,
+				0ED072FE2A13617E00272470 /* Info.plist */,
+				0ED072FF2A13617E00272470 /* ShieldActionExtension.entitlements */,
+			);
+			path = ShieldActionExtension;
+			sourceTree = "<group>";
+		};
+		0ED0730E2A13619300272470 /* ShieldConfigurationExtension */ = {
+			isa = PBXGroup;
+			children = (
+				0ED0730F2A13619300272470 /* ShieldConfigurationExtension.swift */,
+				0ED073112A13619300272470 /* Info.plist */,
+				0ED073122A13619300272470 /* ShieldConfigurationExtension.entitlements */,
+			);
+			path = ShieldConfigurationExtension;
+			sourceTree = "<group>";
+		};
 		7E4717142A069CC30030AF1C /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +288,7 @@
 				7E4717282A069CE40030AF1C /* SettingView.swift */,
 				BBD8E2D62A11F93F00A0689A /* OnboardingView2.swift */,
 				138EDC342A126ED500E57813 /* MakesMembers.swift */,
+				0ED0731C2A13629D00272470 /* OnboardingView3.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -170,6 +307,7 @@
 				13CAC9392A11630500DC297F /* OnboardingCard.swift */,
 				13CAC93D2A11633800DC297F /* OnboardingText.swift */,
 				138EDC322A126E6300E57813 /* DeveloperRaw.swift */,
+				0ED0731A2A13625700272470 /* MultiPicker.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -178,6 +316,10 @@
 			isa = PBXGroup;
 			children = (
 				BB142F012A02082A0080C843 /* MC2-Team4-KKAMPPAK */,
+				0ED072E82A13615100272470 /* DeviceActivityMonitorExtension */,
+				0ED072FB2A13617E00272470 /* ShieldActionExtension */,
+				0ED0730E2A13619300272470 /* ShieldConfigurationExtension */,
+				0ED072E52A13615100272470 /* Frameworks */,
 				BB142F002A02082A0080C843 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -186,6 +328,9 @@
 			isa = PBXGroup;
 			children = (
 				BB142EFF2A02082A0080C843 /* MC2-Team4-KKAMPPAK.app */,
+				0ED072E42A13615100272470 /* DeviceActivityMonitorExtension.appex */,
+				0ED072F82A13617E00272470 /* ShieldActionExtension.appex */,
+				0ED0730A2A13619300272470 /* ShieldConfigurationExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -193,6 +338,7 @@
 		BB142F012A02082A0080C843 /* MC2-Team4-KKAMPPAK */ = {
 			isa = PBXGroup;
 			children = (
+				0ED073192A13619E00272470 /* MC2-Team4-KKAMPPAK.entitlements */,
 				135F75EE2A0FFE6400487299 /* Info.plist */,
 				7E4717212A069CE40030AF1C /* View */,
 				7E4717142A069CC30030AF1C /* Model */,
@@ -222,6 +368,57 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0ED072E32A13615100272470 /* DeviceActivityMonitorExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0ED072F32A13615100272470 /* Build configuration list for PBXNativeTarget "DeviceActivityMonitorExtension" */;
+			buildPhases = (
+				0ED072E02A13615100272470 /* Sources */,
+				0ED072E12A13615100272470 /* Frameworks */,
+				0ED072E22A13615100272470 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeviceActivityMonitorExtension;
+			productName = DeviceActivityMonitorExtension;
+			productReference = 0ED072E42A13615100272470 /* DeviceActivityMonitorExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		0ED072F72A13617E00272470 /* ShieldActionExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0ED073032A13617E00272470 /* Build configuration list for PBXNativeTarget "ShieldActionExtension" */;
+			buildPhases = (
+				0ED072F42A13617E00272470 /* Sources */,
+				0ED072F52A13617E00272470 /* Frameworks */,
+				0ED072F62A13617E00272470 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShieldActionExtension;
+			productName = ShieldActionExtension;
+			productReference = 0ED072F82A13617E00272470 /* ShieldActionExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		0ED073092A13619300272470 /* ShieldConfigurationExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0ED073162A13619300272470 /* Build configuration list for PBXNativeTarget "ShieldConfigurationExtension" */;
+			buildPhases = (
+				0ED073062A13619300272470 /* Sources */,
+				0ED073072A13619300272470 /* Frameworks */,
+				0ED073082A13619300272470 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShieldConfigurationExtension;
+			productName = ShieldConfigurationExtension;
+			productReference = 0ED0730A2A13619300272470 /* ShieldConfigurationExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		BB142EFE2A02082A0080C843 /* MC2-Team4-KKAMPPAK */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB142F0D2A02082B0080C843 /* Build configuration list for PBXNativeTarget "MC2-Team4-KKAMPPAK" */;
@@ -229,10 +426,14 @@
 				BB142EFB2A02082A0080C843 /* Sources */,
 				BB142EFC2A02082A0080C843 /* Frameworks */,
 				BB142EFD2A02082A0080C843 /* Resources */,
+				0ED072F02A13615100272470 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0ED072EE2A13615100272470 /* PBXTargetDependency */,
+				0ED073012A13617E00272470 /* PBXTargetDependency */,
+				0ED073142A13619300272470 /* PBXTargetDependency */,
 			);
 			name = "MC2-Team4-KKAMPPAK";
 			productName = "MC2-Team4-KKAMPPAK";
@@ -249,6 +450,15 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					0ED072E32A13615100272470 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					0ED072F72A13617E00272470 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					0ED073092A13619300272470 = {
+						CreatedOnToolsVersion = 14.3;
+					};
 					BB142EFE2A02082A0080C843 = {
 						CreatedOnToolsVersion = 14.3;
 					};
@@ -268,11 +478,35 @@
 			projectRoot = "";
 			targets = (
 				BB142EFE2A02082A0080C843 /* MC2-Team4-KKAMPPAK */,
+				0ED072E32A13615100272470 /* DeviceActivityMonitorExtension */,
+				0ED072F72A13617E00272470 /* ShieldActionExtension */,
+				0ED073092A13619300272470 /* ShieldConfigurationExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0ED072E22A13615100272470 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0ED072F62A13617E00272470 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0ED073082A13619300272470 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BB142EFD2A02082A0080C843 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -292,6 +526,31 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0ED072E02A13615100272470 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ED0731E2A1363F500272470 /* NotificationManager.swift in Sources */,
+				0ED072EA2A13615100272470 /* DeviceActivityMonitorExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0ED072F42A13617E00272470 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ED072FD2A13617E00272470 /* ShieldActionExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0ED073062A13619300272470 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ED073102A13619300272470 /* ShieldConfigurationExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BB142EFB2A02082A0080C843 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -309,6 +568,7 @@
 				7E47172E2A069CE40030AF1C /* SettingView.swift in Sources */,
 				7E4717322A0C88000030AF1C /* HapticManager.swift in Sources */,
 				1A92DA732A10DD6E00E2F735 /* FinishView.swift in Sources */,
+				0ED0731B2A13625700272470 /* MultiPicker.swift in Sources */,
 				7E47172A2A069CE40030AF1C /* EyeMovingView.swift in Sources */,
 				7E4717292A069CE40030AF1C /* EyeBlinkingView.swift in Sources */,
 				BBD8E2D52A1145C000A0689A /* TimePicker.swift in Sources */,
@@ -319,6 +579,7 @@
 				BBD8E2D72A11F93F00A0689A /* OnboardingView2.swift in Sources */,
 				BB142F172A09CE480080C843 /* CardStack.swift in Sources */,
 				7E47172B2A069CE40030AF1C /* ContentView.swift in Sources */,
+				0ED0731D2A13629D00272470 /* OnboardingView3.swift in Sources */,
 				7E47172C2A069CE40030AF1C /* Button.swift in Sources */,
 				13CAC93C2A11632200DC297F /* OnboardingView.swift in Sources */,
 				BB142F502A0C9C5F0080C843 /* DemoView.swift in Sources */,
@@ -338,7 +599,181 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		0ED072EE2A13615100272470 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0ED072E32A13615100272470 /* DeviceActivityMonitorExtension */;
+			targetProxy = 0ED072ED2A13615100272470 /* PBXContainerItemProxy */;
+		};
+		0ED073012A13617E00272470 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0ED072F72A13617E00272470 /* ShieldActionExtension */;
+			targetProxy = 0ED073002A13617E00272470 /* PBXContainerItemProxy */;
+		};
+		0ED073142A13619300272470 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0ED073092A13619300272470 /* ShieldConfigurationExtension */;
+			targetProxy = 0ED073132A13619300272470 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		0ED072F12A13615100272470 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DeviceActivityMonitorExtension/DeviceActivityMonitorExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 34K3V5D9X5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DeviceActivityMonitorExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DeviceActivityMonitorExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = KKAMPPAK.DeviceActivityMonitorExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0ED072F22A13615100272470 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DeviceActivityMonitorExtension/DeviceActivityMonitorExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 34K3V5D9X5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DeviceActivityMonitorExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DeviceActivityMonitorExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = KKAMPPAK.DeviceActivityMonitorExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0ED073042A13617E00272470 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ShieldActionExtension/ShieldActionExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 34K3V5D9X5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShieldActionExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ShieldActionExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = KKAMPPAK.ShieldActionExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0ED073052A13617E00272470 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ShieldActionExtension/ShieldActionExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 34K3V5D9X5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShieldActionExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ShieldActionExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = KKAMPPAK.ShieldActionExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0ED073172A13619300272470 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ShieldConfigurationExtension/ShieldConfigurationExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 34K3V5D9X5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShieldConfigurationExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ShieldConfigurationExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = KKAMPPAK.ShieldConfigurationExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0ED073182A13619300272470 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ShieldConfigurationExtension/ShieldConfigurationExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 34K3V5D9X5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShieldConfigurationExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ShieldConfigurationExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = KKAMPPAK.ShieldConfigurationExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		BB142F0B2A02082B0080C843 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -456,9 +891,11 @@
 		BB142F0E2A02082B0080C843 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = "MC2-Team4-KKAMPPAK/MC2-Team4-KKAMPPAK.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MC2-Team4-KKAMPPAK/Preview Content\"";
@@ -478,7 +915,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.n.MC2-Team4-KKAMPPAK";
+				PRODUCT_BUNDLE_IDENTIFIER = KKAMPPAK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -489,9 +926,11 @@
 		BB142F0F2A02082B0080C843 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = "MC2-Team4-KKAMPPAK/MC2-Team4-KKAMPPAK.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MC2-Team4-KKAMPPAK/Preview Content\"";
@@ -511,7 +950,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.n.MC2-Team4-KKAMPPAK";
+				PRODUCT_BUNDLE_IDENTIFIER = KKAMPPAK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -522,6 +961,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0ED072F32A13615100272470 /* Build configuration list for PBXNativeTarget "DeviceActivityMonitorExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0ED072F12A13615100272470 /* Debug */,
+				0ED072F22A13615100272470 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0ED073032A13617E00272470 /* Build configuration list for PBXNativeTarget "ShieldActionExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0ED073042A13617E00272470 /* Debug */,
+				0ED073052A13617E00272470 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0ED073162A13619300272470 /* Build configuration list for PBXNativeTarget "ShieldConfigurationExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0ED073172A13619300272470 /* Debug */,
+				0ED073182A13619300272470 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BB142EFA2A0208290080C843 /* Build configuration list for PBXProject "MC2-Team4-KKAMPPAK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
