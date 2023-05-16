@@ -13,9 +13,14 @@ struct OnboardingView2: View {
     @Binding var showView: Bool
     @Binding var isSecondView: Bool
     @State var selectedTime: String? = nil
+    
     @State var hours: Int
     @State var minutes: Int
     @State var seconds: Int
+
+        
+    @State
+    var isPickerPresented = true
     
     var body: some View {
         ZStack{
@@ -49,6 +54,7 @@ struct OnboardingView2: View {
                     selectedTime =
                     "+ \(hours)시간 \(minutes)분 \(seconds)초"
                     print( selectedTime ?? "")
+                    handleStartDeviceActivityMonitoring()
                 } label: {
                     ZStack{
                         RoundedRectangle(cornerRadius: 40)
@@ -73,13 +79,24 @@ struct OnboardingView2: View {
                         .baselineOffset(5)
                         .padding(.top, 25)
                 }
-            }
+            }.familyActivityPicker(headerText: "헤더명", isPresented: $isPickerPresented, selection: ScreenTime.shared.$selectedApps)
+            
+            //FamilyControls/FamilyActivitySelection/includeEntireCategory
            
         }
       
         
     }
     
+}
+
+extension OnboardingView2 {
+
+    //앱 제한 모니터링 등록 및 시작
+    private func handleStartDeviceActivityMonitoring(includeUsageThreshold: Bool = true) {
+        ScreenTime.shared.handleStartDeviceActivityMonitoring(includeUsageThreshold: includeUsageThreshold)
+    }
+
 }
 
 //struct OnboardingView2_Previews: PreviewProvider {
