@@ -89,10 +89,10 @@ struct EyeBlinkingView: View {
                             
                             Image("normalEye")
                                 .resizable()
-                                .frame(width: 50,height: 30)
+                                .frame(width: 60,height: 30)
                             if checkBlink{
                                 GifView(gifName: "eyes")
-                                    .frame(width: 50,height: 50)
+                                    .frame(width: 60,height: 60)
                                     .opacity(1)
                                     .onAppear{
                                         DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
