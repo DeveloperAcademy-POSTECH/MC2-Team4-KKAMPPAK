@@ -97,18 +97,21 @@ struct SettingView: View {
                         Divider()
                             .background(Color.white)
                             .padding(.trailing, 10)
-                        
-                        HStack {
-                            Text("깜빡을 만든 사람들")
-                                .foregroundColor(.white)
-                                .font(.headline)
-                            Spacer()
-                            Image(systemName: "chevron.right")
-                                .foregroundColor(.white)
-                                .padding(.trailing, 5)
+                        NavigationLink(destination: MakesMembers())
+                        {
+                            HStack {
+                                Text("깜빡을 만든 사람들")
+                                    .foregroundColor(.white)
+                                    .font(.headline)
+                                Spacer()
+                                Image(systemName: "chevron.right")
+                                    .foregroundColor(.white)
+                                    .padding(.trailing, 5)
+                            }
+                            .padding(.vertical, 20)
+                            .padding(.trailing, 35)
+                            
                         }
-                        .padding(.vertical, 20)
-                        .padding(.trailing, 35)
                         Divider()
                             .background(Color.white)
                             .padding(.trailing, 10)

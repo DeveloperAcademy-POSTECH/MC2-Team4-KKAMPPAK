@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		135F75EB2A0FF89C00487299 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135F75EA2A0FF89C00487299 /* LoadingView.swift */; };
 		135F75ED2A0FFA9E00487299 /* LoadingBlinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135F75EC2A0FFA9E00487299 /* LoadingBlinkView.swift */; };
-		135F75F02A0FFF4900487299 /* eyes.gif in Resources */ = {isa = PBXBuildFile; fileRef = 135F75EF2A0FFF4900487299 /* eyes.gif */; };
+		138EDC332A126E6300E57813 /* DeveloperRaw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138EDC322A126E6300E57813 /* DeveloperRaw.swift */; };
+		138EDC352A126ED500E57813 /* MakesMembers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138EDC342A126ED500E57813 /* MakesMembers.swift */; };
+		138EDC372A130EF900E57813 /* eyes.gif in Resources */ = {isa = PBXBuildFile; fileRef = 138EDC362A130EF900E57813 /* eyes.gif */; };
 		13CAC9352A1162C300DC297F /* NextCard 2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 13CAC9312A1162C300DC297F /* NextCard 2.gif */; };
 		13CAC9362A1162C300DC297F /* onboardgif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 13CAC9322A1162C300DC297F /* onboardgif.gif */; };
 		13CAC9372A1162C300DC297F /* onboadingBlink.gif in Resources */ = {isa = PBXBuildFile; fileRef = 13CAC9332A1162C300DC297F /* onboadingBlink.gif */; };
@@ -57,7 +59,9 @@
 		135F75EA2A0FF89C00487299 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		135F75EC2A0FFA9E00487299 /* LoadingBlinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingBlinkView.swift; sourceTree = "<group>"; };
 		135F75EE2A0FFE6400487299 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		135F75EF2A0FFF4900487299 /* eyes.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = eyes.gif; sourceTree = "<group>"; };
+		138EDC322A126E6300E57813 /* DeveloperRaw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperRaw.swift; sourceTree = "<group>"; };
+		138EDC342A126ED500E57813 /* MakesMembers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakesMembers.swift; sourceTree = "<group>"; };
+		138EDC362A130EF900E57813 /* eyes.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = eyes.gif; sourceTree = "<group>"; };
 		13CAC9312A1162C300DC297F /* NextCard 2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "NextCard 2.gif"; sourceTree = "<group>"; };
 		13CAC9322A1162C300DC297F /* onboardgif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = onboardgif.gif; sourceTree = "<group>"; };
 		13CAC9332A1162C300DC297F /* onboadingBlink.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = onboadingBlink.gif; sourceTree = "<group>"; };
@@ -147,6 +151,7 @@
 				A231D80B2A0DC85400072D20 /* MusicView.swift */,
 				7E4717282A069CE40030AF1C /* SettingView.swift */,
 				BBD8E2D62A11F93F00A0689A /* OnboardingView2.swift */,
+				138EDC342A126ED500E57813 /* MakesMembers.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -164,6 +169,7 @@
 				BBD8E2D42A1145C000A0689A /* TimePicker.swift */,
 				13CAC9392A11630500DC297F /* OnboardingCard.swift */,
 				13CAC93D2A11633800DC297F /* OnboardingText.swift */,
+				138EDC322A126E6300E57813 /* DeveloperRaw.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -192,8 +198,8 @@
 				7E4717142A069CC30030AF1C /* Model */,
 				BB142F022A02082A0080C843 /* MC2_Team4_KKAMPPAKApp.swift */,
 				BB142F062A02082B0080C843 /* Assets.xcassets */,
-				135F75EF2A0FFF4900487299 /* eyes.gif */,
 				A231D8072A0DC81500072D20 /* 띠로링.mp3 */,
+				138EDC362A130EF900E57813 /* eyes.gif */,
 				13CAC9312A1162C300DC297F /* NextCard 2.gif */,
 				13CAC9332A1162C300DC297F /* onboadingBlink.gif */,
 				13CAC9342A1162C300DC297F /* onboadingSide.gif */,
@@ -273,12 +279,12 @@
 			files = (
 				BB142F0A2A02082B0080C843 /* Preview Assets.xcassets in Resources */,
 				A231D8062A0DC80900072D20 /* 깜빡_splash.gif in Resources */,
-				135F75F02A0FFF4900487299 /* eyes.gif in Resources */,
 				13CAC9362A1162C300DC297F /* onboardgif.gif in Resources */,
 				13CAC9382A1162C300DC297F /* onboadingSide.gif in Resources */,
 				A231D8082A0DC81500072D20 /* 띠로링.mp3 in Resources */,
 				BB142F072A02082B0080C843 /* Assets.xcassets in Resources */,
 				13CAC9352A1162C300DC297F /* NextCard 2.gif in Resources */,
+				138EDC372A130EF900E57813 /* eyes.gif in Resources */,
 				13CAC9372A1162C300DC297F /* onboadingBlink.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,6 +313,7 @@
 				7E4717292A069CE40030AF1C /* EyeBlinkingView.swift in Sources */,
 				BBD8E2D52A1145C000A0689A /* TimePicker.swift in Sources */,
 				7E47171E2A069CC30030AF1C /* ScreenTime.swift in Sources */,
+				138EDC332A126E6300E57813 /* DeveloperRaw.swift in Sources */,
 				13CAC9402A1169B900DC297F /* OnboardingCheckView.swift in Sources */,
 				7E4717462A1133810030AF1C /* MovingLoadingView.swift in Sources */,
 				BBD8E2D72A11F93F00A0689A /* OnboardingView2.swift in Sources */,
@@ -324,6 +331,7 @@
 				7E47171F2A069CC30030AF1C /* SettingTime.swift in Sources */,
 				135F75ED2A0FFA9E00487299 /* LoadingBlinkView.swift in Sources */,
 				13CAC93A2A11630500DC297F /* OnboardingCard.swift in Sources */,
+				138EDC352A126ED500E57813 /* MakesMembers.swift in Sources */,
 				BB142F032A02082A0080C843 /* MC2_Team4_KKAMPPAKApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
