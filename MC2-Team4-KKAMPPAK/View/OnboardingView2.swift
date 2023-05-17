@@ -15,13 +15,13 @@ struct OnboardingView2: View {
     @Binding var isSecondView: Bool
     @State var selectedTime: String? = nil
     
-    @State var hours: Int
-    @State var minutes: Int
-    @State var seconds: Int
+    @Binding var hours: Int
+    @Binding var minutes: Int
+    @Binding var seconds: Int
 
         
-    @State
-    var isPickerPresented = false
+    @State var isPickerPresented = false
+
     
     var body: some View {
         ZStack{
@@ -55,7 +55,8 @@ struct OnboardingView2: View {
                     selectedTime =
                     "+ \(hours)시간 \(minutes)분 \(seconds)초"
                     print( selectedTime ?? "")
-                    handleStartDeviceActivityMonitoring()
+                   
+                    handleStartDeviceActivityMonitoring(interval:  (hours * 3600) + (minutes * 60) + seconds)
                 } label: {
                     ZStack{
                         RoundedRectangle(cornerRadius: 40)
@@ -95,8 +96,8 @@ struct OnboardingView2: View {
 extension OnboardingView2 {
 
     //앱 제한 모니터링 등록 및 시작
-    private func handleStartDeviceActivityMonitoring(includeUsageThreshold: Bool = true) {
-        ScreenTime.shared.handleStartDeviceActivityMonitoring(includeUsageThreshold: includeUsageThreshold)
+    private func handleStartDeviceActivityMonitoring(includeUsageThreshold: Bool = true, interval: Int) {
+        ScreenTime.shared.handleStartDeviceActivityMonitoring(includeUsageThreshold: includeUsageThreshold, interval:  (hours * 3600) + (minutes * 60) + seconds)
     }
 
     private func handleSetBlockApplication() {

@@ -37,7 +37,7 @@ struct ContentView: View {
                                    cards.insert(CardItem(alarm: Date(), isFlipped: true, degrees: 180, color: colors[0]), at: 0)
                                }
                             }
-                        NavigationLink(destination: SettingView(hours: hours, minutes: minutes, seconds: seconds)){
+                        NavigationLink(destination: SettingView(hours: $hours, minutes: $minutes, seconds: $seconds)){
                             Image(systemName: "gearshape.fill")
                                 .resizable()
                                 .frame(width: 25, height: 25, alignment: .topTrailing)
@@ -100,13 +100,11 @@ struct ContentView: View {
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .onAppear(){
+//                let notificationManager = NotificationManager.shared
+//                notificationManager.scheduleNotification1(hours: hours, minutes: minutes, seconds: seconds)
                 print("\(hours) : \(minutes) : \(seconds)")
             }
-//            .onAppear {
-//                DispatchQueue.main.asyncAfter(deadline: .now() + 4, execute: {
-//                    isLoading.toggle()
-//                })
-//            }
+//
         }
         
 

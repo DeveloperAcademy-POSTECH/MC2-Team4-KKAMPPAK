@@ -13,7 +13,7 @@ struct SplashView: View {
     var body: some View {
         VStack {
             if self.isActive {
-                OnboardingCheckView(hours: Binding.constant(0), minutes: Binding.constant(0), seconds: Binding.constant(0))
+                OnboardingCheckView(hours: 0, minutes: 0, seconds: 0)
             } else {
                 ZStack(alignment: .center) {
                     

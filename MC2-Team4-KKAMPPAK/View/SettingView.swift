@@ -4,9 +4,9 @@ struct SettingView: View {
     
     @State private var isToggleOn = false
     @State private var selectedTime: String? = nil
-    @State var hours: Int
-    @State var minutes: Int
-    @State var seconds: Int
+    @Binding var hours: Int
+    @Binding var minutes: Int
+    @Binding var seconds: Int
     
     var body: some View {
         NavigationView{
