@@ -78,6 +78,7 @@ struct SettingView: View {
                                         Button(action: {
                                             selectedTime =
                                             "+ \(hours)시간 \(minutes)분 \(seconds)초"
+                                            handleStartDeviceActivityMonitoring(interval:  (hours * 3600) + (minutes * 60) + seconds)
                                         }, label: {
                                             Text("확인")
                                                 .foregroundColor(.blue)
@@ -139,7 +140,18 @@ struct SettingView: View {
     }
 }
 
+extension SettingView {
 
+    //앱 제한 모니터링 등록 및 시작
+    private func handleStartDeviceActivityMonitoring(includeUsageThreshold: Bool = true, interval: Int) {
+        ScreenTime.shared.handleStartDeviceActivityMonitoring(includeUsageThreshold: includeUsageThreshold, interval:  (hours * 3600) + (minutes * 60) + seconds)
+    }
+
+    private func handleSetBlockApplication() {
+        ScreenTime.shared.handleSetBlockApplication()
+    }
+
+}
 //struct SettingView_Previews: PreviewProvider {
 //    static var previews: some View {
 //        SettingView()
