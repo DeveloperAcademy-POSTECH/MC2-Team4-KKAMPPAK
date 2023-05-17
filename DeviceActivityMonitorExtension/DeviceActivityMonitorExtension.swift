@@ -32,11 +32,12 @@ class DeviceActivityMonitorExtension: DeviceActivityMonitor {
     //threshold에 도착하면 행동한다
     override func eventDidReachThreshold(_ event: DeviceActivityEvent.Name, activity: DeviceActivityName) {
         super.eventDidReachThreshold(event, activity: activity)
-        
         NotificationManager.shared.scheduleNotification()
+        //NotificationManager.shared.scheduleNotification()
         let store = ManagedSettingsStore(named: .monitoring)
-        store.shield.applications = shieldedApps.applicationTokens.isEmpty ? nil : shieldedApps.applicationTokens
+//        store.shield.applications = shieldedApps.applicationTokens.isEmpty ? nil : shieldedApps.applicationTokens
         store.shield.applicationCategories = ShieldSettings.ActivityCategoryPolicy.specific(shieldedApps.categoryTokens)
+        //store.shield.applicationCategories = ShieldSettings.ActivityCategoryPolicy.all()
         
         
         // Handle the event reaching its threshold.
@@ -61,7 +62,7 @@ class DeviceActivityMonitorExtension: DeviceActivityMonitor {
     override func eventWillReachThresholdWarning(_ event: DeviceActivityEvent.Name, activity: DeviceActivityName) {
         super.eventWillReachThresholdWarning(event, activity: activity)
         
-        NotificationManager.shared.scheduleNotification()
+        //NotificationManager.shared.scheduleNotification()
 
     }
 }

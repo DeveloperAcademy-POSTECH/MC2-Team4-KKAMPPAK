@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import FamilyControls
 
 struct OnboardingView2: View {
     @Environment(\.presentationMode) var presentationMode
@@ -20,7 +21,7 @@ struct OnboardingView2: View {
 
         
     @State
-    var isPickerPresented = true
+    var isPickerPresented = false
     
     var body: some View {
         ZStack{
@@ -79,8 +80,9 @@ struct OnboardingView2: View {
                         .baselineOffset(5)
                         .padding(.top, 25)
                 }
-            }.familyActivityPicker(headerText: "헤더명", isPresented: $isPickerPresented, selection: ScreenTime.shared.$selectedApps)
+            }.familyActivityPicker(headerText: "스크린 타임을 감지하고 싶은 어플을 골라주세요", isPresented: $isPickerPresented, selection: ScreenTime.shared.$selectedApps)
             
+            //selection: ScreenTime.shared.$selectedApps
             //FamilyControls/FamilyActivitySelection/includeEntireCategory
            
         }
@@ -95,6 +97,10 @@ extension OnboardingView2 {
     //앱 제한 모니터링 등록 및 시작
     private func handleStartDeviceActivityMonitoring(includeUsageThreshold: Bool = true) {
         ScreenTime.shared.handleStartDeviceActivityMonitoring(includeUsageThreshold: includeUsageThreshold)
+    }
+
+    private func handleSetBlockApplication() {
+        ScreenTime.shared.handleSetBlockApplication()
     }
 
 }

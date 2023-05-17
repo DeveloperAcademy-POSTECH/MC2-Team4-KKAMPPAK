@@ -42,7 +42,6 @@ class ShieldActionExtension: ShieldActionDelegate {
         case .primaryButtonPressed:
             completionHandler(.close)
         case .secondaryButtonPressed:
-            // 지연 시간 후 처리되는 것은 확인했다.
             
             if testInt >= 9
             {
