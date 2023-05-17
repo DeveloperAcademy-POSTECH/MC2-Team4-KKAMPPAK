@@ -39,7 +39,7 @@ struct FinishView: View {
                         RoundedRectangle(cornerRadius: 40)
                            
                         Button {
-                            handleResetSelection()
+//                            handleResetSelection()
                             NavigationUtil.popToRootView()
                         } label: {
                             Text("메인 화면으로")
@@ -75,21 +75,21 @@ struct FinishView: View {
     }
 }
 
-extension FinishView {
-    private func handleResetSelection() {
-        ScreenTime.shared.handleResetSelection()
-        handleStartDeviceActivityMonitoring(includeUsageThreshold: false)
-    }
-    
-    private func handleStartDeviceActivityMonitoring(includeUsageThreshold: Bool = true) {
-        ScreenTime.shared.handleStartDeviceActivityMonitoring(includeUsageThreshold: includeUsageThreshold)
-    }
-    
-    private func handleSetBlockApplication() {
-        ScreenTime.shared.handleSetBlockApplication()
-    }
-    
-}
+//extension FinishView {
+//    private func handleResetSelection() {
+//        ScreenTime.shared.handleResetSelection()
+//        handleStartDeviceActivityMonitoring(includeUsageThreshold: false)
+//    }
+//
+//    private func handleStartDeviceActivityMonitoring(includeUsageThreshold: Bool = true) {
+//        ScreenTime.shared.handleStartDeviceActivityMonitoring(includeUsageThreshold: includeUsageThreshold)
+//    }
+//
+//    private func handleSetBlockApplication() {
+//        ScreenTime.shared.handleSetBlockApplication()
+//    }
+//
+//}
 struct FinishView_Previews: PreviewProvider {
     static var previews: some View {
         FinishView()

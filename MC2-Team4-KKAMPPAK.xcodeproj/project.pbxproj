@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E7453482A13D863005AF14E /* kkamppakshield.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E7453472A13D863005AF14E /* kkamppakshield.png */; };
 		0ED072E72A13615100272470 /* DeviceActivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED072E62A13615100272470 /* DeviceActivity.framework */; };
 		0ED072EA2A13615100272470 /* DeviceActivityMonitorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED072E92A13615100272470 /* DeviceActivityMonitorExtension.swift */; };
 		0ED072EF2A13615100272470 /* DeviceActivityMonitorExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0ED072E42A13615100272470 /* DeviceActivityMonitorExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -110,7 +109,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0E7453472A13D863005AF14E /* kkamppakshield.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kkamppakshield.png; path = ../../../../../Downloads/kkamppakshield.png; sourceTree = "<group>"; };
 		0ED072E42A13615100272470 /* DeviceActivityMonitorExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DeviceActivityMonitorExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ED072E62A13615100272470 /* DeviceActivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DeviceActivity.framework; path = System/Library/Frameworks/DeviceActivity.framework; sourceTree = SDKROOT; };
 		0ED072E92A13615100272470 /* DeviceActivityMonitorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceActivityMonitorExtension.swift; sourceTree = "<group>"; };
@@ -248,7 +246,6 @@
 		0ED0730E2A13619300272470 /* ShieldConfigurationExtension */ = {
 			isa = PBXGroup;
 			children = (
-				0E7453472A13D863005AF14E /* kkamppakshield.png */,
 				0ED0730F2A13619300272470 /* ShieldConfigurationExtension.swift */,
 				0ED073112A13619300272470 /* Info.plist */,
 				0ED073122A13619300272470 /* ShieldConfigurationExtension.entitlements */,
@@ -507,7 +504,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E7453482A13D863005AF14E /* kkamppakshield.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
