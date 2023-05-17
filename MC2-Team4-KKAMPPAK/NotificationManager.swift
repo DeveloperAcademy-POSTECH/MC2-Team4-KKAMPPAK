@@ -15,6 +15,8 @@ class NotificationManager: NSObject, UNUserNotificationCenterDelegate {
         }
     }
     
+   
+    
     func scheduleNotification() {
         let content = UNMutableNotificationContent()
         content.title = "깜빡하기" // 알림 제목 설정
@@ -22,7 +24,7 @@ class NotificationManager: NSObject, UNUserNotificationCenterDelegate {
         content.sound = UNNotificationSound.default
         //content.subtitle = "I am Tester!"
         content.badge = 1
-
+     
         // trigger - time
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 10.0, repeats: false)
 

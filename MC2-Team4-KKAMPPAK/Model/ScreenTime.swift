@@ -44,7 +44,7 @@ class ScreenTime: ObservableObject {
         selectedApps = FamilyActivitySelection()
     }
     
-    func handleStartDeviceActivityMonitoring(includeUsageThreshold: Bool = true) {
+    func handleStartDeviceActivityMonitoring(includeUsageThreshold: Bool = true, interval: Int) {
         
         //datacomponent타입을 써야함
         let dateComponents = Calendar.current.dateComponents([.hour, .minute, .second], from: Date())
@@ -52,7 +52,7 @@ class ScreenTime: ObservableObject {
         // 새 스케쥴 시간 설정
         let schedule = DeviceActivitySchedule(
             intervalStart: DateComponents(hour: dateComponents.hour, minute: dateComponents.minute, second: dateComponents.second),
-            intervalEnd: DateComponents(hour: dateComponents.hour! + 23, minute: dateComponents.minute, second: dateComponents.second),
+            intervalEnd: DateComponents(hour: 23, minute: 59, second: 59),
             repeats: true
             //warning Time 설정해야 알람
             //warningTime: DateComponents(minute: 1)
@@ -63,7 +63,7 @@ class ScreenTime: ObservableObject {
             categories: selectedApps.categoryTokens,
             webDomains: selectedApps.webDomainTokens,
             //threshold - 이 시간이 되면 특정한 event가 발생 deviceactivitymonitor에 eventdidreachthreshold
-            threshold: DateComponents(minute: 1)
+            threshold: DateComponents(second: interval)
             )
         
         do {

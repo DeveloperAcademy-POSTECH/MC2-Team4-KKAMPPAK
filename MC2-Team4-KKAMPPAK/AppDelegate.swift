@@ -23,6 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         scheduleNotifications()
     }
     
+    
     private func scheduleNotifications() {
         for card in getCards() {
             let wakeUpTime = card.alarm
