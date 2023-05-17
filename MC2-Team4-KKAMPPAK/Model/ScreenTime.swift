@@ -18,14 +18,30 @@ class ScreenTime: ObservableObject {
 //    @Binding var hours: Int
 //    @Binding var minutes: Int
 //    @Binding var seconds: Int
+//
 //    private init(hours: Binding<Int>, minute: Binding<Int>, seconds: Binding<Int>) {
 //        self._hours = hours
 //        self._hours = minute
 //        self._seconds = seconds
 //    }
-    
-    private init() {}
     static let shared = ScreenTime()
+    private init() {}
+    
+//    static var shared: ScreenTime?
+//
+//    static func createdShared(hours: Binding<Int>, minutes: Binding<Int>, seconds: Binding<Int>){
+//            shared = ScreenTime(hours: hours, minute: minutes, seconds: seconds)
+//        }
+    
+//    let hourComponents = Calendar.current.dateComponents([.hour], from: Date())
+//    let curHour = hourComponents
+//    let minuteComponents = Calendar.current.dateComponents([.minute], from: Date())
+//    let curMins = minuteComponents
+//    let secondsComponents = Calendar.current.dateComponents([.second], from: Date())
+//    let curSec = secondsComponents
+//
+//    private init() {}
+//    static let shared = ScreenTime()
 
     @AppStorage("selectedApps", store: UserDefaults(suiteName: "group.com.shield.kkamppak"))
     var selectedApps = FamilyActivitySelection()
@@ -52,8 +68,9 @@ class ScreenTime: ObservableObject {
         // 새 스케쥴 시간 설정
         let schedule = DeviceActivitySchedule(
             intervalStart: DateComponents(hour: dateComponents.hour, minute: dateComponents.minute, second: dateComponents.second),
-            intervalEnd: DateComponents(hour: dateComponents.hour! + 23, minute: dateComponents.minute, second: dateComponents.second),
-            repeats: true
+            intervalEnd: DateComponents(hour: 23, minute: 59, second: 59),
+            repeats: false
+            
             //warning Time 설정해야 알람
             //warningTime: DateComponents(minute: 1)
         )
@@ -63,7 +80,7 @@ class ScreenTime: ObservableObject {
             categories: selectedApps.categoryTokens,
             webDomains: selectedApps.webDomainTokens,
             //threshold - 이 시간이 되면 특정한 event가 발생 deviceactivitymonitor에 eventdidreachthreshold
-            threshold: DateComponents(minute: 1)
+            threshold: DateComponents(second: 10)
             )
         
         do {
@@ -80,10 +97,11 @@ class ScreenTime: ObservableObject {
     }
     
     func handleSetBlockApplication() {
-        store.shield.applications = selectedApps.applicationTokens.isEmpty ? nil : selectedApps.applicationTokens
+//        store.shield.applications = selectedApps.applicationTokens.isEmpty ? nil : selectedApps.applicationTokens
         store.shield.applicationCategories = selectedApps.categoryTokens.isEmpty
-        ? nil
+        ? .all()
         : ShieldSettings.ActivityCategoryPolicy.specific(selectedApps.categoryTokens)
+        //store.shield.applicationCategories = ShieldSettings.ActivityCategoryPolicy.all()
     }
 
 }

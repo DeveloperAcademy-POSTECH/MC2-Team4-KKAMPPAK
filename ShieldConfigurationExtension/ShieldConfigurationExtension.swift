@@ -23,11 +23,11 @@ class ShieldConfigurationExtension: ShieldConfigurationDataSource {
         return ShieldConfiguration(
             backgroundBlurStyle: UIBlurEffect.Style.systemThickMaterial,
             backgroundColor: UIColor.white,
-            icon: UIImage(systemName: "stopwatch"),
-            title: ShieldConfiguration.Label(text: "No app for you???: \(testInt)", color: .yellow),
-            subtitle: ShieldConfiguration.Label(text: "Sorry, no apps for you", color: .black),
-            primaryButtonLabel: ShieldConfiguration.Label(text: "Ask for a break?", color: .black),
-            secondaryButtonLabel: ShieldConfiguration.Label(text: "Quick Quick", color: .black)
+            icon: UIImage(named: "kkamppakshield.png"),
+            title: ShieldConfiguration.Label(text: "깜빡 하러 가실까요?", color: .black),
+            subtitle: ShieldConfiguration.Label(text: "", color: .black),
+            primaryButtonLabel: ShieldConfiguration.Label(text: "홈화면으로", color: .black),
+            secondaryButtonLabel: ShieldConfiguration.Label(text: "", color: .black)
         )
     }
     
@@ -36,11 +36,11 @@ class ShieldConfigurationExtension: ShieldConfigurationDataSource {
         return ShieldConfiguration(
             backgroundBlurStyle: UIBlurEffect.Style.systemThickMaterial,
             backgroundColor: UIColor.white,
-            icon: UIImage(systemName: "stopwatch"),
-            title: ShieldConfiguration.Label(text: "No app for you!!!!: : \(testInt)", color: .yellow),
-            subtitle: ShieldConfiguration.Label(text: "Sorry, no apps for you", color: .black),
-            primaryButtonLabel: ShieldConfiguration.Label(text: "Ask for a break?", color: .black),
-            secondaryButtonLabel: ShieldConfiguration.Label(text: "Quick Quick", color: .black)
+            icon: UIImage(named: "kkamppakshield.png"),
+            title: ShieldConfiguration.Label(text: "깜빡 하러 가실까요?", color: .yellow),
+            subtitle: ShieldConfiguration.Label(text: "", color: .black),
+            primaryButtonLabel: ShieldConfiguration.Label(text: "홈화면으로", color: .black),
+            secondaryButtonLabel: ShieldConfiguration.Label(text: "", color: .black)
         )
     }
     

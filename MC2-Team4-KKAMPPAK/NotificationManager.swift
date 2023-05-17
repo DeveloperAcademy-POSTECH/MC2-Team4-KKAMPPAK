@@ -24,7 +24,7 @@ class NotificationManager: NSObject, UNUserNotificationCenterDelegate {
         content.badge = 1
 
         // trigger - time
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 10.0, repeats: false)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 0.1, repeats: false)
 
         let request = UNNotificationRequest(
             identifier: UUID().uuidString,
