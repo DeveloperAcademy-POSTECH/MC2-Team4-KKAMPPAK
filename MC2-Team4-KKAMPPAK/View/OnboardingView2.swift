@@ -29,13 +29,13 @@ struct OnboardingView2: View {
                 .ignoresSafeArea()
             VStack{
                 Spacer()
-                Text("최대 사용 시간을\n설정해볼까요?")
+                Text("스마트폰을 사용하실\n최대 시간을 알려주세요")
                     .font(.system(size: 28,weight: .heavy))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
                     .bold()
                     .padding(.bottom, 15)
-                Text("스마트폰을 연속으로 이만큼 사용하면\n깜빡이가 알려드릴게요!")
+                Text("스마트폰을 이 시간만큼 쉬지않고 사용한다면,\n깜빡이가 알려드릴게요!")
                     .font(.system(size: 18,weight: .heavy))
                     .foregroundColor(Color("thirdCircle"))
                     .multilineTextAlignment(.center)
@@ -59,8 +59,9 @@ struct OnboardingView2: View {
                     handleStartDeviceActivityMonitoring(interval:  (hours * 3600) + (minutes * 60) + seconds)
                 } label: {
                     ZStack{
-                        RoundedRectangle(cornerRadius: 40)
-                            .frame(width: 314,height: 80)
+                        RoundedRectangle(cornerRadius: 50)
+                            .frame(maxWidth: .infinity)
+                            .padding(.horizontal,30)
                             .foregroundColor(Color("centerCircle"))
                         Text("다음")
                             .font(.system(size:24))
@@ -93,6 +94,7 @@ struct OnboardingView2: View {
     
 }
 
+// MARK: Extension Functions
 extension OnboardingView2 {
 
     //앱 제한 모니터링 등록 및 시작
