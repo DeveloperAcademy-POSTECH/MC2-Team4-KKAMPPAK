@@ -18,7 +18,8 @@ struct OnboardingView: View {
         OnboardingCard(kampakkImage: "cardKampak", description:"화면을 오래\n보니 눈이 뻑뻑해요!"),
     ]
 
-    let contents = [OnboardingContent(title: "눈 깜빡 운동\n3초당 1회, 1분에 15회 이상", description: "스마트폰 사용 중에 발생하는\n 안구건조증, 각종 각말질환을 예방해요", gif: "onboadingBlink", gifWidth: 172, gifHeight: 96),
+    let contents = [OnboardingContent(title: "Z세대의\n스마트폰 사용\n하루 평균 7시간", description: "건강한 일상을 가로막는 주된 원인", gif: "onboardgif", gifWidth: 345, gifHeight: 349),
+        OnboardingContent(title: "눈 깜빡 운동\n3초당 1회, 1분에 15회 이상", description: "스마트폰 사용 중에 발생하는\n 안구건조증, 각종 각말질환을 예방해요", gif: "onboadingBlink", gifWidth: 172, gifHeight: 96),
                     OnboardingContent(title: "눈 상하좌우 운동\n양 옆 위아래 1분", description: "누적된 눈 피로에 더욱 효과적으로!", gif: "onboadingSide", gifWidth: 172, gifHeight: 96),
                     OnboardingContent(title: "원하는 시간에\n깜빡이의 알림을!", description: "지키고자 하는 스마트폰 스크린타임을\n 깜빡이가 알려줘요", gif: "NextCard 2", gifWidth: 220, gifHeight: 229)
     ]
@@ -66,20 +67,21 @@ extension OnboardingView {
     
     private var headerArea: some View {
         VStack(alignment: .center, spacing: 0) {
-            Text("Z세대의\n스마트폰 사용\n하루 평균 7시간")
-                .font(.system(size: 24,weight: .bold))
+            Text("깜빡이와 함께하는")
+                .font(.system(size: 16,weight: .medium))
                 .foregroundColor(.white)
                 .multilineTextAlignment(.center)
             
-            Text("건강한 일상을 가로막는 주된 원인!")
-                .font(.system(size: 16))
+            Text("눈, 깜빡했나요?\n스마트폰 사용 시간,\n깜빡했나요?")
+                .font(.system(size: 24,weight: .bold))
                 .padding(.top,24)
-                .foregroundColor(.blue)
+                .multilineTextAlignment(.center)
+                .foregroundColor(Color("thirdCircle"))
             
             
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 20) {
-                    ForEach(0..<items.count * 30) { index in
+                    ForEach(0..<300) { index in
                         let itemIndex = index % items.count
                         OnboardingCard(kampakkImage: items[itemIndex].kampakkImage,
                                        description: items[itemIndex].description)
@@ -118,7 +120,7 @@ extension OnboardingView {
                         .padding(.top, index == 0 ?  50 : 120)
                     Text(contents[index].description)
                         .multilineTextAlignment(.center)
-                        .foregroundColor(.blue)
+                        .foregroundColor(Color("thirdCircle"))
                         .font(.system(size: 16))
                         .padding(.top,21)
                     GifView(gifName: contents[index].gif)
@@ -136,7 +138,7 @@ extension OnboardingView {
             isSecondView = true
         } label: {
             RoundedRectangle(cornerRadius: 50)
-                .foregroundColor(.blue)
+                .foregroundColor(Color("centerCircle"))
                 .overlay(alignment: .center) {
                     Text("다음")
                         .font(.system(size: 20,weight: .medium))

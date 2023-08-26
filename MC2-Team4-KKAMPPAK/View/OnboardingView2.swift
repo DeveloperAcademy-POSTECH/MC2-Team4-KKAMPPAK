@@ -61,11 +61,11 @@ struct OnboardingView2: View {
                     ZStack{
                         RoundedRectangle(cornerRadius: 50)
                             .frame(maxWidth: .infinity)
+                            .frame(height: 62)
                             .padding(.horizontal,30)
                             .foregroundColor(Color("centerCircle"))
-                        Text("다음")
-                            .font(.system(size:24))
-                            .bold()
+                        Text("이 시간으로 설정하기")
+                            .font(.system(size:20,weight: .medium))
                             .foregroundColor(.white)
                     }
                 }
