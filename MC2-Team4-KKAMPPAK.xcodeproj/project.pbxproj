@@ -22,6 +22,7 @@
 		0ED0731E2A1363F500272470 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB142F4B2A0C9B8F0080C843 /* NotificationManager.swift */; };
 		135F75EB2A0FF89C00487299 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135F75EA2A0FF89C00487299 /* LoadingView.swift */; };
 		135F75ED2A0FFA9E00487299 /* LoadingBlinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135F75EC2A0FFA9E00487299 /* LoadingBlinkView.swift */; };
+		138CDF9B2A99C556005A03AF /* OnboadrdingContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138CDF9A2A99C556005A03AF /* OnboadrdingContent.swift */; };
 		138EDC332A126E6300E57813 /* DeveloperRaw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138EDC322A126E6300E57813 /* DeveloperRaw.swift */; };
 		138EDC352A126ED500E57813 /* MakesMembers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138EDC342A126ED500E57813 /* MakesMembers.swift */; };
 		138EDC372A130EF900E57813 /* eyes.gif in Resources */ = {isa = PBXBuildFile; fileRef = 138EDC362A130EF900E57813 /* eyes.gif */; };
@@ -130,6 +131,7 @@
 		135F75EA2A0FF89C00487299 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		135F75EC2A0FFA9E00487299 /* LoadingBlinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingBlinkView.swift; sourceTree = "<group>"; };
 		135F75EE2A0FFE6400487299 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		138CDF9A2A99C556005A03AF /* OnboadrdingContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboadrdingContent.swift; sourceTree = "<group>"; };
 		138EDC322A126E6300E57813 /* DeveloperRaw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperRaw.swift; sourceTree = "<group>"; };
 		138EDC342A126ED500E57813 /* MakesMembers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakesMembers.swift; sourceTree = "<group>"; };
 		138EDC362A130EF900E57813 /* eyes.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = eyes.gif; sourceTree = "<group>"; };
@@ -265,6 +267,7 @@
 				13D24B952A0A83EA003C3CFB /* BlinkARViewContainer.swift */,
 				BB142F4B2A0C9B8F0080C843 /* NotificationManager.swift */,
 				BB142F492A0C9B0F0080C843 /* AppDelegate.swift */,
+				138CDF9A2A99C556005A03AF /* OnboadrdingContent.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -584,6 +587,7 @@
 				13CAC93C2A11632200DC297F /* OnboardingView.swift in Sources */,
 				BB142F502A0C9C5F0080C843 /* DemoView.swift in Sources */,
 				7E47171C2A069CC30030AF1C /* Setting.swift in Sources */,
+				138CDF9B2A99C556005A03AF /* OnboadrdingContent.swift in Sources */,
 				13CAC93E2A11633800DC297F /* OnboardingText.swift in Sources */,
 				7E4717422A1106690030AF1C /* BlinkingLoadingView.swift in Sources */,
 				7E4717202A069CC30030AF1C /* EyeMovingARViewContainer.swift in Sources */,
