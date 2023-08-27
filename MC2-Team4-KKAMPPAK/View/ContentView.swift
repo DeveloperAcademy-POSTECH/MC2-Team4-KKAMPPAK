@@ -72,6 +72,7 @@ struct ContentView: View {
                         }
                      
                     }
+                   
                     Spacer()
                     
                     NavigationLink (destination: BlinkingLoadingView(animate: $animate))
@@ -112,11 +113,11 @@ struct ContentView: View {
 }
 
 //
-//struct Content_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ContentView()
-//    }
-//}
+struct Content_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView(hours: .constant(0), minutes: .constant(0), seconds: .constant(0))
+    }
+}
 
 
 

@@ -11,13 +11,6 @@ public struct CardStack<Data, Content>: View where Data: RandomAccessCollection,
     private let data: Data
     @ViewBuilder private let content: (Data.Element) -> Content
     @Binding var finalCurrentIndex: Int
-    
-    
-    /// Creates a stack with the given content
-    /// - Parameters:
-    ///   - data: The identifiable data for computing the list.
-    ///   - currentIndex: The index of the topmost card in the stack
-    ///   - content: A view builder that creates the view for a single card
   
     
     public init(_ data: Data, currentIndex: Binding<Int> = .constant(0), @ViewBuilder content: @escaping (Data.Element) -> Content) {

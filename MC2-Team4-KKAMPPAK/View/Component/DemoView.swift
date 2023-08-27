@@ -24,37 +24,39 @@ struct DemoView: View {
         return formatter
     }()
     
-    
     var body: some View {
         CardStack(cards, currentIndex: $currentIndex) { card in
-            if (card.isFlipped) {
-                RoundedRectangle(cornerRadius: 40 ,style: .continuous)
-                    .foregroundColor(Color("cardColor1"))
-                    .frame(width: 313, height: 359)
-                    .overlay(
-                        VStack {
-                            // 네비게이션 바
+            RoundedRectangle(cornerRadius: 40 ,style: .continuous)
+                .foregroundColor(card.isFlipped ? Color("cardColor1") : card.color)
+                .frame(width: 313, height: 359)
+                .rotation3DEffect(
+                    .degrees(card.isFlipped ? 180 : 0),
+                    axis: (x: 0, y: 1, z: 0),
+                    anchor: .center,
+                    anchorZ: 0,
+                    perspective: 0.25
+                )
+                .animation(.easeInOut(duration: 0.3)) // 추가된 부분
+                .overlay(
+                    VStack {
+                        if card.isFlipped {
                             HStack {
-                                Button(action: {
-                                    cards[currentIndex].isFlipped = false
-                                    withAnimation {
-                                        cards[currentIndex].degrees += 180
+                               Text("취소")
+                                    .foregroundColor(.blue)
+                                    .onTapGesture {
+                                         withAnimation {
+                                             cards[currentIndex].isFlipped.toggle()
+                                         }
                                     }
-                                }) {
-                                    Text("취소")
-                                        .foregroundColor(.blue)
-                                    
-                                }
                                 Spacer()
                                 Button(action: {
                                     cards[currentIndex].alarm = card.alarm
                                     
                                     let manager = NotificationManager()
-                                   manager.requestAuthorization()
-                                   manager.scheduleNotification(at: card.alarm)
-                                    cards[currentIndex].isFlipped = false
+                                    manager.requestAuthorization()
+                                    manager.scheduleNotification(at: card.alarm)
                                     withAnimation {
-                                        cards[currentIndex].degrees -= 180
+                                        cards[currentIndex].isFlipped.toggle()
                                     }
                                 }) {
                                     Text("저장")
@@ -64,7 +66,6 @@ struct DemoView: View {
                             }
                             .padding(30)
                             .frame(height: 64)
-                            
                             DatePicker("", selection: Binding<Date>(
                                 get: { card.alarm },
                                 set: { date in
@@ -74,9 +75,9 @@ struct DemoView: View {
                             .datePickerStyle(.wheel)
                             .labelsHidden()
                             .frame(width: 313, height: 180)
-                            // 알람 삭제 버튼
                             Button(action: {
                                 cards.remove(at: currentIndex)
+                                
                             }) {
                                 Text("알람 삭제")
                                     .foregroundColor(.red)
@@ -87,20 +88,7 @@ struct DemoView: View {
                             .cornerRadius(9)
                             .padding()
                             Spacer()
-                        }
-                    )
-            } else {
-                RoundedRectangle(cornerRadius: 40, style: .continuous)
-                    .onTapGesture {
-                        cards[currentIndex].isFlipped = true
-                        withAnimation {
-                            cards[currentIndex].degrees -= 180
-                        }
-                    }
-                    .foregroundColor(card.color)
-                    .frame(width: 313, height: 359)
-                    .overlay(
-                        VStack{
+                        } else {
                             Text(dateFormatter.string(from: card.alarm))
                                 .font(.system(size: 38))
                                 .fontWeight(.bold)
@@ -113,21 +101,28 @@ struct DemoView: View {
                                     .font(.title3)
                                     .fontWeight(.bold)
                                     .foregroundColor(Color(red: 0.321, green: 0.43, blue: 1))
-                                 
+                                    .onTapGesture {
+                                        withAnimation {
+                                            cards[currentIndex].isFlipped.toggle()
+                                        }
+                                    }
                                 Image(systemName: "chevron.right")
                                     .foregroundColor(Color("centerCircle"))
                                     .bold()
-                            }   .padding(.top, 30)
+                            }
+                            .padding(.top, 30)
                         }
-                    )
-            }
-            
+                    }
+                )
+               
+              
         }
+       
     }
 }
-
+//
 //struct DemoView_Previews: PreviewProvider {
 //    static var previews: some View {
-//        DemoView(cards: [CardItem(alarm: Date(), isFlipped: false, degrees: 180)])
+//        DemoView(cards: [CardItem(alarm: Date(), isFlipped: false, degrees: 180, color: <#Color#>)])
 //    }
 //}
