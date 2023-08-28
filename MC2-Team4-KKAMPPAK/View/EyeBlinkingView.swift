@@ -10,6 +10,7 @@ import ARKit
 import RealityKit
 struct EyeBlinkingView: View {
     @State var checkBlink : Bool
+    @State var blinkCnt : Int
     @State private var animate = false
     @State private var timeRemaining = 0.0
     @State var progressValue: Float = 0.0
@@ -23,20 +24,26 @@ struct EyeBlinkingView: View {
         
         NavigationStack{
             ZStack{
-                BlinkARViewContainer(checkBlink: $checkBlink)
+                BlinkARViewContainer(checkBlink: $checkBlink, blinkCnt: $blinkCnt)
                 Color("backgroundColor").edgesIgnoringSafeArea(.all)
                 VStack{
                     Spacer()
-                    Text("눈 깜빡이기. \n1분간 15회")
-                        .font(.largeTitle)
+                    Text("눈 깜빡이기 30초")
+                        .font(.title)
                         .bold()
-                        .lineSpacing(5)
                         .foregroundColor(.white)
                         .frame(maxWidth: .infinity,alignment: .leading)
                         .padding(.top, 15)
-                        .padding(.leading, 50)
-                        .padding(.bottom, 75)
+                        .padding(.leading, 30)
+                        .padding(.bottom, 5)
                       
+                    Text("3초에 한번 깜빡여봐요")
+                        .font(.system(size: 20))
+                        .foregroundColor(.white)
+                        .frame(maxWidth: .infinity,alignment: .leading)
+                        .padding(.leading, 30)
+                        .padding(.bottom, 66)
+                    
                     ZStack{
                         Circle()
                             .stroke(Color.white,style: .init(lineWidth: 6))
@@ -106,12 +113,23 @@ struct EyeBlinkingView: View {
                         }
                         
                     }
-                    .padding(.leading, 57)
-                    .padding(.trailing,  57)
-                    .padding(.bottom, 80)
+                    .padding(.leading, 35)
+                    .padding(.trailing,  35)
+                    .padding(.bottom, 35)
+                    
+                    HStack(alignment:.center){
+                        Text("\(blinkCnt)")
+                            .font(.system(size: 32))
+                            .foregroundColor(.white)
+                            .padding(.bottom, 6)
+                        Text("번 깜빡였어요.")
+                            .font(.system(size: 20))
+                            .foregroundColor(.white)
+                    }
+                    .padding(.bottom, 19)
                     
                     ProgressBar(value: $progressValue)
-                        .frame(width: 300, height: 18)
+                        .frame(width: UIScreen.main.bounds.size.width - 60, height: 20)
                         .onAppear(){
                             self.startProgressBar()
                         }
@@ -148,8 +166,8 @@ struct EyeBlinkingView: View {
         
     }
     func startProgressBar() {
-        Timer.scheduledTimer(withTimeInterval: 0.0625, repeats: true, block: { timer in
-            self.progressValue += 0.002
+        Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: { timer in
+            self.progressValue += 0.033
             
             if(progressValue >= 1){
                 timer.invalidate()

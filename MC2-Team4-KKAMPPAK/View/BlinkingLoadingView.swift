@@ -17,7 +17,7 @@ struct BlinkingLoadingView: View {
                 .edgesIgnoringSafeArea(.all)
             
             if showView {
-                EyeBlinkingView(checkBlink: false)
+                EyeBlinkingView(checkBlink: false, blinkCnt: 0)
             }
             
             VStack{
