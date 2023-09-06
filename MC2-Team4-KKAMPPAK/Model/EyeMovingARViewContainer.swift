@@ -11,11 +11,13 @@ import ARKit
 
 struct EyeMovingARViewContainer: UIViewRepresentable {
     @Binding var mode: Int
+    @Binding var checkModeChange: Bool
 
     @Binding var isLeftCompleted: Bool
     @Binding var isRightCompleted: Bool
     @Binding var isUpCompleted: Bool
     @Binding var isDownCompleted: Bool
+    @Binding var eyeMovingCnt : Int
     
     func makeUIView(context: Context) -> ARView {
         let arView = ARView(frame: .zero)
@@ -77,6 +79,7 @@ struct EyeMovingARViewContainer: UIViewRepresentable {
                     
                     parent?.$isLeftCompleted.wrappedValue = true
                     parent?.$isRightCompleted.wrappedValue = false
+                    parent?.$eyeMovingCnt.wrappedValue = (parent?.$eyeMovingCnt.wrappedValue)! + 1;
                         
                 }
                 else if !self.isStop && rightEyeValue > 0.3 {
@@ -88,9 +91,14 @@ struct EyeMovingARViewContainer: UIViewRepresentable {
                     
                     parent?.$isRightCompleted.wrappedValue = true
                     parent?.$isLeftCompleted.wrappedValue = false
+                    parent?.$eyeMovingCnt.wrappedValue = (parent?.$eyeMovingCnt.wrappedValue)! + 1;
                 }
             }
             else{
+                if parent?.$checkModeChange.wrappedValue == false {
+                    parent?.$checkModeChange.wrappedValue = true
+                    parent?.$eyeMovingCnt.wrappedValue = 0
+                }
                 if !isStop && upLeftEyeValue > 0.2 && upRightEyeValue > 0.2  {
                     self.isStop = true
                     
@@ -100,6 +108,7 @@ struct EyeMovingARViewContainer: UIViewRepresentable {
                     
                     parent?.$isUpCompleted.wrappedValue = true
                     parent?.$isDownCompleted.wrappedValue = false
+                    parent?.$eyeMovingCnt.wrappedValue = (parent?.$eyeMovingCnt.wrappedValue)! + 1;
                         
                 }
                 else if !self.isStop && downRightEyeValue > 0.2 && downLeftEyeValue > 0.2 {
@@ -111,6 +120,7 @@ struct EyeMovingARViewContainer: UIViewRepresentable {
                     
                     parent?.$isDownCompleted.wrappedValue = true
                     parent?.$isUpCompleted.wrappedValue = false
+                    parent?.$eyeMovingCnt.wrappedValue = (parent?.$eyeMovingCnt.wrappedValue)! + 1;
                 }
             }
             

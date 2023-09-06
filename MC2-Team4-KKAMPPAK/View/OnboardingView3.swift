@@ -42,7 +42,7 @@ struct OnBoarding3: View {
                 
                 Spacer()
 
-                NavigationLink(destination: EyeBlinkingView(checkBlink: true))
+                NavigationLink(destination: EyeBlinkingView(checkBlink: true, blinkCnt: 0))
                 {
                     VStack{
                         Text("깜빡 시작하기")

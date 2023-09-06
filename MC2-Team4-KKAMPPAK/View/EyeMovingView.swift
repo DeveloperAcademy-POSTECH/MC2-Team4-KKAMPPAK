@@ -20,6 +20,8 @@ struct EyeMovingView: View {
     @State private var isRightCompleted = false
     @State private var isUpCompleted = false
     @State private var isDownCompleted = false
+    @State var eyeMovingCnt : Int
+    @State var checkModeChange : Bool
     
     @State private var xOffset: CGFloat = 0
     @State private var xOffset1: CGFloat = 0
@@ -43,7 +45,7 @@ struct EyeMovingView: View {
             }
             if(mode == 1){
                 ZStack{
-                    EyeMovingARViewContainer(mode: $mode, isLeftCompleted: $isLeftCompleted, isRightCompleted: $isRightCompleted, isUpCompleted: $isUpCompleted, isDownCompleted: $isDownCompleted)
+                    EyeMovingARViewContainer(mode: $mode, checkModeChange: $checkModeChange, isLeftCompleted: $isLeftCompleted, isRightCompleted: $isRightCompleted, isUpCompleted: $isUpCompleted, isDownCompleted: $isDownCompleted, eyeMovingCnt: $eyeMovingCnt)
                     
                     Color(red: 51 / 255, green: 51 / 255, blue: 51 / 255).ignoresSafeArea()
                     
@@ -51,21 +53,31 @@ struct EyeMovingView: View {
                     VStack{
                         
                         Spacer()
-                        Text("눈 움직이기. \n양옆, 위아래 30초")
-                            .font(.largeTitle)
-                            .bold()
-                            .lineSpacing(5)
-                            .foregroundColor(.white)
-                            .frame(maxWidth: .infinity,alignment: .leading)
-                            .padding(.top, 15)
-                            .padding(.leading, 50)
-                            .padding(.bottom, 75)
+                        VStack{
+                            Text("눈 움직이기 양옆 15초")
+                                .font(.title)
+                                .bold()
+                                .foregroundColor(.white)
+                                .frame(maxWidth: .infinity,alignment: .leading)
+                                .padding(.top, 15)
+                                .padding(.leading, 30)
+                                .padding(.bottom, 3)
+                              
+                            Text("2초마다 움직여봐요")
+                                .font(.system(size: 20))
+                                .foregroundColor(.white)
+                                .frame(maxWidth: .infinity,alignment: .leading)
+                                .padding(.leading, 30)
+                                .padding(.bottom, 66)
+                        }
+                        .padding(.leading, 30 )
+                        
                         
                         ZStack{
                             
                             RoundedRectangle(cornerRadius: 40)
                                 .fill(Color(red: 206 / 255, green: 214 / 255, blue: 255 / 255).opacity(0.5))
-                                .frame(width: 65, height:300)
+                                .frame(width: 65, height:320)
                             
                             Rectangle()
                                 .fill(Color(red: 51 / 255, green: 51 / 255, blue: 51 / 255))
@@ -73,7 +85,7 @@ struct EyeMovingView: View {
                             
                             RoundedRectangle(cornerRadius: 40)
                                 .fill(Color(red: 206 / 255, green: 214 / 255, blue: 255 / 255))
-                                .frame(width: 300, height: 65)
+                                .frame(width: 320, height: 65)
 
 
                             
@@ -182,14 +194,29 @@ struct EyeMovingView: View {
                         }
                         .padding(.leading, 57)
                         .padding(.trailing,  57)
-                        .padding(.bottom, 80)
+                        .padding(.bottom, 35)
+                        
+                        HStack(alignment:.center){
+                            Text("\(eyeMovingCnt)")
+                                .font(.system(size: 32))
+                                .foregroundColor(.white)
+                                .padding(.bottom, 6)
+                            Text("번 움직였어요.")
+                                .font(.system(size: 20))
+                                .foregroundColor(.white)
+                        }
+                        .padding(.bottom, 19)
                         
                         
-                        ProgressBar(value: $progressValue)
-                            .frame(width: 300, height: 18)
-                            .onAppear(){
-                                self.startProgressBar()
-                            }
+                        VStack(alignment: .center){
+                            ProgressBar(value: $progressValue)
+                                .frame(width: UIScreen.main.bounds.size.width - 60, height: 20)
+                                .onAppear(){
+                                    self.startProgressBar()
+                                }
+                        }
+                        .frame(width: .infinity)
+                        
                         
                         Spacer()
             
@@ -204,7 +231,7 @@ struct EyeMovingView: View {
                         .padding(.bottom, 30)
                         .onAppear {
                             Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true) { timer in
-                                if timeRemaining < 30.0 {
+                                if timeRemaining < 15.0 {
                                     timeRemaining += 0.01
                                 }
                                 else {
@@ -222,30 +249,37 @@ struct EyeMovingView: View {
                             })
                         }
                     }
+//                    .padding(.leading, 30)
                 }
             }
             else{
                 ZStack{
-                    EyeMovingARViewContainer(mode: $mode, isLeftCompleted: $isLeftCompleted, isRightCompleted: $isRightCompleted, isUpCompleted: $isUpCompleted, isDownCompleted: $isDownCompleted)
+                    EyeMovingARViewContainer(mode: $mode, checkModeChange: $checkModeChange, isLeftCompleted: $isLeftCompleted, isRightCompleted: $isRightCompleted, isUpCompleted: $isUpCompleted, isDownCompleted: $isDownCompleted, eyeMovingCnt: $eyeMovingCnt)
                     
                     Color(red: 51 / 255, green: 51 / 255, blue: 51 / 255).ignoresSafeArea()
                     
                     VStack{
                         Spacer()
-                        Text("눈 움직이기. \n양옆, 위아래 30초")
-                            .font(.largeTitle)
+                        Text("눈 움직이기 위아래 15초")
+                            .font(.title)
                             .bold()
-                            .lineSpacing(5)
                             .foregroundColor(.white)
                             .frame(maxWidth: .infinity,alignment: .leading)
                             .padding(.top, 15)
-                            .padding(.leading, 50)
-                            .padding(.bottom, 75)
+                            .padding(.leading, 30)
+                            .padding(.bottom, 3)
+                          
+                        Text("2초마다 움직여봐요")
+                            .font(.system(size: 20))
+                            .foregroundColor(.white)
+                            .frame(maxWidth: .infinity,alignment: .leading)
+                            .padding(.leading, 30)
+                            .padding(.bottom, 66)
                         
                         ZStack{
                             RoundedRectangle(cornerRadius: 40)
                                 .fill(Color(red: 206 / 255, green: 214 / 255, blue: 255 / 255).opacity(0.5))
-                                .frame(width: 300, height: 65)
+                                .frame(width: 320, height: 65)
                             
                             Rectangle()
                                 .fill(Color(red: 51 / 255, green: 51 / 255, blue: 51 / 255))
@@ -253,7 +287,7 @@ struct EyeMovingView: View {
                             
                             RoundedRectangle(cornerRadius: 40)
                                 .fill(Color(red: 206 / 255, green: 214 / 255, blue: 255 / 255))
-                                .frame(width: 65, height: 300)
+                                .frame(width: 65, height: 320)
 
 
                             
@@ -362,15 +396,30 @@ struct EyeMovingView: View {
                             
                             
                         }
-                        .padding(.leading, 57)
-                        .padding(.trailing,  57)
-                        .padding(.bottom, 80)
+//                        .padding(.leading, 57)
+//                        .padding(.trailing,  57)
+                        .padding(.bottom, 35)
                         
-                        ProgressBar(value: $progressValue)
-                            .frame(width: 300, height: 18)
-                            .onAppear(){
-                                self.startProgressBar()
-                            }
+                        HStack(alignment:.center){
+                            Text("\(eyeMovingCnt)")
+                                .font(.system(size: 32))
+                                .foregroundColor(.white)
+                                .padding(.bottom, 6)
+                            Text("번 움직였어요.")
+                                .font(.system(size: 20))
+                                .foregroundColor(.white)
+                        }
+                        .padding(.bottom, 19)
+                        
+                        VStack(alignment: .center){
+                            ProgressBar(value: $progressValue)
+                                .frame(width: UIScreen.main.bounds.size.width - 60, height: 20)
+                                .onAppear(){
+                                    self.startProgressBar()
+                                }
+                        }
+                        .frame(width: .infinity)
+                        
                         
                         Spacer()
             
@@ -388,12 +437,12 @@ struct EyeMovingView: View {
                         .padding(.bottom, 30)
                         .onAppear {
                             Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true) { timer in
-                                if timeRemaining < 30.0 {
+                                if timeRemaining < 15.0 {
                                     timeRemaining += 0.01
                                 }
                                 else {
                                     timer.invalidate()
-                                    // 60초가 지나면 NextView로 이동
+                                    // 30초가 지나면 NextView로 이동
                                     withAnimation(.easeInOut(duration: 0.5)) {
                                         isNextViewPresented = true
                                     }
@@ -414,7 +463,7 @@ struct EyeMovingView: View {
     
     func startProgressBar() {
         Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: { timer in
-            self.progressValue += 0.032
+            self.progressValue += 0.067
             
             if(progressValue >= 1){
                 timer.invalidate()

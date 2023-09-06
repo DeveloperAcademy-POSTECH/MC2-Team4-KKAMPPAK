@@ -11,6 +11,7 @@ import SwiftUI
 
 struct BlinkARViewContainer: UIViewRepresentable {
     @Binding var checkBlink : Bool
+    @Binding var blinkCnt : Int
     func makeUIView(context: Context) -> ARView {
         
         let arView = ARView(frame: .zero)
@@ -46,6 +47,7 @@ class Coordinator : NSObject , ARSessionDelegate {
                         
                         if parent.$checkBlink.wrappedValue == false && leftEyeBlinkValue > 0.94 && rightEyeBlinkValue > 0.94 {
                             parent.$checkBlink.wrappedValue = true
+                            parent.$blinkCnt.wrappedValue = parent.$blinkCnt.wrappedValue + 1;
                             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.8) {
                                 self.parent.$checkBlink.wrappedValue = false
                             }
