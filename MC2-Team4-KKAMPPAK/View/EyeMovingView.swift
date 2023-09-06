@@ -53,21 +53,25 @@ struct EyeMovingView: View {
                     VStack{
                         
                         Spacer()
-                        Text("눈 움직이기 양옆 15초")
-                            .font(.title)
-                            .bold()
-                            .foregroundColor(.white)
-                            .frame(maxWidth: .infinity,alignment: .leading)
-                            .padding(.top, 15)
-                            .padding(.leading, 30)
-                            .padding(.bottom, 3)
-                          
-                        Text("2초마다 움직여봐요")
-                            .font(.system(size: 20))
-                            .foregroundColor(.white)
-                            .frame(maxWidth: .infinity,alignment: .leading)
-                            .padding(.leading, 30)
-                            .padding(.bottom, 66)
+                        VStack{
+                            Text("눈 움직이기 양옆 15초")
+                                .font(.title)
+                                .bold()
+                                .foregroundColor(.white)
+                                .frame(maxWidth: .infinity,alignment: .leading)
+                                .padding(.top, 15)
+                                .padding(.leading, 30)
+                                .padding(.bottom, 3)
+                              
+                            Text("2초마다 움직여봐요")
+                                .font(.system(size: 20))
+                                .foregroundColor(.white)
+                                .frame(maxWidth: .infinity,alignment: .leading)
+                                .padding(.leading, 30)
+                                .padding(.bottom, 66)
+                        }
+                        .padding(.leading, 30 )
+                        
                         
                         ZStack{
                             
@@ -204,11 +208,15 @@ struct EyeMovingView: View {
                         .padding(.bottom, 19)
                         
                         
-                        ProgressBar(value: $progressValue)
-                            .frame(width: UIScreen.main.bounds.size.width - 60, height: 20)
-                            .onAppear(){
-                                self.startProgressBar()
-                            }
+                        VStack(alignment: .center){
+                            ProgressBar(value: $progressValue)
+                                .frame(width: UIScreen.main.bounds.size.width - 60, height: 20)
+                                .onAppear(){
+                                    self.startProgressBar()
+                                }
+                        }
+                        .frame(width: .infinity)
+                        
                         
                         Spacer()
             
@@ -241,7 +249,7 @@ struct EyeMovingView: View {
                             })
                         }
                     }
-                    .padding(.leading, 30)
+//                    .padding(.leading, 30)
                 }
             }
             else{
@@ -388,8 +396,8 @@ struct EyeMovingView: View {
                             
                             
                         }
-                        .padding(.leading, 57)
-                        .padding(.trailing,  57)
+//                        .padding(.leading, 57)
+//                        .padding(.trailing,  57)
                         .padding(.bottom, 35)
                         
                         HStack(alignment:.center){
@@ -403,11 +411,15 @@ struct EyeMovingView: View {
                         }
                         .padding(.bottom, 19)
                         
-                        ProgressBar(value: $progressValue)
-                            .frame(width: UIScreen.main.bounds.size.width - 60, height: 20)
-                            .onAppear(){
-                                self.startProgressBar()
-                            }
+                        VStack(alignment: .center){
+                            ProgressBar(value: $progressValue)
+                                .frame(width: UIScreen.main.bounds.size.width - 60, height: 20)
+                                .onAppear(){
+                                    self.startProgressBar()
+                                }
+                        }
+                        .frame(width: .infinity)
+                        
                         
                         Spacer()
             
