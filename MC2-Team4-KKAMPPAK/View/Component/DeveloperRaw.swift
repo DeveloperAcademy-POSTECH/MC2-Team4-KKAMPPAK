@@ -12,29 +12,29 @@ struct DeveloperRaw: View {
     let name: String
     let discription: String
     var body: some View {
-        HStack{
-             Image(mimoji)
-                .resizable()
-                .frame(width: 82,height: 83)
-                .padding(.trailing, 18)
-            
-            VStack(alignment: .leading){
-                Text(name)
-                    .font(.system(size: 17))
-                    .foregroundColor(Color("thirdCircle"))
-                    .bold()
-                    .padding(.bottom,1)
+
+            HStack(alignment: .center){
+                 Image(mimoji)
+                    .resizable()
+                    .frame(width: 73,height: 94)
                 
-                Text(discription)
-                    .font(.system(size: 15))
-                    .foregroundColor(Color.white)
+                VStack(alignment: .leading){
+                    Text(name)
+                        .font(.system(size: 17))
+                        .foregroundColor(Color("thirdCircle"))
+                        .bold()
+                    Text(discription)
+                        .font(.system(size: 15))
+                        .foregroundColor(Color.white)
+                }
+                .padding(.leading,12)
+                .frame(maxWidth: .infinity, alignment: .leading)
             }
-            .frame(maxWidth: .infinity, alignment: .leading)
-        }
-        .frame(maxWidth: .infinity)
-        .padding(.leading, 45)
-        .padding(.trailing, 118)
-        .padding(.bottom, 30)
+            .frame(maxWidth: .infinity)
+            .padding(.leading, 52)
+        
+
+        
         }
 }
 

@@ -13,22 +13,8 @@ import DeviceActivity
 
 class ScreenTime: ObservableObject {
     
-    //static let shared = ScreenTime()
-    
-//    @Binding var hours: Int
-//    @Binding var minutes: Int
-//    @Binding var seconds: Int
-//
-//    private init(hours: Binding<Int>, minute: Binding<Int>, seconds: Binding<Int>) {
-//        self._hours = hours
-//        self._hours = minute
-//        self._seconds = seconds
-//    }
     static let shared = ScreenTime()
     private init() {}
-    
-//    static var shared: ScreenTime?
-//
 //    static func createdShared(hours: Binding<Int>, minutes: Binding<Int>, seconds: Binding<Int>){
 //            shared = ScreenTime(hours: hours, minute: minutes, seconds: seconds)
 //        }
@@ -39,9 +25,7 @@ class ScreenTime: ObservableObject {
 //    let curMins = minuteComponents
 //    let secondsComponents = Calendar.current.dateComponents([.second], from: Date())
 //    let curSec = secondsComponents
-//
-//    private init() {}
-//    static let shared = ScreenTime()
+
 
     @AppStorage("selectedApps", store: UserDefaults(suiteName: "group.com.shield.kkamppak"))
     var selectedApps = FamilyActivitySelection()
@@ -92,7 +76,6 @@ class ScreenTime: ObservableObject {
                 during: schedule,
                 events: includeUsageThreshold ? [.monitoring: event] : [:]
             )
-                    
         } catch {
             print("Unexpected error: \(error).")
         }
@@ -105,6 +88,10 @@ class ScreenTime: ObservableObject {
         : ShieldSettings.ActivityCategoryPolicy.specific(selectedApps.categoryTokens)
         //store.shield.applicationCategories = ShieldSettings.ActivityCategoryPolicy.all()
     }
+    func stopDeviceMonitoring(){
+        ScreenTime.shared.deviceActivityCenter.stopMonitoring()
+    }
+    
 
 }
 

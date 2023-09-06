@@ -83,7 +83,7 @@ extension OnBoarding3 {
                     print("not..!")
                 Task {
                     do {
-                        try await center.requestAuthorization(options: [.alert, .badge, .sound])
+                        try await center.requestAuthorization(options: [.alert, .sound])
                     } catch {
                         print("Failed to enroll Aniyah with error: \(error)")
                     }
