@@ -33,7 +33,6 @@ struct OnboardingView: View {
     var body: some View {
         NavigationView{
             ZStack{
-                
                 Color("backgroundColor")
                     .ignoresSafeArea()
                 ScrollViewReader{ value in
@@ -178,7 +177,7 @@ extension OnboardingView {
                     print("not..!")
                 Task {
                     do {
-                        try await center.requestAuthorization(options: [.alert, .badge, .sound])
+                        try await center.requestAuthorization(options: [.alert, .sound])
                     } catch {
                         print("Failed to enroll Aniyah with error: \(error)")
                     }
