@@ -12,6 +12,7 @@ struct ContentView: View {
     @Binding var hours: Int
     @Binding var minutes: Int
     @Binding var seconds: Int
+    @State var isEditing: Bool = false
     
     var body: some View {
         NavigationStack {
@@ -22,21 +23,25 @@ struct ContentView: View {
                 VStack{
                     HStack{
                         Spacer()
-                        Image(systemName: "plus")
-                            .resizable()
-                            .frame(width: 25, height: 25, alignment: .topTrailing)
-                            .foregroundColor(Color(red: 0.321, green: 0.43, blue: 1))
-                            .padding(.trailing, 20)
-                            .fontWeight(.heavy)
-                            .onTapGesture {
-                                if cards.count < 3 {
-                                   for i in 0..<cards.count {
-                                       let index = colors.indices.contains(i+1) ? i+1 : 0
-                                       cards[i].color = colors[index]
-                                   }
-                                   cards.insert(CardItem(alarm: Date(), isFlipped: true, degrees: 180, color: colors[0]), at: 0)
-                               }
+                        Button(action: {
+                            isEditing = true
+                            
+                            if cards.count < 3 {
+                                for i in 0..<cards.count {
+                                    let index = colors.indices.contains(i+1) ? i+1 : 0
+                                    cards[i].color = colors[index]
+                                }
+                                cards.insert(CardItem(alarm: Date(), isFlipped: true, color: colors[0]), at: 0)
                             }
+                        }) {
+                            Image(systemName: "plus")
+                                .resizable()
+                                .frame(width: 25, height: 25, alignment: .topTrailing)
+                                .foregroundColor(Color(red: 0.321, green: 0.43, blue: 1))
+                                .padding(.trailing, 20)
+                                .fontWeight(.heavy)
+                        }
+                        .disabled(isEditing)
                         NavigationLink(destination: SettingView(hours: $hours, minutes: $minutes, seconds: $seconds)){
                             Image(systemName: "gearshape.fill")
                                 .resizable()
@@ -64,11 +69,11 @@ struct ContentView: View {
                                            let index = colors.indices.contains(i+1) ? i+1 : 0
                                            cards[i].color = colors[index]
                                        }
-                                       cards.insert(CardItem(alarm: Date(), isFlipped: true, degrees: 180, color: colors[0]), at: 0)
+                                       cards.insert(CardItem(alarm: Date(), isFlipped: true,  color: colors[0]), at: 0)
                                    }
                                 }
                         } else {
-                            DemoView(cards: $cards)
+                            DemoView(cards: $cards, isEditing: $isEditing)
                         }
                      
                     }

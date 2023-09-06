@@ -4,12 +4,10 @@ import SwiftUI
 struct CardItem: Identifiable, Equatable {
     var alarm: Date
     var isFlipped: Bool = false
-    var degrees: Double = 180.0
     var color: Color
     var id: Date {
         alarm
     }
-    
 }
 
 
@@ -17,7 +15,7 @@ struct DemoView: View {
     @State private var currentIndex = 0
     @State private var tappedIndex: Int? = nil
     @Binding var cards : [CardItem]
-    
+    @Binding var isEditing : Bool
     let dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateFormat = "hh:mm a"
@@ -36,7 +34,7 @@ struct DemoView: View {
                     anchorZ: 0,
                     perspective: 0.25
                 )
-                .animation(.easeInOut(duration: 0.3)) // 추가된 부분
+//                .animation(.easeInOut(duration: 0.3))
                 .overlay(
                     VStack {
                         if card.isFlipped {
@@ -44,6 +42,7 @@ struct DemoView: View {
                                Text("취소")
                                     .foregroundColor(.blue)
                                     .onTapGesture {
+                                        isEditing.toggle()
                                          withAnimation {
                                              cards[currentIndex].isFlipped.toggle()
                                          }
@@ -51,10 +50,10 @@ struct DemoView: View {
                                 Spacer()
                                 Button(action: {
                                     cards[currentIndex].alarm = card.alarm
-                                    
                                     let manager = NotificationManager()
                                     manager.requestAuthorization()
                                     manager.scheduleNotification(at: card.alarm)
+                                    isEditing.toggle()
                                     withAnimation {
                                         cards[currentIndex].isFlipped.toggle()
                                     }
@@ -77,6 +76,7 @@ struct DemoView: View {
                             .frame(width: 313, height: 180)
                             Button(action: {
                                 cards.remove(at: currentIndex)
+                                isEditing.toggle()
                                 
                             }) {
                                 Text("알람 삭제")
@@ -102,6 +102,7 @@ struct DemoView: View {
                                     .fontWeight(.bold)
                                     .foregroundColor(Color(red: 0.321, green: 0.43, blue: 1))
                                     .onTapGesture {
+                                        isEditing.toggle()
                                         withAnimation {
                                             cards[currentIndex].isFlipped.toggle()
                                         }
