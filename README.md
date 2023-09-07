@@ -6,12 +6,16 @@
 
 ## 🎥 시연 영상
 
+<br/>
+
 ## 💻 적용 기술
 ### 1. 개발 환경 및 언어
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![Xcode](https://img.shields.io/badge/Xcode-007ACC?style=for-the-badge&logo=Xcode&logoColor=white) ![Swift](https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white)
 
-### 3. 시스템 구성 및 아키텍처
+### 2. 시스템 구성 및 아키텍처
 <img width="1027" alt="image" src="https://github.com/DeveloperAcademy-POSTECH/MC2-Team4-KKAMPPAK/assets/61380136/b6aa927d-3955-4656-ad3b-470fb8638390">
+
+<br/>
 
 ## 📝 작품 소개
 ### 1. 개발 배경
