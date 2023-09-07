@@ -3,7 +3,7 @@
 과도한 스마트폰 사용을 자각하고 눈 스트레칭을 할 수 있는 어플 (Face-tracking, Screen Time)
 
 ## 🎥 시연 영상
-![KKAMPPAK](https://www.youtube.com/watch?v=2RLvLtNcXAI)
+[![KKAMPPAK](http://img.youtube.com/vi/2RLvLtNcXAI/0.jpg)](https://youtu.be/2RLvLtNcXAI)
 
 <br/>
 
