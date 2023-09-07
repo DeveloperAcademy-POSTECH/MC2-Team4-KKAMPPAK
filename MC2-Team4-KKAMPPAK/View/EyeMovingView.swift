@@ -122,7 +122,7 @@ struct EyeMovingView: View {
                                 
                                 Image("kp")
                                     .resizable()
-                                    .frame(width: 40, height: 40)
+                                    .frame(width: 44, height: 39)
                                     .offset(x: xOffset)
                                     .animation(.easeInOut(duration: 0.5))
                                     .onAppear() {
@@ -171,7 +171,7 @@ struct EyeMovingView: View {
                                 
                                 Image("kp")
                                     .resizable()
-                                    .frame(width: 40, height: 40)
+                                    .frame(width: 44, height: 39)
                                     .offset(x: xOffset)
                                     .animation(.easeInOut(duration: 0.5))
                                     .onAppear() {
@@ -189,7 +189,7 @@ struct EyeMovingView: View {
                             if(!isRightCompleted && !isLeftCompleted){
                                 Image("kp")
                                     .resizable()
-                                    .frame(width: 40, height: 40)
+                                    .frame(width: 44, height: 39)
                             }
                         }
                         .padding(.leading, 57)
@@ -324,7 +324,7 @@ struct EyeMovingView: View {
                                 
                                 Image("kp")
                                     .resizable()
-                                    .frame(width: 40, height: 40)
+                                    .frame(width: 44, height: 39)
                                     .offset(y: xOffset)
                                     .animation(.easeInOut(duration: 0.5))
                                     .onAppear() {
@@ -373,7 +373,7 @@ struct EyeMovingView: View {
                                 
                                 Image("kp")
                                     .resizable()
-                                    .frame(width: 40, height: 40)
+                                    .frame(width: 44, height: 39)
                                     .offset(y: xOffset)
                                     .animation(.easeInOut(duration: 0.5))
                                     .onAppear() {
@@ -391,7 +391,7 @@ struct EyeMovingView: View {
                             if(!isUpCompleted && !isDownCompleted){
                                 Image("kp")
                                     .resizable()
-                                    .frame(width: 40, height: 40)
+                                    .frame(width: 44, height: 39)
                             }
                             
                             
