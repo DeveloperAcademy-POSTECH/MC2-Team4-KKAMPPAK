@@ -52,7 +52,8 @@ struct EyeBlinkingView: View {
                             .opacity(0.8)
                             .scaleEffect(checkBlink ? 0 : 1)
                             .animation(
-                                Animation.linear(duration: 0.5)
+                                Animation.easeInOut(duration: 0.5)
+//                                Animation.linear(duration: 0.5)
                                     .delay(0.2),
                                 value: checkBlink
                             )
@@ -64,7 +65,8 @@ struct EyeBlinkingView: View {
                             .opacity(0.9)
                             .scaleEffect(checkBlink ? 0.2 : 1)
                             .animation(
-                                Animation.linear(duration: 0.5)
+//                                Animation.linear(duration: 0.5)
+                                Animation.easeInOut(duration: 0.5)
                                     .delay(0.15),
                                 value: checkBlink
                             )
@@ -74,7 +76,8 @@ struct EyeBlinkingView: View {
                             .opacity(1)
                             .scaleEffect(checkBlink ? 0.2 : 1)
                             .animation(
-                                Animation.linear(duration: 0.5)
+//                                Animation.linear(duration: 0.5)
+                                Animation.easeInOut(duration: 0.5)
                                     .delay(0.1),
                                 value: checkBlink
                             )
@@ -85,7 +88,8 @@ struct EyeBlinkingView: View {
                             .opacity(1)
                             .scaleEffect(checkBlink ? 0.2 : 1)
                             .animation(
-                                Animation.linear(duration: 0.5)
+//                                Animation.linear(duration: 0.5)
+                                Animation.easeInOut(duration: 0.5)
                                     .delay(0.05),
                                 value: checkBlink
                             )
@@ -94,11 +98,11 @@ struct EyeBlinkingView: View {
                                 .frame(width: 100, height: 100)
                                 .foregroundColor(Color("centerCircle"))
                             
-                            Image("normalEye")
+                            Image("eye")
                                 .resizable()
                                 .frame(width: 60,height: 30)
                             if checkBlink{
-                                GifView(gifName: "eyes")
+                                GifView(gifName: "blinking")
                                     .frame(width: 60,height: 60)
                                     .opacity(1)
                                     .onAppear{
@@ -106,7 +110,7 @@ struct EyeBlinkingView: View {
                                             hapticManager.notification(type: .success)
                                         }
                                     }
-                                
+
 
 
                             }
