@@ -8,7 +8,13 @@ struct CardItem: Identifiable, Equatable {
     var id: Date {
         alarm
     }
+    var notificationIdentifier: String {
+         let dateFormatter = DateFormatter()
+         dateFormatter.dateFormat = "yyyyMMddHHmmss"
+         return dateFormatter.string(from: alarm)
+     }
 }
+
 
 
 struct DemoView: View {
@@ -50,13 +56,13 @@ struct DemoView: View {
                                 Spacer()
                                 Button(action: {
                                     cards[currentIndex].alarm = card.alarm
-                                    let manager = NotificationManager()
-                                    manager.requestAuthorization()
-                                    manager.scheduleNotification(at: card.alarm)
-                                    isEditing.toggle()
-                                    withAnimation {
-                                        cards[currentIndex].isFlipped.toggle()
-                                    }
+                                   let manager = NotificationManager.shared
+                                   manager.cancelNotification(identifier: card.notificationIdentifier)
+                                   manager.scheduleNotification(at: card.alarm, identifier: card.notificationIdentifier)
+                                   isEditing.toggle()
+                                   withAnimation {
+                                       cards[currentIndex].isFlipped.toggle()
+                                   }
                                 }) {
                                     Text("저장")
                                         .foregroundColor(.blue)
@@ -77,7 +83,8 @@ struct DemoView: View {
                             Button(action: {
                                 cards.remove(at: currentIndex)
                                 isEditing.toggle()
-                                
+                                let manager = NotificationManager.shared
+                                manager.cancelNotification(identifier: card.notificationIdentifier)
                             }) {
                                 Text("알람 삭제")
                                     .foregroundColor(.red)

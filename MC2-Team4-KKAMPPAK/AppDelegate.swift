@@ -27,12 +27,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private func scheduleNotifications() {
         for card in getCards() {
             let wakeUpTime = card.alarm
-            notificationManager.scheduleNotification(at: wakeUpTime)
+            notificationManager.scheduleNotification(at: wakeUpTime, identifier: card.notificationIdentifier)
+            print("Alarm schedule : ", card.notificationIdentifier)
         }
+      
     }
     
     private func getCards() -> [CardItem] {
-        // Get the cards from ContentView or wherever they are stored
         return ContentView(hours: hours, minutes: minutes, seconds: seconds).cards
     }
 }
