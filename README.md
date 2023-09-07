@@ -4,16 +4,16 @@
 # MC2-Team4-KKAMPPAK
 과도한 스마트폰 사용을 자각하고 눈 스트레칭을 할 수 있는 어플 (Face-tracking, Screen Time)
 
-## 시연 영상
+## 🎥 시연 영상
 
-## 적용 기술
+## 💻 적용 기술
 ### 1. 개발 환경 및 언어
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![Xcode](https://img.shields.io/badge/Xcode-007ACC?style=for-the-badge&logo=Xcode&logoColor=white) ![Swift](https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white)
 
 ### 3. 시스템 구성 및 아키텍처
 <img width="1027" alt="image" src="https://github.com/DeveloperAcademy-POSTECH/MC2-Team4-KKAMPPAK/assets/61380136/b6aa927d-3955-4656-ad3b-470fb8638390">
 
-## 작품 소개
+## 📝 작품 소개
 ### 1. 개발 배경
 z세대, 혹은 현재의 청소년과 젊은 세대는 스마트폰을 일상적으로 사용하며 이로 인해 스마트폰 및 미디어 중독이 사회적으로 큰 문제로 부각되고 있습니다.<br/>
 특히, 청소년 중에서도 잠재적 위험군과 실제 위험군을 합치면 전체 청소년의 약 40%가 해당되는 심각한 문제로 나타나고 있습니다. 이를 심각한 문제라고 우려한 우리 팀은 청소년들을 중심으로 데스크 리서치와 유저 인터뷰를 통해 다양한 사례를 조사하였습니다. <br/>
