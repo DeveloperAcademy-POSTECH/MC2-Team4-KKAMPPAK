@@ -13,7 +13,7 @@ struct MC2_Team4_KKAMPPAKApp: App {
     
     var body: some Scene {
         WindowGroup {
-            SplashView()
+            ContentView(hours: .constant(1), minutes: .constant(1), seconds: .constant(1))
         }
     }
 }
