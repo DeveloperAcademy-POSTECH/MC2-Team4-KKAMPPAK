@@ -42,7 +42,8 @@ struct ContentView: View {
                                 .fontWeight(.heavy)
                         }
                         .disabled(isEditing)
-                        NavigationLink(destination: SettingView(hours: $hours, minutes: $minutes, seconds: $seconds)){
+                        NavigationLink(destination: SettingView2(hours: $hours, minutes: $minutes, seconds: $seconds)){
+
                             Image(systemName: "gearshape.fill")
                                 .resizable()
                                 .frame(width: 25, height: 25, alignment: .topTrailing)

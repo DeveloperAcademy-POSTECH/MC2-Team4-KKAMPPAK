@@ -21,8 +21,6 @@ struct FinishView: View {
                         .bold()
                         .foregroundColor(.white)
                         .lineLimit(1)
-                    
-                    
                 }
                 .padding(EdgeInsets(top: 220, leading: 130, bottom: 0, trailing: 130))
                 .frame(maxWidth: .infinity)
@@ -33,26 +31,28 @@ struct FinishView: View {
                         .frame(width: 121,height: 108)
                     
                 }
-                .padding(EdgeInsets(top: 15, leading: 138, bottom: 30, trailing: 134))
+                .padding(.top, 15)
+                .padding(.bottom, 30)
+                
                 VStack{
                     ZStack{
-                        RoundedRectangle(cornerRadius: 40)
+                        RoundedRectangle(cornerRadius: 50)
                            
                         Button {
 //                            handleResetSelection()
                             NavigationUtil.popToRootView()
                         } label: {
-                            Text("메인 화면으로")
-                                .font(.system(size: 24))
+                            Text("메인으로 돌아가기")
+                                .font(.system(size: 20))
                                 .bold()
                                 .foregroundColor(Color.white)
                         }
                         
                     }
                     .foregroundColor(Color("centerCircle"))
-                    .frame(height: 70)
+                    .frame(height: 62)
                     .frame(maxWidth: .infinity)
-                    .padding(EdgeInsets(top: 145, leading: 39, bottom: 30, trailing: 40))
+                    .padding(EdgeInsets(top: 145, leading: 30, bottom: 30, trailing: 30))
                     
                     NavigationLink(destination: BlinkingLoadingView(animate: $animate)){
                         Text("다시 깜빡 하러 가기")
@@ -70,6 +70,8 @@ struct FinishView: View {
             }
             
         }
+        .navigationBarBackButtonHidden(true)
+
       
         
     }

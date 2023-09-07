@@ -17,7 +17,7 @@ struct MovingLoadingView: View {
                 .edgesIgnoringSafeArea(.all)
             
             if showView {
-                EyeMovingView()
+                EyeMovingView(eyeMovingCnt: 0, checkModeChange: false)
             }
             
             VStack{

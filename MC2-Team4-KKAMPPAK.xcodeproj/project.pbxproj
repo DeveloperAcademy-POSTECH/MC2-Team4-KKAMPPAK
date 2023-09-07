@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E018D162A9A1EF700E5A14D /* MakesRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E018D152A9A1EF700E5A14D /* MakesRow.swift */; };
+		0E18682B2A9390C60057F7FC /* SettingView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E18682A2A9390C60057F7FC /* SettingView2.swift */; };
 		0ED072E72A13615100272470 /* DeviceActivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED072E62A13615100272470 /* DeviceActivity.framework */; };
 		0ED072EA2A13615100272470 /* DeviceActivityMonitorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED072E92A13615100272470 /* DeviceActivityMonitorExtension.swift */; };
 		0ED072EF2A13615100272470 /* DeviceActivityMonitorExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0ED072E42A13615100272470 /* DeviceActivityMonitorExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -110,6 +112,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0E018D152A9A1EF700E5A14D /* MakesRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakesRow.swift; sourceTree = "<group>"; };
+		0E18682A2A9390C60057F7FC /* SettingView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView2.swift; sourceTree = "<group>"; };
 		0ED072E42A13615100272470 /* DeviceActivityMonitorExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DeviceActivityMonitorExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ED072E62A13615100272470 /* DeviceActivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DeviceActivity.framework; path = System/Library/Frameworks/DeviceActivity.framework; sourceTree = SDKROOT; };
 		0ED072E92A13615100272470 /* DeviceActivityMonitorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceActivityMonitorExtension.swift; sourceTree = "<group>"; };
@@ -267,6 +271,7 @@
 				13D24B952A0A83EA003C3CFB /* BlinkARViewContainer.swift */,
 				BB142F4B2A0C9B8F0080C843 /* NotificationManager.swift */,
 				BB142F492A0C9B0F0080C843 /* AppDelegate.swift */,
+				0E018D152A9A1EF700E5A14D /* MakesRow.swift */,
 				138CDF9A2A99C556005A03AF /* OnboadrdingContent.swift */,
 			);
 			path = Model;
@@ -289,6 +294,7 @@
 				A231D8092A0DC83500072D20 /* GifView.swift */,
 				A231D80B2A0DC85400072D20 /* MusicView.swift */,
 				7E4717282A069CE40030AF1C /* SettingView.swift */,
+				0E18682A2A9390C60057F7FC /* SettingView2.swift */,
 				BBD8E2D62A11F93F00A0689A /* OnboardingView2.swift */,
 				138EDC342A126ED500E57813 /* MakesMembers.swift */,
 				0ED0731C2A13629D00272470 /* OnboardingView3.swift */,
@@ -566,6 +572,7 @@
 				135F75EB2A0FF89C00487299 /* LoadingView.swift in Sources */,
 				BB142F4A2A0C9B0F0080C843 /* AppDelegate.swift in Sources */,
 				A231D80C2A0DC85400072D20 /* MusicView.swift in Sources */,
+				0E018D162A9A1EF700E5A14D /* MakesRow.swift in Sources */,
 				7E47171B2A069CC30030AF1C /* Alert.swift in Sources */,
 				A231D80A2A0DC83500072D20 /* GifView.swift in Sources */,
 				7E47172E2A069CE40030AF1C /* SettingView.swift in Sources */,
@@ -574,6 +581,7 @@
 				0ED0731B2A13625700272470 /* MultiPicker.swift in Sources */,
 				7E47172A2A069CE40030AF1C /* EyeMovingView.swift in Sources */,
 				7E4717292A069CE40030AF1C /* EyeBlinkingView.swift in Sources */,
+				0E18682B2A9390C60057F7FC /* SettingView2.swift in Sources */,
 				BBD8E2D52A1145C000A0689A /* TimePicker.swift in Sources */,
 				7E47171E2A069CC30030AF1C /* ScreenTime.swift in Sources */,
 				138EDC332A126E6300E57813 /* DeveloperRaw.swift in Sources */,
@@ -628,7 +636,7 @@
 				CODE_SIGN_ENTITLEMENTS = DeviceActivityMonitorExtension/DeviceActivityMonitorExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8H945XJJGA;
+				DEVELOPMENT_TEAM = V7Z62V83Y6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DeviceActivityMonitorExtension/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = DeviceActivityMonitorExtension;
@@ -652,9 +660,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = DeviceActivityMonitorExtension/DeviceActivityMonitorExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8H945XJJGA;
+				DEVELOPMENT_TEAM = V7Z62V83Y6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DeviceActivityMonitorExtension/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = DeviceActivityMonitorExtension;
@@ -667,6 +676,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.good.KKAMPPAK.DeviceActivityMonitorExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -680,7 +690,7 @@
 				CODE_SIGN_ENTITLEMENTS = ShieldActionExtension/ShieldActionExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8H945XJJGA;
+				DEVELOPMENT_TEAM = V7Z62V83Y6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ShieldActionExtension/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = ShieldActionExtension;
@@ -706,7 +716,7 @@
 				CODE_SIGN_ENTITLEMENTS = ShieldActionExtension/ShieldActionExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8H945XJJGA;
+				DEVELOPMENT_TEAM = V7Z62V83Y6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ShieldActionExtension/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = ShieldActionExtension;
@@ -732,7 +742,7 @@
 				CODE_SIGN_ENTITLEMENTS = ShieldConfigurationExtension/ShieldConfigurationExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8H945XJJGA;
+				DEVELOPMENT_TEAM = V7Z62V83Y6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ShieldConfigurationExtension/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = ShieldConfigurationExtension;
@@ -758,7 +768,7 @@
 				CODE_SIGN_ENTITLEMENTS = ShieldConfigurationExtension/ShieldConfigurationExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8H945XJJGA;
+				DEVELOPMENT_TEAM = V7Z62V83Y6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ShieldConfigurationExtension/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = ShieldConfigurationExtension;
@@ -903,7 +913,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MC2-Team4-KKAMPPAK/Preview Content\"";
-				DEVELOPMENT_TEAM = 8H945XJJGA;
+				DEVELOPMENT_TEAM = V7Z62V83Y6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "MC2-Team4-KKAMPPAK/Info.plist";
@@ -938,7 +948,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MC2-Team4-KKAMPPAK/Preview Content\"";
-				DEVELOPMENT_TEAM = 8H945XJJGA;
+				DEVELOPMENT_TEAM = V7Z62V83Y6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "MC2-Team4-KKAMPPAK/Info.plist";
