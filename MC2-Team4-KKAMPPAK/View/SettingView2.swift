@@ -55,7 +55,7 @@ struct SettingView2: View {
             }
         }
         .toolbarBackground(.visible, for: .navigationBar)
-        .toolbarBackground(.black, for: .navigationBar)
+        .toolbarBackground(Color(red: 0.15, green: 0.15, blue: 0.15), for: .navigationBar)
 //        .navigationTitle("시스템 설정")
 //                .toolbarBackground(.visible, for: .navigationBar)
 //                .toolbarBackground(.red, for: .navigationBar)

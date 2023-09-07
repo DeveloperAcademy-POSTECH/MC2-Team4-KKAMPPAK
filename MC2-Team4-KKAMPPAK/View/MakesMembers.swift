@@ -27,6 +27,17 @@ struct MakesMembers: View {
             .ignoresSafeArea()
             
         }
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .principal) {
+                VStack {
+                    Text("깜빡을 만든 사람들")
+                        .foregroundColor(.white)
+                }
+            }
+        }
+        .toolbarBackground(.visible, for: .navigationBar)
+        .toolbarBackground(Color(red: 0.15, green: 0.15, blue: 0.15), for: .navigationBar)
         
     }
     
